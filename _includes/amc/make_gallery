@@ -1,0 +1,51 @@
+{% comment %}<!--
+
+The make_gallery include is a helper to make image galleries with thumbnails below the carousel.
+
+REQUIREMENTS
+  - The HTML/CSS is based on Twitter Bootstrap v2.0.0
+  - The name of the folder must be assigned before calling make_gallery
+  - The number of images to include must be assigned in advance
+  - Image filenames must be of the form "/example/example-1.jpg"
+  - Thumbnail images must be of the form "/example/example-thumb-1.jpg"
+  - Only worth using with 2+ images :)
+
+Example use in a blog post:
+
+  {% assign image_folder = 'my-awesome-holiday' %}
+  {% assign number_of_images = 31 %}
+  {% include amc/make_gallery %}
+
+$('#myCarousel').carousel( 2 )
+
+-->{% endcomment %}
+<p><div id="gallery_{{ image_folder }}" class="gallery">
+  <ul class="thumbnails">
+    {% for image_iter in (1..number_of_images) %}
+      <li><a data-position="{{ image_iter }}"><img src="{{ BASE_PATH }}/images/{{ image_folder }}/{{ image_folder }}-thumb-{{ image_iter }}.png" alt="" /></a></li>
+    {% endfor %}
+  </ul>
+  <div id="pics-{{ image_folder }}" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item active" align="center">
+        <img src="{{ BASE_PATH }}/images/{{ image_folder }}/{{ image_folder }}-{{ 1 }}.jpg" alt="">
+        <div class="carousel-caption">
+          <h6 align="right">1 / {{ number_of_images }}</h6>
+        </div>
+      </div>
+      {% for image_iter in (2..number_of_images) %}
+      <div class="item" align="center">
+        <img src="{{ BASE_PATH }}/images/{{ image_folder }}/{{ image_folder }}-{{ image_iter }}.jpg" alt="">
+        <div class="carousel-caption">
+          <h6 align="right">{{ image_iter }} / {{ number_of_images }}</h6>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a class="left carousel-control" href="#pics-{{ image_folder }}" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#pics-{{ image_folder }}" data-slide="next">&rsaquo;</a>
+  </div>
+</div></p>
+
+{% assign image_folder = nil %}
+{% assign number_of_images = nil %}

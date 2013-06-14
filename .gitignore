@@ -1,0 +1,97 @@
+##
+##  generic gitignore file. 
+##  - amirmc
+##
+
+#################################################
+#               OS Specific                     #
+#################################################
+    # Linux
+*~
+    # Mac OSX
+.DS_Store
+.Thumbs
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+    # Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+#################################################
+#               Jekyll                          #
+#################################################
+_site/*
+_theme_packages/*
+
+#################################################
+#               Code                            #
+#################################################
+    # OCaml
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+    # Ruby
+.rbenv-version
+.rvmrc
+
+#################################################
+#               Editors                         #
+#################################################
+    # LaTeX
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
+    # Sublime Text
+*.sublime-workspace
+    # vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+#################################################
+#               Misc                            #
+#################################################
+    # No idea...
+!.gitkeep

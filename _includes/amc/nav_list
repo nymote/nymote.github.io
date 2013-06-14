@@ -1,0 +1,7 @@
+{% comment %}<!--
+  See JB/pages_list for original comments
+-->{% endcomment %}
+
+{% for weight in (1..4) %}  {% for p in site.pages %} {% if p.navweight == weight %}
+<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.production_url }}/{{ p.navlink }}">{{ p.navtitle }}</a></li>
+{% endif %} {% endfor %} {% endfor %}
