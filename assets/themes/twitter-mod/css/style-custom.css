@@ -4,6 +4,7 @@ html {
 }
 html, body {
   /*background-color: #eee;*/
+  background: url('/images/handmadepaper.png')
 }
 .navbar {
   margin-bottom: 20px;
