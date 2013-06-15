@@ -3,8 +3,8 @@ html {
   overflow-y: scroll;
 }
 html, body {
-  background-color: #e8e5e3;
-  background: url('/images/ricepaper2.png')
+  background-color: #f4f4f4;
+  background: url('/images/background.png')
 }
 .navbar {
   margin-bottom: 20px;
@@ -13,16 +13,16 @@ html, body {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  background-color: #e8e5e3;
+  background-color: #f4f4f4;
 }
 
 .navbar-inner {
-  background-color: #e8e5e3;
-  background-image: -moz-linear-gradient(top, #e8e5e3, #e8e5e3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8e5e3), to(#e8e5e3));
-  background-image: -webkit-linear-gradient(top, #e8e5e3, #e8e5e3);
-  background-image: -o-linear-gradient(top, #e8e5e3, #e8e5e3);
-  background-image: linear-gradient(to bottom, #e8e5e3, #e8e5e3);
+  background-color: #f4f4f4;
+  background-image: -moz-linear-gradient(top, #f4f4f4, #f4f4f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#f4f4f4));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #f4f4f4);
+  background-image: -o-linear-gradient(top, #f4f4f4, #f4f4f4);
+  background-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4);
 }
 ./*container {
   margin: 0 auto;
