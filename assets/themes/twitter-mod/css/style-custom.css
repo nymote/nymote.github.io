@@ -3,13 +3,27 @@ html {
   overflow-y: scroll;
 }
 html, body {
-  /*background-color: #eee;*/
-  background: url('/images/handmadepaper.png')
+  background-color: #e8e5e3;
+  background: url('/images/ricepaper2.png')
 }
 .navbar {
   margin-bottom: 20px;
 }
 
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  background-color: #e8e5e3;
+}
+
+.navbar-inner {
+  background-color: #e8e5e3;
+  background-image: -moz-linear-gradient(top, #e8e5e3, #e8e5e3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8e5e3), to(#e8e5e3));
+  background-image: -webkit-linear-gradient(top, #e8e5e3, #e8e5e3);
+  background-image: -o-linear-gradient(top, #e8e5e3, #e8e5e3);
+  background-image: linear-gradient(to bottom, #e8e5e3, #e8e5e3);
+}
 ./*container {
   margin: 0 auto;
   max-width: 700px; }
