@@ -59,6 +59,9 @@ img.header {
     padding-bottom: 0px;
 }
 
+ul.archive {
+  list-style: none;
+}
 
 /* tag_box ======================================================== */
 /*
