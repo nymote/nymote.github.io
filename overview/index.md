@@ -22,7 +22,8 @@ simpler and generally work is more productive.  However, we've also made
 sacrifices in order to achieve these gains, in many cases without fully 
 comprehending the risks.
 
-By adopting large centralised services we've made an implicit trade that we 
+By adopting large centralised services we've answered the 
+[call of the siren servers](#TODO) and made an implicit trade. That we 
 will share our habits and data with them in exchange for something useful. 
 In doing so we've empowered internet behemoths while simultaneously reducing 
 our ability to influence them.  We risk becoming slaves to the current 
