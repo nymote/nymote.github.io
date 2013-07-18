@@ -5,14 +5,16 @@ tagline: "Connectivity between all your devices"
 ---
 {% include JB/setup %}
 
-## Restoring the end-to-end principle
+## Your own personal network
 
 <img style="float:right;" src="/images/networked-devices.png">
 The cloud is a (mostly) always available service that can be seen by
 all devices. Without this, it is difficult for individual devices to
 find each other.  **Signpost** is building "personal
-cloud" infrastructure to let your devices all see each other without
-requiring complex configuration.
+cloud" infrastructure to let your devices all see and reach each other without requiring complex configuration.
+
+
+
 
 Peer-to-peer services are notoriously hard to use due to the
 prevalence of firewalls and NAT middleboxes that prevent all of our
@@ -30,5 +32,4 @@ addition, it also understands the *internal* structure of networks
 (e.g. the home) and can directly redirect devices that are on the same
 network to each other without going via the Internet. 
 
-Stay tuned for a prototype release of this project around Fall 2013. 
 
