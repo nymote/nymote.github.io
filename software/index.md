@@ -1,21 +1,20 @@
 ---
 layout: page
-title: Tools for a personal cloud
-header: Tools
+title: Software for a personal cloud
+header: Software
 
 group: nav
-navtitle: Tools
-navlink: tools
+navtitle: Software
+navlink: software
 navweight: 2
 ---
 {% include JB/setup %}
 
-In order 
-
+There are two areas we need to work on to allow us to regain the freedoms we've lost.  The first of these is to create the appropriate [infrastructure](#infrastructure) that incorporates good security and is distributed in nature.  These tools will form the bedrock on which we can then build robust and scalable [applications](#applications), that provide all the good things we are used to but without requiring us to be subject to the whims of the Internet Barons.
 
 ## Infrastructure
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+The underlying building blocks are a crucial piece of the 
 
 ### Signpost
 
