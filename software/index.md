@@ -19,6 +19,7 @@ all the great things we are used to but without requiring us to be subject
 to the whims of the Internet Barons.
 
 <!-- siren servers and our faustian bargain -->
+----
 
 ## Infrastructure
 
@@ -61,6 +62,8 @@ approach where only the necessary components are included, allowing for
 highly efficient and extremely lean 'appliances'.  These can be deployed in 
 environments ranging from Amazon's EC2 to the Raspberry Pi.  
 *([more about mirage](./mirage/)*)
+
+----
 
 ## Applications
 
