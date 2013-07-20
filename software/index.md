@@ -72,13 +72,13 @@ accounted for so the focus can shift to functionality and extensibility.
 
 ### Email server
 
+<img style="float:right;" src="/images/mail-thumb.png">
 One of the most fundamental and ubiquitous tools we have is email.  In order 
 to completely own your digital presence, we must first be able to easily 
-manage and control our own email communications.  There are many email 
-clients in the world today but innovation in the sense of email servers has 
-stagnated.  At the moment, it's simply too difficult for an individual to 
-control their own email but there's no reason it can't be simplified.  With 
-email servers that work for small groups, like families or friends, we can 
-begin to see routes to new email innovation, where developers can write 
+manage and control our own email communications. 
+At the moment, it's simply too difficult for an individual to 
+run their own email server but there's no reason it can't be simplified. 
+With email servers that work for small groups, like families or friends, we 
+can begin to see routes to new email innovation, where developers can write 
 software that interacts directly with the server to enhance email in ways we 
 cannot right now.
