@@ -34,9 +34,10 @@ create the next generation of products.  They deal with the issues of
 <img style="float:right;" src="/images/networked-devices-thumb.png">
 The cloud is a (mostly) always available service that can be seen by
 all devices. Without this, it is difficult for individual devices to
-find each other.  **Signpost** is "personal cloud" infrastructure to
-let your devices all see each other without requiring complex 
-configuration or needing a third-party.  
+find each other.  **Signpost** is distributed "personal cloud" 
+infrastructure to let your devices all see each other without requiring 
+any complex configuration.  Once all your devices can find each other, 
+regardless of location, you effectively have your own little internet.  
 *([more about signpost](./signpost/)*)
 
 ### Irminsule
@@ -56,11 +57,9 @@ can be kept and moved between devices with ease.
 Most applications that run in the cloud aren't optimised to do so.  They 
 inherently carry assumptions about the underlying operating system with 
 them, including vulnerabilities and bloat.  **Mirage** represents an 
-approach where only the necessary components for an application are included 
-and the operating system can be discarded.  This allows for highly-efficient 
-and extremely lean 'appliances' which can undergo whole-system optimisation. 
-Such appliances are perfect for deploying in environments ranging from 
-Amazon's EC2 to the Raspberry Pi. 
+approach where only the necessary components are included, allowing for 
+highly efficient and extremely lean 'appliances'.  These can be deployed in 
+environments ranging from Amazon's EC2 to the Raspberry Pi.  
 *([more about mirage](./mirage/)*)
 
 ## Applications
@@ -69,7 +68,7 @@ With the new infrastructure, we are able to build robust applications that
 will push towards a more decentralised web and empower knew kinds of 
 innovation and exploration.  Building on the right foundations, means the 
 core aspects of connectivity and syncing between devices will already be 
-accounted for so the focus can be on the functionality and extensibility.
+accounted for so the focus can shift to functionality and extensibility.
 
 ### Email server
 
