@@ -42,7 +42,12 @@ configuration or needing a third-party.
 ### Irminsule
 
 <img style="float:right;"  src="/images/tree_of_digital_life-thumb.png">
-Having multiple devices has made the engineering effort around data persistence and sync more complex.  We have to concern ourselves about how data obtained for one device is made available and useful to others, without losing history.  **Irminsule** is a new kind of library database, based on the principles of Git (the version control system), meaning that all history can be kept and moved between devices with ease.  
+Having multiple devices has made the engineering effort around data 
+persistence and sync more complex.  We have to concern ourselves about how 
+data obtained for one device is made available and useful to others, without 
+losing history.  **Irminsule** is a new kind of library database, based on 
+the principles of Git (the version control system), meaning that all history 
+can be kept and moved between devices with ease.  
 *([more about irminsule](./irminsule/)*)
 
 ### Mirage
@@ -60,7 +65,11 @@ Amazon's EC2 to the Raspberry Pi.
 
 ## Applications
 
-With the new infrastructure, we are able to build robust applications that will push towards a more decentralised web and empower knew kinds of innovation and exploration.  Building on the right foundations, means the core aspects of connectivity and syncing between devices will already be accounted for so the focus can be on the functionality and extensibility.
+With the new infrastructure, we are able to build robust applications that 
+will push towards a more decentralised web and empower knew kinds of 
+innovation and exploration.  Building on the right foundations, means the 
+core aspects of connectivity and syncing between devices will already be 
+accounted for so the focus can be on the functionality and extensibility.
 
 ### Email server
 
