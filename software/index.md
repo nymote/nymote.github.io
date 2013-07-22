@@ -35,8 +35,7 @@ create the next generation of products.  They deal with the issues of
 <img style="float:right;" src="/images/networked-devices-thumb.png">
 The cloud is a (mostly) always available service that can be seen by
 all devices. Without this, it is difficult for individual devices to
-find each other.  **Signpost** is distributed "personal cloud" 
-infrastructure to let your devices all see each other without requiring 
+find each other.  **Signpost** is building "personal cloud" infrastructure to let your devices all see each and reach each other without requiring 
 any complex configuration.  Once all your devices can find each other, 
 regardless of location, you effectively have your own little internet.  
 *([more about signpost](./signpost/)*)
