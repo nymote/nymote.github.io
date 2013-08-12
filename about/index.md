@@ -43,7 +43,8 @@ companies.
 Dr. **[Amir Chaudhry][amir-www]** is Programme Manager for OCaml Labs in the 
 Systems Research Group at the University of Cambridge.  He has a remarkably 
 broad academic background including work on detecting landmines, while at 
-Imperial College and L'Universita di Padova.  He received his PhD in 2007 from the University of Cambridge, while working on the
+Imperial College and L'Universita di Padova.  He received his PhD in 2007 
+from the University of Cambridge, while working on the
 neuroscience of human emotion and decision-making.
 
 
