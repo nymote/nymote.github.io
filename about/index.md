@@ -42,17 +42,19 @@ companies.
 <img style="float:left;" src="/images/amir.jpg">
 Dr. **[Amir Chaudhry][amir-www]** is Programme Manager for OCaml Labs in the 
 Systems Research Group at the University of Cambridge.  He has a remarkably 
-broad academic background with research spanning landmine detection at 
-Imperial College and L'Universita di Padova to the neuroscience of human 
-emotion at the University of Cambridge, where he received his PhD in 2007.
+broad academic background including work on detecting landmines, while at 
+Imperial College and L'Universita di Padova.  He received his PhD in 2007 from the University of Cambridge, while working on the
+neuroscience of human emotion and decision-making.
+
 
 Outside academia, Amir has been involved in several startups from medical 
-devices to web applications where his roles have varied from that of early 
-team member, to board level and post-acquisition.  In 2009 he created and 
+devices to web applications and his roles have varied from that of early 
+team member, to board level and post-acquisition integration. 
+In 2009 he created and 
 ran the initial Springboard accelerator programme, which recently merged 
-with TechStars and he also worked on special projects and product management 
+with TechStars.  He has worked on special projects and product management 
 at Red Gate Software, helping to take a long-established product from free 
-to paid-for. Previously, he also held a number of roles at National Grid plc.
+to paid-for. Previously, he held a number of roles at National Grid plc.
 
 [anil-www]: http://anil.recoil.org
 [amir-www]: http://amirchaudhry.com
