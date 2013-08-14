@@ -29,6 +29,7 @@ contributors so far.
 
 [![Anil](/images/mugshots/anil.jpg)][anil-www]  
 *[Anil Madhavapeddy][anil-www]*  
+**Lead for [Mirage](/software/mirage)**  
 Senior Research Associate, University of Cambridge
 [anil-www]: http://anil.recoil.org
 
@@ -44,11 +45,13 @@ Systems Research Group, University of Cambridge
 
 [![David](/images/mugshots/sheets.png)][sheets-www]  
 *[David Sheets][sheets-www]*  
+**Lead for [Signpost](/software/signpost)**  
 PhD Researcher, University of Cambridge
 [sheets-www]: https://github.com/dsheets
 
 [![Thomas](/images/mugshots/tg.png)][thomas-www]  
 *[Thomas Gazagnaire][thomas-www]*  
+**Lead for [Irminsule](/software/irminsule)**  
 CTO, OCamlPro
 [thomas-www]: http://gazagnaire.org
 
