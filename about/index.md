@@ -33,70 +33,57 @@ contributors so far.
 
 [![Jon](/images/mugshots/jonc.gif)][jonc-www]  
 *[Jon Crowcroft][jonc-www]*  
-Professor of Communications Systems, University of Cambridge
 [jonc-www]: http://www.cl.cam.ac.uk/~jac22
 
 [![Amir](/images/mugshots/amir.jpg)][amir-www]  
 *[Amir Chaudhry][amir-www]*  
-Systems Research Group, University of Cambridge
 [amir-www]: http://amirchaudhry.com
 
 [![David](/images/mugshots/sheets.png)][sheets-www]  
 *[David Sheets][sheets-www]*  
 **Lead for [Signpost](/software/signpost)**  
-PhD Researcher, University of Cambridge
 [sheets-www]: https://github.com/dsheets
 
 [![Thomas](/images/mugshots/tg.png)][thomas-www]  
 *[Thomas Gazagnaire][thomas-www]*  
 **Lead for [Irminsule](/software/irminsule)**  
-CTO, OCamlPro
 [thomas-www]: http://gazagnaire.org
 
 [![David](/images/mugshots/djs.jpg)][scotty-www]  
 *[David Scott][scotty-www]*  
 **Lead for [Mirage](/software/mirage)**  
-XenServer System Architect, Citrix Systems R&D
 [scotty-www]: http://dave.recoil.org
 
 [![mort](/images/mugshots/mort.png)][mort-www]  
 *[Richard Mortier][mort-www]*  
-Lecturer, University of Nottingham
 [mort-www]: http://www.cs.nott.ac.uk/~rmm
 
 [![haris](/images/mugshots/haris.jpg)][haris-www]  
 *[Haris Rotsos][haris-www]*  
-PhD Researcher, University of Cambridge
 [haris-www]: http://www.cl.cam.ac.uk/~cr409
 
 [![heidi](/images/mugshots/heidi.jpg)][heidi-www]  
 *[Heidi Howard][heidi-www]*  
-Research Assistant, University of Cambridge
 [heidi-www]: http://hh360.user.srcf.net
 
 [![Raphael](/images/mugshots/raphael.jpg)][raphael-www]  
 *[Raphael Proust][raphael-www]*  
-PhD Researcher, University of Cambridge
 [raphael-www]: http://www.cl.cam.ac.uk/~rp452/
 
 [![Balraj](/images/mugshots/default.jpg)][balraj-www]  
 *[Balraj Singh][balraj-www]*  
-PhD Researcher, University of Cambridge
 [balraj-www]: https://github.com/balrajsingh
 
 [![Steve](/images/mugshots/smh.jpg)][steve-www]  
 *[Steven Hand][steve-www]*  
-Reader in Computer Systems, University of Cambridge
 [steve-www]: http://www.cl.cam.ac.uk/~smh22/
 
 [![Vincent](/images/mugshots/vb.jpg)][vincent-www]  
 *[Vincent Bernardoff][vincent-www]*  
-Citrix Systems R&D
 [vincent-www]: https://github.com/vbmithr
 
 [![Vincent](/images/mugshots/jludlam.jpg)][jonl-www]  
 *[Jon Ludlam][jonl-www]*  
-Citrix Systems R&D
 [jonl-www]: https://github.com/jonludlam
 
 
