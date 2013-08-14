@@ -27,47 +27,62 @@ contributors so far.
 
 ### Contributors
 
-
-<img style="float:left;" src="/images/anil.jpg">
-**[Anil Madhavapeddy][anil-www]** is a Senior Research Fellow at the 
-University of Cambridge, based in the Systems Research Group. He was on the 
-original team that developed the Xen hypervisor, which powers much of the 
-public cloud and also helped develop an industry-leading cloud management 
-toolstack written entirely in OCaml. This XenServer product has been 
-deployed on millions of physical hosts, and drives critical infrastructure 
-for many Fortune 500 companies.
-
-Prior to obtaining his PhD in 2006 from the University of Cambridge, Anil 
-had a diverse background in industry at NetApp, NASA, and Internet Vision. 
-He is an active member of the open-source development community with the 
-OpenBSD operating system, is on the steering committee of the ACM Commercial 
-Uses of Functional Programming workshop, and serves on the boards of startup 
-companies. 
-
-----
-
-<img style="float:left;" src="/images/amir.jpg">
-**[Amir Chaudhry][amir-www]** is Programme Manager for OCaml Labs in the 
-Systems Research Group at the University of Cambridge.  He has a remarkably 
-broad academic background including work on detecting landmines, while at 
-Imperial College and L'Universita di Padova.  He received his PhD in 2007 
-from the University of Cambridge, while working on the
-neuroscience of human emotion and decision-making.
-
-
-Outside academia, Amir has been involved in several startups from medical 
-devices to web applications and his roles have varied from that of early 
-team member, to board level and post-acquisition integration. 
-In 2009 he created and 
-ran the initial Springboard accelerator programme, which recently merged 
-with TechStars.  He has worked on special projects and product management 
-at Red Gate Software, helping to take a long-established product from free 
-to paid-for. Previously, he held a number of roles at National Grid plc.
-
-
-
+[![Anil](/images/mugshots/anil.jpg)][anil-www]
+*[Anil Madhavapeddy][anil-www]*
 [anil-www]: http://anil.recoil.org
+
+[![Jon](/images/mugshots/jonc.jpg)][jonc-www]
+*[Jon Crowcroft][jonc-www]*
+[jonc-www]: http://www.cl.cam.ac.uk/~jac22
+
+[![Amir](/images/mugshots/amir.jpg)][amir-www]
+*[Amir Chaudhry][amir-www]*
 [amir-www]: http://amirchaudhry.com
+
+[![David](/images/mugshots/dsheets.jpg)][sheets-www]
+*[David Sheets][sheets-www]*
+[sheets-www]: https://github.com/dsheets
+
+[![Thomas](/images/mugshots/thomas.jpg)][thomas-www]
+*[Thomas Gazagnaire][thomas-www]*
+[thomas-www]: http://gazagnaire.org
+
+[![mort](/images/mugshots/mort.jpg)][mort-www]
+*[Richard Mortier][mort-www]*
+[mort-www]: http://www.cs.nott.ac.uk/~rmm
+
+[![haris](/images/mugshots/haris.jpg)][haris-www]
+*[Haris Rotsos][haris-www]*
+[haris-www]: http://www.cl.cam.ac.uk/~cr409
+
+[![heidi](/images/mugshots/heidi.jpg)][heidi-www]
+*[Heidi Howard][heidi-www]*
+[heidi-www]: http://hh360.user.srcf.net
+
+[![David](/images/mugshots/dscott.jpg)][scotty-www]
+*[David Scott][scotty-www]*
+[scotty-www]: http://dave.recoil.org
+
+[![Raphael](/images/mugshots/raphael.jpg)][raphael-www]
+*[Raphael Proust][raphael-www]*
+[raphael-www]: http://www.cl.cam.ac.uk/~rp452/
+
+[![Balraj](/images/mugshots/balraj.jpg)][balraj-www]
+*[Balraj Singh][balraj-www]*
+[balraj-www]: https://github.com/balrajsingh
+
+[![Steve](/images/mugshots/steve.jpg)][steve-www]
+*[Steven Hand][steve-www]*
+[steve-www]: http://www.cl.cam.ac.uk/~smh22/
+
+[![Vincent](/images/mugshots/vincent.jpg)][vincent-www]
+*[Vincent Bernardoff][vincent-www]*
+[vincent-www]: https://github.com/vbmithr
+
+[![Vincent](/images/mugshots/jonl.jpg)][jonl-www]
+*[Jon Ludlam][jonl-www]*
+[jonl-www]: https://github.com/jonludlam
+
 
 <!--
 ## Approach
