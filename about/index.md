@@ -29,8 +29,6 @@ contributors so far.
 
 [![Anil](/images/mugshots/anil.jpg)][anil-www]  
 *[Anil Madhavapeddy][anil-www]*  
-**Lead for [Mirage](/software/mirage)**  
-Senior Research Associate, University of Cambridge
 [anil-www]: http://anil.recoil.org
 
 [![Jon](/images/mugshots/jonc.gif)][jonc-www]  
@@ -55,6 +53,12 @@ PhD Researcher, University of Cambridge
 CTO, OCamlPro
 [thomas-www]: http://gazagnaire.org
 
+[![David](/images/mugshots/djs.jpg)][scotty-www]  
+*[David Scott][scotty-www]*  
+**Lead for [Mirage](/software/mirage)**  
+XenServer System Architect, Citrix Systems R&D
+[scotty-www]: http://dave.recoil.org
+
 [![mort](/images/mugshots/mort.png)][mort-www]  
 *[Richard Mortier][mort-www]*  
 Lecturer, University of Nottingham
@@ -69,11 +73,6 @@ PhD Researcher, University of Cambridge
 *[Heidi Howard][heidi-www]*  
 Research Assistant, University of Cambridge
 [heidi-www]: http://hh360.user.srcf.net
-
-[![David](/images/mugshots/djs.jpg)][scotty-www]  
-*[David Scott][scotty-www]*  
-XenServer System Architect, Citrix Systems R&D
-[scotty-www]: http://dave.recoil.org
 
 [![Raphael](/images/mugshots/raphael.jpg)][raphael-www]  
 *[Raphael Proust][raphael-www]*  
