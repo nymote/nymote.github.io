@@ -15,14 +15,17 @@ a trivial undertaking.  Even though it's possible to string together
 something quick with existing tools, they are ultimately limited since they 
 lack the necessary security considerations.  To build scalable and 
 distributed systems of this kind requires deep expertise in the areas of 
-networking, distributed software and the cloud.  
+networking and the cloud as well as a commitment to Open Source software and community building.
+
+The [software](../software) for [Nymote]({{site.production_url}}) comprises a number of related items that provide the core requirements of identity, connectivity and data storage.  The overall project is led by Anil Madhavapeddy, Jon Crowcroft and Amir Chaudhry and below is a list of the contributors so far.
+
 <!-- Those are the people who understand what is practicable and how to sensibly construct, test and deploy such products. -->
 
-### Team
+### Contributors
 
 
 <img style="float:left;" src="/images/anil.jpg">
-Dr. **[Anil Madhavapeddy][anil-www]** is a Senior Research Fellow at the 
+**[Anil Madhavapeddy][anil-www]** is a Senior Research Fellow at the 
 University of Cambridge, based in the Systems Research Group. He was on the 
 original team that developed the Xen hypervisor, which powers much of the 
 public cloud and also helped develop an industry-leading cloud management 
@@ -40,7 +43,7 @@ companies.
 ----
 
 <img style="float:left;" src="/images/amir.jpg">
-Dr. **[Amir Chaudhry][amir-www]** is Programme Manager for OCaml Labs in the 
+**[Amir Chaudhry][amir-www]** is Programme Manager for OCaml Labs in the 
 Systems Research Group at the University of Cambridge.  He has a remarkably 
 broad academic background including work on detecting landmines, while at 
 Imperial College and L'Universita di Padova.  He received his PhD in 2007 
@@ -56,6 +59,8 @@ ran the initial Springboard accelerator programme, which recently merged
 with TechStars.  He has worked on special projects and product management 
 at Red Gate Software, helping to take a long-established product from free 
 to paid-for. Previously, he held a number of roles at National Grid plc.
+
+
 
 [anil-www]: http://anil.recoil.org
 [amir-www]: http://amirchaudhry.com
