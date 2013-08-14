@@ -17,7 +17,11 @@ lack the necessary security considerations.  To build scalable and
 distributed systems of this kind requires deep expertise in the areas of 
 networking and the cloud as well as a commitment to Open Source software and community building.
 
-The [software](../software) for [Nymote]({{site.production_url}}) comprises a number of related items that provide the core requirements of identity, connectivity and data storage.  The overall project is led by Anil Madhavapeddy, Jon Crowcroft and Amir Chaudhry and below is a list of the contributors so far.
+The [software](../software) for [Nymote]({{site.production_url}}) comprises 
+a number of related items that provide the core requirements of identity, 
+connectivity and data storage.  The overall project is led by Anil 
+Madhavapeddy, Jon Crowcroft and Amir Chaudhry and below is a list of the 
+contributors so far.
 
 <!-- Those are the people who understand what is practicable and how to sensibly construct, test and deploy such products. -->
 
