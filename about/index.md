@@ -39,10 +39,10 @@ contributors so far.
 *[Amir Chaudhry][amir-www]*  
 [amir-www]: http://amirchaudhry.com
 
-[![David](/images/mugshots/sheets.png)][sheets-www]  
-*[David Sheets][sheets-www]*  
+[![mort](/images/mugshots/mort.png)][mort-www]  
+*[Richard Mortier][mort-www]*  
 **Lead for [Signpost](/software/signpost)**  
-[sheets-www]: https://github.com/dsheets
+[mort-www]: http://www.cs.nott.ac.uk/~rmm
 
 [![Thomas](/images/mugshots/tg.png)][thomas-www]  
 *[Thomas Gazagnaire][thomas-www]*  
@@ -54,9 +54,9 @@ contributors so far.
 **Lead for [Mirage](/software/mirage)**  
 [scotty-www]: http://dave.recoil.org
 
-[![mort](/images/mugshots/mort.png)][mort-www]  
-*[Richard Mortier][mort-www]*  
-[mort-www]: http://www.cs.nott.ac.uk/~rmm
+[![David](/images/mugshots/sheets.png)][sheets-www]  
+*[David Sheets][sheets-www]*  
+[sheets-www]: https://github.com/dsheets
 
 [![haris](/images/mugshots/haris.jpg)][haris-www]  
 *[Haris Rotsos][haris-www]*  
