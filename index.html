@@ -7,556 +7,477 @@ tagline:
 
 <!-- This section is for Splash Screen -->
 <div class="ole">
-<section id="jSplash">
-  <div id="circle"></div>
-</section>
+  <section id="jSplash">
+    <div id="circle"></div>
+  </section>
 </div>
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
 <div id="home-slider">  
-    <div class="overlay"><img src="{{ ASSET_PATH }}/img/sliderlogo.png" class="sliderlogo fluid" /></div>
-
+  <div class="overlay">
+    <img src="images/nymote-logo-white.png" class="sliderlogo fluid" />
+  </div>
   <div class="container">
-      <div class="row">
-          <div class="span12">
-                <div class="slider-text">
-                    <div id="slidecaption"></div>
-                </div>
-            </div>
+    <div class="row">
+      <div class="span12">
+        <div class="slider-text">
+          <div id="slidecaption"></div>
         </div>
-    </div>   
+      </div>
+    </div>
+  </div>   
   
   <div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="icon-arrow-down"></i></a>
-    </div>
+    <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+    <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+    <ul id="slide-list">
+    </ul>
+    <a id="nextsection" href="#work"><i class="icon-arrow-down"></i></a>
+  </div>
 </div>
 <!-- End Homepage Slider -->
 
 <!-- Header -->
 <header>
-    <div class="sticky-nav">
-      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+  <div class="sticky-nav">
+    <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
-        <div id="logo">
-          <a id="goUp" href="#home-slider"></a>
-        </div>
-        
-        <nav id="menu">
-          <ul id="menu-nav">
-              <li class="current"><a href="#work">Home</a></li>
-                <li><a href="#services">Overview</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="/blog" class="external">Blog</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-        </nav>
-        
+    <div id="logo">
+      <a id="goUp" href="#home-slider"></a>
     </div>
+        
+    <nav id="menu">
+      <ul id="menu-nav">
+        <li class="current"><a href="#work">Home</a></li>
+          <li><a href="#services">Overview</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="/blog" class="external">Blog</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>      
+  </div>
 </header>
 <!-- End Header -->
 
-<!-- Our Work Section -->
+<!-- Home Section -->
 <div id="work" class="page">
   <div class="container">
-      <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title center">Lifelong control of your networked personal data</h2>
-                   
-                
-                </div>    
-            </div>
-        </div>
-         <div class="row">
-        <div class="span4">
-            <div class="services-box">
-                <div class="icon">
-                    <span class="icon-globe"></span>
-                </div>
-                <h3>Connectivity</h3>
-                <p>Bring all your devices together and create secure networks between them so you can access your data wherever you are</p>
-            </div>
-        </div>
-        
-        <div class="span4">
-            <div class="services-box">
-                <div class="icon">
-                    <span class="icon-signal"></span>
-                </div>
-                <h3>Scalability</h3>
-                <p>Create your own personal infrastructure then install applications into it securely through an app store for the cloud</p>
-            </div>
-        </div>
-        
-        <div class="span4">
-            <div class="services-box">
-                <div class="icon">
-                    <span class="icon-home"></span>
-                </div>
-                <h3>Ownership</h3>
-                <p>Take full advantage of the cloud with robust Open Source software and avoid compromising your online destiny</p>
-            </div>
-        </div>
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title center">Lifelong control of your networked personal data</h2>        
+        </div>    
+      </div>
     </div>
     
-        <!-- End Title Page -->
+    <div class="row">
+      <div class="span4">
+        <div class="services-box">
+          <div class="icon">
+            <span class="icon-globe"></span>
+          </div>
+          <h3>Connectivity</h3>
+          <p>Bring all your devices together and create secure networks between them so you can access your data wherever you are</p>
+        </div>
+      </div>
+      
+      <div class="span4">
+        <div class="services-box">
+          <div class="icon">
+            <span class="icon-signal"></span>
+          </div>
+          <h3>Scalability</h3>
+          <p>Create your own personal infrastructure then install applications into it securely through an app store for the cloud</p>
+        </div>
+      </div>
         
-       
+      <div class="span4">
+        <div class="services-box">
+          <div class="icon">
+            <span class="icon-home"></span>
+          </div>
+          <h3>Ownership</h3>
+          <p>Take full advantage of the cloud with robust Open Source software and avoid compromising your online destiny</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-<!-- Services Section -->
+<!-- End Home Section -->
+
+<!-- Overview Section -->
 <div id="services" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">  <div class="span12"><h2 class="title">Overview</h2></div></div>
-    <div class="row">
-        <div class="span6">
-            <div class="title-page">
-                <div class="page-description">
-                <h3 id='tools_to_build_a_distributed_future'>    Software to control your digital life</h3>
-                   <p>We&#8217;re creating software infrastructure to put users back in control of their digital lives.</p>
-
-<p>The internet has become such a huge part of our daily lives to the extent that it&#8217;s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive. However, we&#8217;ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the risks.</p>
-
-<p>By adopting large centralised services we&#8217;ve answered the <a href='#TODO'>call of the siren servers</a> and made an implicit trade. That we will share our habits and data with them in exchange for something useful. In doing so we&#8217;ve empowered internet behemoths while simultaneously reducing our ability to influence them. We risk becoming slaves to the current system unless we can create alternatives that compete. It&#8217;s time to work on those alternatives.</p>
-            </div>
-        </div>
-    </div>
-        <div class="span6">
-            <div class="title-page">
-                <div class="page-description">
-                <h3 id='tools_to_build_a_distributed_future'>   Tools to build a distributed future</h3>
-                
-<p>Our approach is to create secure, robust and <em>open-source</em> infrastructure that others can build on. Security and privacy need to be incorporated from the ground up so that promises of &#8220;your data is safe with us&#8221; can be kept by the technology itself. In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it may mean rebuilding tools and creating new products to replace those that are no longer fit for purpose.</p>
-
-<p>We are starting with mechanisms to provide identity and connectivity for your personal cloud of devices as well as the mechanisms to keep data in sync across them. You can find more detail about those on our <a href='../software/'>software</a> page and get involved in the <a href='http://lists.nymote.org'>developer mailing-list</a> too. If you prefer to only hear about announcements, then please sign up to our <a href='TODO'>public list</a>.</p
->       
-
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- End Title Page -->
-
-   
-
-    <!-- End Services Boxes -->
-    
-</div>
-</div>
-
-<!-- Big Blockquote -->
-<div class="big-quote page">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <p class="signup">Signup to our Nymote newsletter to receive the latest updates</p><a href="#footer" class="button customwidth">Subscribe</a></p>
-                <span class="font-icon-blockquote"></span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Big Blockquote -->
-
-<!-- Services Section -->
-<div id="software" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Software for a personal cloud</h2>
-                <h3 class="title-description"></h3>
-                
-                <div class="page-description">
-                <h3 id='tools_to_build_a_distributed_future'>  </h3>
-
-  <p>There are two areas we need to work on to allow us to regain the freedoms we&#8217;ve lost. The first of these is to create the appropriate <a href='#infrastructure'>infrastructure</a> that incorporates good security and is distributed in nature. These tools will form the bedrock on which we can then build robust and scalable <a href='#applications'>applications</a>, that provide all the great things we are used to but without requiring us to be subject to the whims of the Internet Barons.</p>
-<!-- siren servers and our faustian bargain -->
-<div class="row">
-    <div class="span12 marginb">
-        <h2>Infrastructure</h2>
-        <p>The underlying building blocks are a crucial piece of the puzzle. We need robust and open-source tools that allow us to create distributed systems that anyone can build on. These tools are the bedrock on which we will create the next generation of products. They deal with the issues of <a href='#signpost'>connectivity</a>, <a href='#irminsule'>synchronisation</a>, and <a href='#mirage'>deployment</a>.</p>
-    </div>
-</div>
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-compass"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Signpost</h3>
-        <p>The cloud is a (mostly) always available service that can be seen by all devices. Without this, it is difficult for individual devices to find each other. <strong>Signpost</strong> is building &#8220;personal cloud&#8221; infrastructure to let your devices all see each and reach each other without requiring any complex configuration. Once all your devices can find each other, regardless of location, you effectively have your own little internet.<br /><em>(
-            <a href='/software/signpost/'>more about signpost</a></em>)</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-refresh"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Irminsule</h3>
-        <p>Having multiple devices has made the engineering effort around data persistence and sync more complex. We have to concern ourselves about how data obtained for one device is made available and useful to others, without losing history. <strong>Irminsule</strong> is a new kind of library database, based on the principles of Git (the version control system), meaning that all history can be kept and moved between devices with ease.<br /><em>
-            (<a href='/software/irminsule/'>more about irminsule</a></em>)</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-cloud"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Mirage</h3>
-        <p>Most applications that run in the cloud aren&#8217;t optimised to do so. They inherently carry assumptions about the underlying operating system with them, including vulnerabilities and bloat. <strong>Mirage</strong> represents an approach where only the necessary components are included, allowing for highly efficient and extremely lean &#8216;appliances&#8217;. These can be deployed in environments ranging from Amazon&#8217;s EC2 to the Raspberry Pi.<br /><em>
-            (<a href='/software/mirage/'>more about mirage</a></em>)</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span12 marginb">
-        <h2>Applications</h2>
-        <p>With the new infrastructure, we are able to build robust applications that will push towards a more decentralised web and empower knew kinds of innovation and exploration. Building on the right foundations, means the core aspects of connectivity and syncing between devices will already be accounted for so the focus can shift to functionality and extensibility.</p>
-    </div>
-</div>
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-envelope"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Mail</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-group"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Contacts</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span3">
-        <div class="services-box">
-            <div class="icon" style="margin-top: 5px;">
-            <span class="icon-calendar"></span>
-            </div>
-        </div>   
-    </div>
-    <div class="span9">
-        <h3>Calendar</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-    </div>
-</div>
-
-</div></div></div></div></div></div>
-
-
-<!-- Big Blockquote -->
-<div class="big-quote page">
   <div class="container">
-      <div class="row">
-          <div class="span12">
-                <p class="signup">Signup to our Nymote newsletter to receive the latest updates</p><a href="#footer" class="button customwidth">Subscribe</a></p>
-                <span class="font-icon-blockquote"></span>
-            </div>
-        </div>
+    <div class="row">
+      <div class="span12">
+        <h2 class="title">Overview</h2>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="span6">
+        <div class="title-page">
+          <div class="page-description">
+            <h3 id='tools_to_build_a_distributed_future'>Software to control your digital life</h3>
+            <p>We&#8217;re creating software infrastructure to put users back in control of their digital lives.</p>
+
+            <p>The internet has become such a huge part of our daily lives to the extent that it&#8217;s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive. However, we&#8217;ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the risks.</p>
+
+            <p>By adopting large centralised services we&#8217;ve answered the <a href='#TODO'>call of the siren servers</a> and made an implicit trade. That we will share our habits and data with them in exchange for something useful. In doing so we&#8217;ve empowered internet behemoths while simultaneously reducing our ability to influence them. We risk becoming slaves to the current system unless we can create alternatives that compete. It&#8217;s time to work on those alternatives.</p>
+          </div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="title-page">
+          <div class="page-description">
+            <h3 id='tools_to_build_a_distributed_future'>Tools to build a distributed future</h3>
+                
+            <p>Our approach is to create secure, robust and <em>open-source</em> infrastructure that others can build on. Security and privacy need to be incorporated from the ground up so that promises of &#8220;your data is safe with us&#8221; can be kept by the technology itself. In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it may mean rebuilding tools and creating new products to replace those that are no longer fit for purpose.</p>
+
+            <p>We are starting with mechanisms to provide identity and connectivity for your personal cloud of devices as well as the mechanisms to keep data in sync across them. You can find more detail about those on our <a href='../software/'>software</a> page and get involved in the <a href='http://lists.nymote.org'>developer mailing-list</a> too. If you prefer to only hear about announcements, then please sign up to our <a href='TODO'>public list</a>.</p>       
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- End Overview Boxes -->
 
-   
+{% include amc/blockquote %}
 
-    <!-- End Services Boxes -->
+<!-- Software Section -->
+<div id="software" class="page-alternate">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title">Software for a personal cloud</h2>
+          <h3 class="title-description"></h3>
+          <div class="page-description">
+<!--remove?--><h3 id='tools_to_build_a_distributed_future'></h3>
+            <p>There are two areas we need to work on to allow us to regain the freedoms we&#8217;ve lost. The first of these is to create the appropriate <a href='#infrastructure'>infrastructure</a> that incorporates good security and is distributed in nature. These tools will form the bedrock on which we can then build robust and scalable <a href='#applications'>applications</a>, that provide all the great things we are used to but without requiring us to be subject to the whims of the Internet Barons.</p><!-- siren servers and our faustian bargain -->
 
+            <!-- INFRASTRUCTURE Section -->
+            <div class="row">
+              <div class="span12 marginb">
+                <h2>Infrastructure</h2>
+                <p>The underlying building blocks are a crucial piece of the puzzle. We need robust and open-source tools that allow us to create distributed systems that anyone can build on. These tools are the bedrock on which we will create the next generation of products. They deal with the issues of <a href='#signpost'>connectivity</a>, <a href='#irminsule'>synchronisation</a>, and <a href='#mirage'>deployment</a>.</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-compass"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Signpost</h3>
+                <p>The cloud is a (mostly) always available service that can be seen by all devices. Without this, it is difficult for individual devices to find each other. <strong>Signpost</strong> is building &#8220;personal cloud&#8221; infrastructure to let your devices all see each and reach each other without requiring any complex configuration. Once all your devices can find each other, regardless of location, you effectively have your own little internet.<br />
+                <em>(<a href='/software/signpost/'>more about signpost</a></em>)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-refresh"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Irminsule</h3>
+                <p>Having multiple devices has made the engineering effort around data persistence and sync more complex. We have to concern ourselves about how data obtained for one device is made available and useful to others, without losing history. <strong>Irminsule</strong> is a new kind of library database, based on the principles of Git (the version control system), meaning that all history can be kept and moved between devices with ease.<br />
+                <em>(<a href='/software/irminsule/'>more about irminsule</a></em>)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-cloud"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Mirage</h3>
+                <p>Most applications that run in the cloud aren&#8217;t optimised to do so. They inherently carry assumptions about the underlying operating system with them, including vulnerabilities and bloat. <strong>Mirage</strong> represents an approach where only the necessary components are included, allowing for highly efficient and extremely lean &#8216;appliances&#8217;. These can be deployed in environments ranging from Amazon&#8217;s EC2 to the Raspberry Pi.<br />
+                <em>(<a href='/software/mirage/'>more about mirage</a></em>)</p>
+              </div>
+            </div>
+
+            <!-- INFRASTRUCTURE Section -->
+            <div class="row">
+              <div class="span12 marginb">
+                <h2>Applications</h2>
+                <p>With the new infrastructure, we are able to build robust applications that will push towards a more decentralised web and empower knew kinds of innovation and exploration. Building on the right foundations, means the core aspects of connectivity and syncing between devices will already be accounted for so the focus can shift to functionality and extensibility.</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-envelope"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Mail</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-group"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Contacts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="span3">
+                <div class="services-box">
+                  <div class="icon" style="margin-top: 5px;">
+                    <span class="icon-calendar"></span>
+                  </div>
+                </div>   
+              </div>
+              <div class="span9">
+                <h3>Calendar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- End Software Section -->
+
+{% include amc/blockquote %}
 
 <!-- About Section -->
 <div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
+  <div class="container">
     <div class="row">
-            <div class="span">   <h2 class="title">About Us</h2></div>
-            </div>
-    <div class="row">
-        <div class="span6">
-            <div class="title-page">
-                <h3 class="title-description">Learn About our Team.</h3>
-                
-                <div class="page-description">
-                    <p>Building lightweight systems specifically geared to live on the cloud is not a trivial undertaking. Even though it’s possible to string together something quick with existing tools, they are ultimately limited since they lack the necessary security considerations. To build scalable and distributed systems of this kind requires deep expertise in the areas of networking, distributed software and the cloud.</p>
-            
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="span6">
-            <div class="title-page">
-                <h3 class="title-description">Learn About our Culture.</h3>
-                
-                <div class="page-description">
-                <p>
-                      The software for Nymote comprises a number of related items that provide the core requirements of identity, connectivity and data storage. The overall project is led by Anil Madhavapeddy, Jon Crowcroft and Amir Chaudhry and below is a list of the contributors so far.
-                    </p>
-            
-                </div>
-                
-            </div>
-        </div>
+      <div class="span">
+        <h2 class="title">About Us</h2>
+      </div>
     </div>
+    
+    <div class="row">
+      <div class="span6">
+        <div class="title-page">
+          <h3 class="title-description">Learn About our Team.</h3>
+          <div class="page-description">
+            <p>Building lightweight systems specifically geared to live on the cloud is not a trivial undertaking. Even though it’s possible to string together something quick with existing tools, they are ultimately limited since they lack the necessary security considerations. To build scalable and distributed systems of this kind requires deep expertise in the areas of networking, distributed software and the cloud.</p>
+          </div>
+        </div>
+      </div>
 
-      
-    <!-- End Title Page -->
-    
-   
-    
+      <div class="span6">
+        <div class="title-page">
+          <h3 class="title-description">Learn About our Culture.</h3>
+          <div class="page-description">
+            <p>The software for Nymote comprises a number of related items that provide the core requirements of identity, connectivity and data storage. The overall project is led by Anil Madhavapeddy, Jon Crowcroft and Amir Chaudhry and below is a list of the contributors so far.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mugshots section -->    
     <div class="sep">
       <span class="separator"></span>
     </div>
-    
-    <!-- People -->
+
     <div class="row">
-      
-        <!-- Start Profile -->
       <div class="span2 profile">
-          <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/anil.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Anil Madhavapeddy</h5>
-            <p class="profile-description"></p>
-            
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/anil.jpg" alt="Anil">
         </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/jonc.gif" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Jon Crowcroft</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/amir.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Amir Chaudhry</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                       <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/mort.png" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Richard Mortier</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/tg.png" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Thomas Gazagnaire</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/djs.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">David Scott</h5><p>&nbsp;</p>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/sheets.png" alt="John Doe">
-            </div>
-            <h5 class="profile-name">David Sheets</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-               <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/haris.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Haris Rotsos</h5>
-            <p class="profile-description"></p>
-                
-    </div>
-        <!-- End Profile -->
-               <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/heidi.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Heidi Howard</h5>
-            <p class="profile-description"></p>
-                
-        </div>
+        <h5 class="profile-name">Anil M</h5>
+        <p class="profile-description"></p>
+      </div>
 
-        <!-- End Profile -->
-               <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/raphael.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Raphael Proust</h5>
-            <p class="profile-description"></p>
-                
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/jonc.gif" alt="Jon">
         </div>
-        <!-- End Profile -->
-               <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/default.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Balraj Singh</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/smh.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Steven Hand</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                        <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/vb.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Vincent Bernardoff</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
-                        <!-- Start Profile -->
-        <div class="span2 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Contributor</span>
-                </div>
-                <img src="{{ ASSET_PATH }}/img/contributor/jludlam.jpg" alt="John Doe">
-            </div>
-            <h5 class="profile-name">Jon Ludlam</h5>
-            <p class="profile-description"></p>
-                
-        </div>
-        <!-- End Profile -->
+        <h5 class="profile-name">Jon C</h5>
+        <p class="profile-description"></p>
+      </div>
 
-      
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/amir.jpg" alt="Amir">
+        </div>
+        <h5 class="profile-name">Amir C</h5>
+        <p class="profile-description"></p>
+      </div>
 
-</div>
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/mort.png" alt="Mort">
+        </div>
+        <h5 class="profile-name">Richard M</h5>
+        <p class="profile-description"></p>
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/tg.png" alt="Thomas">
+        </div>
+        <h5 class="profile-name">Thomas G</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/djs.jpg" alt="David S">
+        </div>
+        <h5 class="profile-name">David S</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/sheets.png" alt="David">
+        </div>
+        <h5 class="profile-name">David S</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/haris.jpg" alt="Haris">
+        </div>
+        <h5 class="profile-name">Haris R</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/heidi.jpg" alt="Heidi">
+        </div>
+        <h5 class="profile-name">Heidi H</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/raphael.jpg" alt="Raphael">
+        </div>
+        <h5 class="profile-name">Raphael P</h5>
+        <p class="profile-description"></p>    
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/default.jpg" alt="Balraj">
+        </div>
+        <h5 class="profile-name">Balraj S</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+              <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/smh.jpg" alt="Steve">
+        </div>
+        <h5 class="profile-name">Steven H</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/vb.jpg" alt="Vincent">
+        </div>
+        <h5 class="profile-name">Vincent B</h5>
+        <p class="profile-description"></p>      
+      </div>
+
+      <div class="span2 profile">
+        <div class="image-wrap">
+          <div class="hover-wrap">
+            <span class="overlay-img"></span>
+            <span class="overlay-text-thumb">Contributor</span>
+          </div>
+          <img src="images/mugshots/jludlam.jpg" alt="John">
+        </div>
+        <h5 class="profile-name">Jon L</h5>
+        <p class="profile-description"></p>
+      </div>
+    </div> <!-- End Mugshots -->
+  </div>
 </div>
 
-<!-- End Services Section -->
-
-
-    
+<!-- Are these close divs superflous? or do they belong in default? -->
+</div>
+</div>    
 </div>
 </div>
