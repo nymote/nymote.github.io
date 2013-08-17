@@ -64,45 +64,7 @@ tagline:
 <!-- Home Section -->
 <div id="home" class="page">
   <div class="container">
-    <div class="row">
-      <div class="span12">
-        <div class="title-page">
-          <h2 class="title center">Lifelong control of your networked personal data</h2>        
-        </div>    
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="span4">
-        <div class="services-box">
-          <div class="icon">
-            <span class="icon-globe"></span>
-          </div>
-          <h3>Connectivity</h3>
-          <p>Bring all your devices together and create secure networks between them so you can access your data wherever you are</p>
-        </div>
-      </div>
-      
-      <div class="span4">
-        <div class="services-box">
-          <div class="icon">
-            <span class="icon-signal"></span>
-          </div>
-          <h3>Scalability</h3>
-          <p>Create your own personal infrastructure then install applications into it securely through an app store for the cloud</p>
-        </div>
-      </div>
-        
-      <div class="span4">
-        <div class="services-box">
-          <div class="icon">
-            <span class="icon-home"></span>
-          </div>
-          <h3>Ownership</h3>
-          <p>Take full advantage of the cloud with robust Open Source software and avoid compromising your online destiny</p>
-        </div>
-      </div>
-    </div>
+    {% include frontpage/home.html %}
   </div>
 </div>
 <!-- End Home Section -->
@@ -120,23 +82,14 @@ tagline:
       <div class="span6">
         <div class="title-page">
           <div class="page-description">
-            <h3 id='tools_to_build_a_distributed_future'>Software to control your digital life</h3>
-            <p>We&#8217;re creating software infrastructure to put users back in control of their digital lives.</p>
-
-            <p>The internet has become such a huge part of our daily lives to the extent that it&#8217;s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive. However, we&#8217;ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the risks.</p>
-
-            <p>By adopting large centralised services we&#8217;ve answered the <a href='#TODO'>call of the siren servers</a> and made an implicit trade. That we will share our habits and data with them in exchange for something useful. In doing so we&#8217;ve empowered internet behemoths while simultaneously reducing our ability to influence them. We risk becoming slaves to the current system unless we can create alternatives that compete. It&#8217;s time to work on those alternatives.</p>
+            {% include frontpage/overview01.html %}
           </div>
         </div>
       </div>
       <div class="span6">
         <div class="title-page">
           <div class="page-description">
-            <h3 id='tools_to_build_a_distributed_future'>Tools to build a distributed future</h3>
-                
-            <p>Our approach is to create secure, robust and <em>open-source</em> infrastructure that others can build on. Security and privacy need to be incorporated from the ground up so that promises of &#8220;your data is safe with us&#8221; can be kept by the technology itself. In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it may mean rebuilding tools and creating new products to replace those that are no longer fit for purpose.</p>
-
-            <p>We are starting with mechanisms to provide identity and connectivity for your personal cloud of devices as well as the mechanisms to keep data in sync across them. You can find more detail about those on our <a href='../software/'>software</a> page and get involved in the <a href='http://lists.nymote.org'>developer mailing-list</a> too. If you prefer to only hear about announcements, then please sign up to our <a href='TODO'>public list</a>.</p>       
+            {% include frontpage/overview02.html %}
           </div>
         </div>
       </div>
