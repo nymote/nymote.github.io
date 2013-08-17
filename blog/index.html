@@ -10,28 +10,57 @@ navweight: 3
 ---
 {% include JB/setup %}
 
-{% for post in site.posts limit:5 %}
-<div class="page-header">
-  <h1><a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>{% if post.tagline %}<h2><small>{{post.tagline}}</small></h2>{% endif %}
-  <!-- <div class="date">
-      <span>{{ post.date | date_to_long_string }}</span>
-  </div> -->
-</div>
-
-<div class="row-fluid post-full">
-  <div class="span12">
-    <div class="content">
-      {{ post.content }}
-      <div class="date">
-        <span>{{ post.date | date_to_long_string }}</span>
-      </div>
-      <a href="{{ BASE_PATH }}{{ post.url }}/#share-comment">Share / Comment</a>
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+          <a id="goUp" href="#home-slider"></a>
+        </div>
+        
+        <nav id="menu">
+          <ul id="menu-nav">
+              <li><a href="/#work" class="external">Home</a></li>
+                <li><a href="/#services" class="external">Overview</a></li>
+                <li><a href="/#software" class="external">Software</a></li>
+                <li class="current"><a href="#">Blog</a></li>
+                <li><a href="/#about" class="external">About Us</a></li>
+            </ul>
+        </nav>
+        
     </div>
-    <hr>
-  </div>
-</div>  
-{% endfor %}
+</header>
+<!-- End Header -->
 
-<div class="row-fluid post-full">
-    <h3><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">More posts</a></h3>
+<div id="blog" class="page-alternate">
+  <div class="container">
+    <div class="row">     
+      <div class="span1"></div>
+      <div class="span10">
+        <div class="title-page">
+
+          {% for post in site.posts limit:5 %}
+          <div class="page-header">
+            <h1><a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+            <span>Posted on {{ post.date | date_to_long_string }}</span>
+            {% if post.tagline %}<h2><small>{{post.tagline}}</small></h2>{% endif %}
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                {{ post.content }}
+                <a href="{{ BASE_PATH }}{{ post.url }}/#share-comment">Share / Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          {% endfor %}
+
+          <h3><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">More posts</a></h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
