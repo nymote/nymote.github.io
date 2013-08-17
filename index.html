@@ -110,110 +110,23 @@ tagline:
           <h3 class="title-description"></h3>
           <div class="page-description">
 <!--remove?--><h3 id='tools_to_build_a_distributed_future'></h3>
-            <p>There are two areas we need to work on to allow us to regain the freedoms we&#8217;ve lost. The first of these is to create the appropriate <a href='#infrastructure'>infrastructure</a> that incorporates good security and is distributed in nature. These tools will form the bedrock on which we can then build robust and scalable <a href='#applications'>applications</a>, that provide all the great things we are used to but without requiring us to be subject to the whims of the Internet Barons.</p><!-- siren servers and our faustian bargain -->
+            {% include frontpage/sw-intro.html %}
 
             <!-- INFRASTRUCTURE Section -->
             <div class="row">
               <div class="span12 marginb">
-                <h2>Infrastructure</h2>
-                <p>The underlying building blocks are a crucial piece of the puzzle. We need robust and open-source tools that allow us to create distributed systems that anyone can build on. These tools are the bedrock on which we will create the next generation of products. They deal with the issues of <a href='#signpost'>connectivity</a>, <a href='#irminsule'>synchronisation</a>, and <a href='#mirage'>deployment</a>.</p>
+                {% include frontpage/sw-infra-intro.html %}
               </div>
             </div>
-            
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-compass"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Signpost</h3>
-                <p>The cloud is a (mostly) always available service that can be seen by all devices. Without this, it is difficult for individual devices to find each other. <strong>Signpost</strong> is building &#8220;personal cloud&#8221; infrastructure to let your devices all see each and reach each other without requiring any complex configuration. Once all your devices can find each other, regardless of location, you effectively have your own little internet.<br />
-                <em>(<a href='/software/signpost/'>more about signpost</a></em>)</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-refresh"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Irminsule</h3>
-                <p>Having multiple devices has made the engineering effort around data persistence and sync more complex. We have to concern ourselves about how data obtained for one device is made available and useful to others, without losing history. <strong>Irminsule</strong> is a new kind of library database, based on the principles of Git (the version control system), meaning that all history can be kept and moved between devices with ease.<br />
-                <em>(<a href='/software/irminsule/'>more about irminsule</a></em>)</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-cloud"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Mirage</h3>
-                <p>Most applications that run in the cloud aren&#8217;t optimised to do so. They inherently carry assumptions about the underlying operating system with them, including vulnerabilities and bloat. <strong>Mirage</strong> represents an approach where only the necessary components are included, allowing for highly efficient and extremely lean &#8216;appliances&#8217;. These can be deployed in environments ranging from Amazon&#8217;s EC2 to the Raspberry Pi.<br />
-                <em>(<a href='/software/mirage/'>more about mirage</a></em>)</p>
-              </div>
-            </div>
+            {% include frontpage/sw-infra.html %}
 
             <!-- INFRASTRUCTURE Section -->
             <div class="row">
               <div class="span12 marginb">
-                <h2>Applications</h2>
-                <p>With the new infrastructure, we are able to build robust applications that will push towards a more decentralised web and empower knew kinds of innovation and exploration. Building on the right foundations, means the core aspects of connectivity and syncing between devices will already be accounted for so the focus can shift to functionality and extensibility.</p>
+                {% include frontpage/sw-apps-intro.html %}
               </div>
             </div>
-            
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-envelope"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Mail</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-group"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Contacts</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span3">
-                <div class="services-box">
-                  <div class="icon" style="margin-top: 5px;">
-                    <span class="icon-calendar"></span>
-                  </div>
-                </div>   
-              </div>
-              <div class="span9">
-                <h3>Calendar</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem urna. Morbi laoreet orci sed elit fermentum mollis. Vestibulum ornare commodo fringilla. Praesent ut rutrum leo, non condimentum lectus. Pellentesque pellentesque dui in urna pharetra, ut pretium mi sollicitudin. Morbi tortor ligula, aliquam nec nibh sed, ornare ornare velit. Etiam at dui a mauris porta condimentum id et velit. Cras semper mollis lacus vitae porta.</p>
-              </div>
-            </div>
+            {% include frontpage/sw-apps.html %}
           </div>
         </div>
       </div>
