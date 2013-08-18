@@ -33,6 +33,13 @@ addition, it also understands the *internal* structure of networks
 (e.g. the home) and can directly redirect devices that are on the same
 network to each other without going via the Internet. 
 
+We recently presented Signpost at the Usenix Security workshop on Free and Open Communications on the Internet ([FOCI][]).  You can read the [paper][foci-paper], go over the [code][signpost-repos], or view the slides below.
+
+&#x20; <iframe src="http://www.slideshare.net/slideshow/embed_code/25359900" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width:476px;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">signpost-at-foci</iframe>
+
+[FOCI]: https://www.usenix.org/conference/foci13
+[foci-paper]: http://anil.recoil.org/papers/2013-foci-signposts.pdf
+[signpost-repos]: https://github.com/signposts
 
 {% include software/signpost-table.html %}
 
