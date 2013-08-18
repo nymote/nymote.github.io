@@ -30,4 +30,11 @@ small 'appliances', Mirage can take full advantage of the cloud while
 dramatically reducing costs and simultaneously increasing security and 
 scalability.   
 
+We've presented Mirage at two conferences recently and are rapidly working towards a developer preview.  You can catchup by reading the [ASPLOS 2013 paper][], or by checking out the slides below from the talk at [OSCON 2013][].
+
+&#x20; <iframe src="http://www.slideshare.net/slideshow/embed_code/25360521" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width:476px;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">oscon-2013</iframe>
+
+[ASPLOS 2013 paper]: http://anil.recoil.org/papers/2013-asplos-mirage.pdf
+[OSCON 2013]: http://www.oscon.com/oscon2013/public/schedule/detail/28956
+
 <div align="right"><small><em>Image credit: <a href="http://dribbble.com/shots/346027-Cloud-Power-Artwork">Cloud Power</a> by <a href="http://dribbble.com/LeapLogic">Michael Thomas</a></em></small></div>
