@@ -1,0 +1,170 @@
+---
+layout: default
+title: "Nymote"
+tagline:
+---
+{% include JB/setup %}
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+  <section id="jSplash">
+    <div id="circle"></div>
+  </section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="top"></div>
+<div id="home-slider">  
+  <div class="overlay">
+    <img src="images/nymote-logo-white.png" class="sliderlogo fluid" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="slider-text">
+          <div id="slidecaption"></div>
+        </div>
+      </div>
+    </div>
+  </div>   
+  
+  <div class="control-nav">
+    <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+    <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+    <ul id="slide-list">
+    </ul>
+    <a id="nextsection" href="#home"><i class="icon-arrow-down"></i></a>
+  </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+  <div class="sticky-nav">
+    <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+    <div id="logo">
+      <a id="goUp" href="#top"></a>
+    </div>
+        
+    <nav id="menu">
+      <ul id="menu-nav">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="/blog" class="external">Blog</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>      
+  </div>
+</header>
+<!-- End Header -->
+
+<!-- Home Section -->
+<div id="home" class="page">
+  <div class="container">
+    {% include frontpage/home.html %}
+  </div>
+</div>
+<!-- End Home Section -->
+
+<!-- Overview Section -->
+<div id="overview" class="page-alternate">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2 class="title">Overview</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span6">
+        <div class="title-page">
+          <div class="page-description">
+            {% include frontpage/overview01.html %}
+          </div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="title-page">
+          <div class="page-description">
+            {% include frontpage/overview02.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Overview Boxes -->
+
+{% include frontpage/blockquote.html %}
+
+<!-- Software Section -->
+<div id="software" class="page-alternate">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title">Software for a personal cloud</h2>
+          <h3 class="title-description"></h3>
+          <div class="page-description">
+            {% include frontpage/sw-intro.html %}
+
+            <!-- INFRASTRUCTURE Section -->
+            <div class="row">
+              <div class="span12 marginb">
+                {% include frontpage/sw-infra-intro.html %}
+              </div>
+            </div>
+            {% include frontpage/sw-infra.html %}
+
+            <!-- APPLICATIONS Section -->
+            <div class="row">
+              <div class="span12 marginb">
+                {% include frontpage/sw-apps-intro.html %}
+              </div>
+            </div>
+            {% include frontpage/sw-apps.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- End Software Section -->
+
+{% include frontpage/blockquote.html %}
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+  <div class="container">
+    <div class="row">
+      <div class="span">
+        <h2 class="title">About Us</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="span6">
+        <div class="title-page">
+          {% include frontpage/about01.html %}
+        </div>
+      </div>
+
+      <div class="span6">
+        <div class="title-page">
+          {% include frontpage/about02.html %}
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mugshots section -->    
+    <div class="sep">
+      <span class="separator"></span>
+    </div>
+    <div class="row">
+      {% include frontpage/about-mugshots.html %}
+    </div>
+  </div>
+</div>
