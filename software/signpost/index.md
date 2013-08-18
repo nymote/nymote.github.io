@@ -2,8 +2,11 @@
 layout: page
 title: Signpost
 tagline: "Connectivity between all your devices"
+next: "Work on an end-to-end prototype"
+last: "Present at FOCI 2013, Washington DC"
 ---
 {% include JB/setup %}
+
 
 ## Your own personal network
 

@@ -2,6 +2,8 @@
 layout: page
 title: Irminsule
 tagline: "A branch-consistent 'git-like' database"
+next: ""
+last: ""
 ---
 {% include JB/setup %}
 

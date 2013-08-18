@@ -29,6 +29,13 @@
         <div class="title-page">
 
           <div class="page-header">
+              {% if page.next %}
+              <strong style="float: right;">Next - {{ page.next }}</strong>
+                {% if page.last %}
+                <br />
+                <em style="float: right;">Last - {{ page.last }}</em>
+                {% endif %}
+              {% endif %}
               <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ page.title }}</a></h1>
               {% if page.tagline %}
               <h2><small>{{ page.tagline }}</small></h2>

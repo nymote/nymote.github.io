@@ -2,6 +2,8 @@
 layout: page
 title: Mirage
 tagline: "Lean and secure cloud OS"
+next: "Release Developer Preview 1"
+last: "Present at OSCON 2013, Oregon"
 ---
 {% include JB/setup %}
 
