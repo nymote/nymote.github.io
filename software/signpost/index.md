@@ -29,3 +29,8 @@ using DNS updates to provide a constant "pointer" to your devices. In
 addition, it also understands the *internal* structure of networks
 (e.g. the home) and can directly redirect devices that are on the same
 network to each other without going via the Internet. 
+
+
+{% include software/signpost-table.html %}
+
+
