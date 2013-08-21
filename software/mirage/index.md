@@ -38,7 +38,8 @@ towards a developer preview.  You can catchup by reading the
 There's much more information on the completely self-hosted 
 [Mirage website][mirage-www] (running as a Xen appliance), where you'll find 
 the full [list of papers][mirage-www-papers], an up to date 
-[blog][mirage-blog] and even [installation instructions][mirage-install].
+[blog][mirage-blog] and [installation instructions][mirage-install], to help 
+you get started quickly.
 
 
 &#x20; <iframe src="http://www.slideshare.net/slideshow/embed_code/25360521" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width:476px;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">oscon-2013</iframe>
