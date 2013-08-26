@@ -1,37 +1,30 @@
 ---
 layout: page
-title: Documents
-header: Documents
+title: "Documents"
+author: Amir Chaudhry
 ---
 {% include JB/setup %}
 
-This is a holding area that contains links to materials we found interesting.  It's a mixture of our own work as well as things we find interesting around the web.
+<div class="services-box">
+    <div style="float: right; margin-left: 20px;" class="icon">
+        <span class="icon-file-text"></span>
+    </div>
+</div>
 
+This is a holding area that contains links to longer form content. It's a mixture of our own work as well as things we find interesting around the web. I'll be organising these and summarising them as I go through them.  I may merge this into the [interesting links][] page instead of keeping it separate.
+
+If you know of something I should add here, please do 
+[send me an email][amir-email], 
+[create an issue on GitHub][issue] or
+submit a pull request to the [repository][]!
+
+[amir-email]: mailto:amir@nymote.com?subject=New%20link%20to%20consider!
+[issue]: https://github.com/nymote/nymote.github.io/issues/new
+[repository]: https://github.com/nymote/nymote.github.io
+[interesting links]: http://nymote.org/links
 
 ### Papers
 
-- **[Lorem ipsum dolor sit amet](#)**
+- **[Unclouded Vision](/docs/2011-icdn-unclouded-vision.pdf)** - Presented at ICDN in 2011. Introduces the concepts of 'Droplets' and 'The Mist' as part of the spectrum that includes the 'The Cloud'.
     
-Seems to be about foo
 
-- consectetur adipisicing elit
-    
-Seems to be about bar
-
-- ed do eiusmod tempor incididunt
-    
-Seems to be about baz
-
-
-### Relevant links
-
-- ut labore et dolore magna aliqua.
-- Ut enim ad minim veniam, quis
-- nostrud exercitation ullamco
-
-
-### Other companies and products
-
-- nostrud exercitation ullamco
-- laboris nisi ut aliquip ex ea commodo
-- consequat. Duis aute irure dolor in 
