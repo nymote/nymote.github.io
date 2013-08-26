@@ -30,5 +30,25 @@ submit a pull request to the [repository][]!
 ### Papers
 
 - **[Unclouded Vision](/docs/2011-icdn-unclouded-vision.pdf)** - Presented at ICDN in 2011. Introduces the concepts of 'Droplets' and 'The Mist' as part of the spectrum that includes the 'The Cloud'.
-    
+
+- [Turning down the LAMP](/docs/2010-hotcloud-lamp.pdf)
+
+- [Dust Clouds](/docs/2010-iswp-dustclouds.pdf)
+
+- [Cyber Butler](/docs/2010-smarte-privacybutler.pdf)
+
+- [CAWARE: Confidential Carbon Commuting](docs/2012-mpm-caware.pdf)
+
+- [Signpost Demo paper](docs/2012-sigcomm-signposts-demo.pdf)
+
+- [Signpost Demo poster](docs/2012-sigcomm-signposts-poster.pdf)
+
+- [Unikernels](docs/2013-asplos-mirage.pdf)
+
+- [Signpost at FOCI](/docs/2013-foci-signposts.pdf)
+
+
+
+
+
 
