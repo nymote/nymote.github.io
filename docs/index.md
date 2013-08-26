@@ -11,7 +11,11 @@ author: Amir Chaudhry
     </div>
 </div>
 
-This is a holding area that contains links to longer form content. It's a mixture of our own work as well as things we find interesting around the web. I'll be organising these and summarising them as I go through them.  I may merge this into the [interesting links][] page instead of keeping it separate.
+This is a holding area that contains links to longer form content. It's a 
+mixture of our own work as well as things we find interesting around the web.
+I'll be organising these and summarising them as I go through them.  I may  
+merge this into the [interesting links][] page instead of keeping it separate
+.
 
 If you know of something I should add here, please do 
 [send me an email][amir-email], 
