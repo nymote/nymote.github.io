@@ -2,7 +2,7 @@
 layout: post
 title: "A new website for Nymote"
 author: Amir Chaudhry
-tags: []
+tags: [signpost, irminsule, mirage, infrastructure, tools]
 excerpt: "Nymote is a set of tools and software infrastructure, created from the ground up, to provide end-users with life-long control of their networked personal data."
 ---
 
@@ -10,16 +10,22 @@ excerpt: "Nymote is a set of tools and software infrastructure, created from the
 
 ## Infrastructure matters
 <a href="http://www.flickr.com/photos/suzumenonamida/8206148949/"><img style="float:left; margin-right: 15px;" src="/images/higashi-osaka-junction.jpg"></a>
-The Internet has become such a huge part of our daily lives to the extent that it’s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive. However, we’ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the risks.
+The Internet has become such a huge part of our daily lives to the extent that it’s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive.  For example, companies such as Apple, Google and Microsoft provide services that manage our emails, while reducing spam, and seamlessly keep our mobile devices in sync for us. Services such as Dropbox and Google Drive make the process of collaborating in teams trivially simple.  Social services like Facebook and Twitter make it fun and easy to keep up to date with friends, while LinkedIn helps you to manage your professional persona and visualise your network.  All of these companies are successful because they provide something of value to their users.  
 
-By adopting large centralised services we’ve made an implicit trade that in exchange for something useful, we will share our habits and data with them. In doing so we’ve empowered Internet behemoths while simultaneously reducing our ability to influence them. We risk becoming slaves to the current system unless we can create alternatives that compete. Just as the current incarnation of the Internet is built on a range of open-source technologies, we need a set of robust tools that allow the developers of the future to build distributed systems and services that empower users.  
+However, we’ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the trade-offs.  By adopting large centralised services we’ve made an implicit trade that in exchange for something useful, we will share our habits and data with them. In doing so we’ve empowered Internet behemoths while simultaneously reducing our ability to influence them. We are at the behest of [ever][tos1]-[changing][tos2] [Terms][tos3] of [Service][tos4], which are [not written in the users' interest][tosdr]. We trust services to secure our data but [repeated breaches][dropbox-breaches] undermine that trust.  Services that we've come to depend on are [shut down][google-reader-shutdown], forcing us to look elsewhere and adapt our habits.  We have reached the point where so much of our information lives in these silos that [governments demand access to them][guardian-nsa].  
 
-Our approach is to create secure, robust and open-source infrastructure that others can build on. Security and privacy need to be incorporated from the ground up so that promises of “your data is safe with us” can be kept by the technology itself, rather than ever-changing Terms of Service. In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it means rebuilding tools and creating new products to replace those that are no longer fit for purpose.
+
+As things stand, we risk becoming slaves to the current system unless we can create decentralised alternatives that compete. The one truism in depending on other people's services is that they will change or disappear so decentralised solutions are *easier* in the long term as *users* can control when they change or update things.  Such systems allow users to maintain the benefits of a networked world as well as achieve *life-long control* of their data.  Just as the current incarnation of the Internet is built on a range of open-source technologies, we need a set of robust tools that allow the developers of the future to build distributed systems and services that empower users.  
+
+Our approach is to create secure, robust and open-source infrastructure that others can build on. Security and privacy need to be incorporated from the ground up so that promises of “your data is safe with us” can be kept by the technology itself. In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it means rebuilding tools and creating new products to replace those that are no longer fit for purpose.
+
 
 ## Open-source building blocks
 
 <a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="/images/lego-blocks.jpg"></a>
 We're starting with fundamental [infrastructure][] to solve the problems around [operating systems][Mirage] for the future, [identity][Signpost] for users and devices and [data-persistence][Irminsule] across those devices.
+
+Over the coming weeks we will introduce you to these key technology pieces, which form a new tool stack for the personal Internet.   
 
 **[Mirage][]** takes a clean-slate approach to the *operating system*, with a view to whole-system optimisation and use on embedded devices.  **[Signpost][]** deals with the growing problems around *identity* and returns the *end-to-end principle* of connectivity to our devices.  **[Irminsule][]** rethinks how we *persist data* based on the principles of Git and solves the problems of provenance and sync. 
 
@@ -38,6 +44,26 @@ To keep up to date with our posts and updates sign up to the [Nymote mailing lis
 [papers]: /docs
 [about]: /#about
 [followers-list]: http://eepurl.com/mXYb1
+[dropbox-breaches]: http://venturebeat.com/2012/08/01/dropbox-has-become-problem-child-of-cloud-security/
+[tosdr]: http://tosdr.org
+[google-reader-shutdown]: http://gigaom.com/2013/07/03/google-readers-shutdown-the-rise-of-walled-gardens-and-the-future-of-the-open-web/
+[guardian-nsa]: http://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data
+[tos1]: http://www.telegraph.co.uk/technology/social-media/9780565/Facebook-terms-and-conditions-why-you-dont-own-your-online-life.html
+[tos2]: http://consumerist.com/2009/02/15/facebooks-new-terms-of-service-we-can-do-anything-we-want-with-your-content-forever
+[tos3]: http://bits.blogs.nytimes.com/2012/12/17/what-instagrams-new-terms-of-service-mean-for-you/?_r=0
+[tos4]: http://mattmckeon.com/facebook-privacy/
+
+### Interesting links:
+
+**Changing Terms of Service**
+
+- http://www.telegraph.co.uk/technology/social-media/9780565/Facebook-terms-and-conditions-why-you-dont-own-your-online-life.html
+
+- http://consumerist.com/2009/02/15/facebooks-new-terms-of-service-we-can-do-anything-we-want-with-your-content-forever
+
+- http://bits.blogs.nytimes.com/2012/12/17/what-instagrams-new-terms-of-service-mean-for-you/?_r=0
+
+- http://mattmckeon.com/facebook-privacy/
 
 
 
