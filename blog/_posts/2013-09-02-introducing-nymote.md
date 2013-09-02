@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Nymote"
 author: Amir Chaudhry
-tags: [signpost, irminsule, mirage, infrastructure, tools, internet of things]
+tags: [infrastructure, internet of things, irminsule, mirage, signpost, tools]
 excerpt: "Nymote is a set of tools and software infrastructure, created from the ground up, to provide end-users with life-long control of their networks and personal data."
 ---
 
@@ -13,7 +13,7 @@ excerpt: "Nymote is a set of tools and software infrastructure, created from the
 [toolstack]: http://en.wikipedia.org/wiki/Solution_stack
 
 ## Infrastructure matters
-<a href="http://www.flickr.com/photos/suzumenonamida/8206148949/"><img style="float:left; margin-right: 15px;" src="/images/higashi-osaka-junction.jpg"></a>
+<a href="http://www.flickr.com/photos/suzumenonamida/8206148949/"><img style="float:left; margin-right: 15px;" src="images/higashi-osaka-junction.jpg"></a>
 The Internet has become such a huge part of our daily lives to the extent that it’s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive than it's ever been.  For example, companies such as Apple, Google and Microsoft provide services that manage our emails, while reducing spam, and seamlessly keep our mobile devices in sync for us. Services such as Dropbox and Google Drive make the process of collaborating in teams trivially simple.  Social services like Facebook and Twitter make it fun and easy to keep up to date with friends, while LinkedIn helps you to manage your professional persona and visualise your network.  All of these companies are successful because they provide something of value to their users.  
 
 However, we’ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the trade-offs.  By adopting large centralised services we’ve made an implicit trade that in exchange for something useful, we will share our habits and data with them. In doing so we’ve empowered Internet behemoths while simultaneously reducing our ability to influence them. We are at the behest of [ever][tos1]-[changing][tos2] [Terms][tos3] of [Service][tos4], which are [not written in the users' interest][tosdr]. We trust services to secure our data but [repeated breaches][dropbox-breaches] undermine that trust.  Services that we come to depend on are [shut down][google-reader-shutdown], forcing us to look elsewhere and adapt our habits.  We are at the the point where so much of our lives are in these silos that [governments demand access to them][guardian-nsa].  
@@ -27,8 +27,8 @@ However, we’ve also made sacrifices in order to achieve these gains, in many c
 [google-reader-shutdown]: http://gigaom.com/2013/07/03/google-readers-shutdown-the-rise-of-walled-gardens-and-the-future-of-the-open-web/
 [guardian-nsa]: http://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data
 
-<img style="float:right; margin-left: 15px;" width="500" src="/images/iot-devices.png">
-In addition to the above, we have entered an era where more of our interactions with the world are through mobile devices, like smartphones.  This trend is set to continue and has been described as the [Post-PC era][post-pc], the [5th wave of computing][5th-wave] and the [Internet of Things][iot].  What they all have in common is the idea of remote devices recording data and performing useful services for us, like encouraging us to be more [physically active][activity-monitors] or [monitoring our homes][philips-monitor].  This is an exciting area and is reminiscent of the early days of the World Wide Web.  There are [highly successful][lima-plug] crowd-funded [projects][canary] that demonstrate the demand from users for new products and services.  As this space evolves we are faced with a choice.  One option is to continue along the current path of increasingly centralised services, providing access to even more intimate aspects of our lives, including health and medical data.  We've seen the both the benefits and costs of this approach with the way things are now.  An alternative is to create more decentralised systems, which can provide the same benefits but with the user at the centre and in control.  
+<img style="float:right; margin-left: 15px;" width="500" src="images/iot-devices.png">
+In addition to the above, we have entered an era where more of our interactions with the world are through mobile devices, like smartphones.  This trend is set to continue and has been described as the [Post-PC era][post-pc], the [5th wave of computing][5th-wave] and the [Internet of Things][iot].  What they all have in common is the idea of remote devices recording data and performing useful services for us, like encouraging us to be more [physically active][activity-monitors] or [monitoring our homes][philips-monitor].  This is an exciting area and is reminiscent of the early days of the World Wide Web.  There are [highly successful][lima-plug] crowd-funded [projects][canary] that demonstrate the demand from users for new products and services.  As this space evolves we are faced with a choice.  One option is to continue along the current path of increasingly centralised services, providing access to even more intimate aspects of our lives, including health and medical data.  We've seen both the benefits and costs of this approach with the way things are now.  An alternative is to create more decentralised systems, which can provide the same benefits but with the user in control at the centre of their network of devices.  
 
 [post-pc]: http://en.wikipedia.org/wiki/Post-PC_era
 [5th-wave]: http://academy.bcs.org/content/2012-lecture-0
@@ -38,11 +38,13 @@ In addition to the above, we have entered an era where more of our interactions 
 [lima-plug]: http://www.kickstarter.com/projects/cloud-guys/plug-the-brain-of-your-devices
 [canary]: http://www.indiegogo.com/projects/canary-the-first-smart-home-security-device-for-everyone
 
-As things stand, we are fundamentally limited by the current system unless we can create decentralised alternatives that compete. Many of the services we enjoy today require a constant connection to the Internet in order to be useful. This is becoming more important as the current wave of Internet of Things devices find their way into our homes, with each of them tethered to a new wave of centralised services and any interruption in power or bandwidth having tangible effects on our lives.  The one truism in depending on other people's services is that they will change or disappear so decentralised solutions are *easier* in the long term as *users* can control when they change or update things.  Such systems allow users to maintain the benefits of a networked world as well as achieve *life-long control* of their data.  Just as the current incarnation of the Internet is built on a range of open-source technologies, we need a set of robust tools that allow the developers of the future to build distributed systems and services that empower users.  
+As things stand, we are fundamentally limited by the current system unless we can create decentralised alternatives that compete. Many of the services we enjoy today require a constant connection to the Internet in order to be useful. This is becoming more important as the current wave of Internet of Things devices find their way into our homes, with each of them tethered to a new wave of centralised services and any interruption in power or bandwidth having tangible effects on our lives.  The one truism in depending on other people's services is that they will change or disappear, so decentralised solutions are *easier* in the long term as *users* can control when they change or update things.  Such systems allow users to maintain the benefits of a networked world as well as achieve *life-long control* of their data.  Just as the current incarnation of the Internet is built on a range of open-source technologies, we need a set of robust tools that allow the developers of the future to build distributed systems and services that empower users.  
 
 This is the mission of the Nymote toolstack. <strong>To enable the creation of resilient decentralised systems that incorporate privacy from the ground up so that users retain control of their networks and data</strong>. Nymote ensures that promises of “your data is safe with us” are underpinned by a technological foundation, which reduces the scope for human error and makes it easy to build scalable systems where users decide when to add features or upgrade.  
 
-<!-- which reduces the scope for human error and the mission-creep we see in third party business models. You can easily see examples of this mission-creep via the changing behaviour of firms like [Facebook][tos1], [Google][google-tos] or [Instagram][instagram-tos] and [many others][tos1]. -->  
+<!-- 
+LEFT THIS OUT AS IT WAS SOUNDING WEIRD.
+which reduces the scope for human error and the mission-creep we see in third party business models. You can easily see examples of this mission-creep via the changing behaviour of firms like [Facebook][tos1], [Google][google-tos] or [Instagram][instagram-tos] and [many others][tos1]. -->  
 <!-- In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it means rebuilding tools and creating new products to replace those that are no 
 longer fit for purpose. -->
 
@@ -57,7 +59,7 @@ longer fit for purpose. -->
 
 ## Open-source building blocks
 
-<a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="/images/lego-blocks.jpg"></a>
+<a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="images/lego-blocks.jpg"></a>
 We're starting with fundamental [infrastructure][] to solve the problems around [operating systems][Mirage] for the future, [identity][Signpost] for users and devices and [data-persistence][Irminsule] across those devices.
 
 [Mirage]: /software/mirage
@@ -86,7 +88,9 @@ Following this, we will discuss **[Signpost][]**, which deals with the growing p
 [signposter1]: /docs/2012-signpost-poster-a4.pdf
 [signposter2]: /docs/2012-sigcomm-signposts-poster.pdf
 
-Finally, we will cover **[Irminsule][]**, which rethinks how we *persist data* based on the principles of Git.  Irminsule incorporates provenance and sync and solves the problems of how all a user's devices will remain synchronised with each other and how that data is seamlessly backed up. This is increasingly important as the number of connected devices continues to grow.
+Finally, we will cover **[Irminsule][]**, which rethinks how we *persist data* based on the principles of version control systems such as Git (or historically, [Bayou][]).  Irminsule incorporates provenance and sync and solves the problems of how all a user's devices coordinate and remain synchronised with each other, and how that data is seamlessly backed up and encrypted to prevent third-party snooping. This is increasingly important as the number of connected devices continues to grow.
+
+[Bayou]: http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps
 
 The emerging tools form the bedrock on which anyone can build robust and scalable applications.  Applications that provide all the great things we're used to with the additional benefits of resilience, ownership and privacy that come with decentralised networks.
 
