@@ -13,7 +13,7 @@ excerpt: "Nymote is a set of tools and software infrastructure, created from the
 [toolstack]: http://en.wikipedia.org/wiki/Solution_stack
 
 ## Infrastructure matters
-<a href="http://www.flickr.com/photos/suzumenonamida/8206148949/"><img style="float:left; margin-right: 15px;" src="images/higashi-osaka-junction.jpg"></a>
+<a href="http://www.flickr.com/photos/suzumenonamida/8206148949/"><img style="float:left; margin-right: 15px;" src="/images/higashi-osaka-junction.jpg"></a>
 The Internet has become such a huge part of our daily lives to the extent that it’s difficult to imagine a world without information and connectivity (literally) at your fingertips. Collaboration is easier, communication simpler and generally work is more productive than it's ever been.  For example, companies such as Apple, Google and Microsoft provide services that manage our emails, while reducing spam, and seamlessly keep our mobile devices in sync for us. Services such as Dropbox and Google Drive make the process of collaborating in teams trivially simple.  Social services like Facebook and Twitter make it fun and easy to keep up to date with friends, while LinkedIn helps you to manage your professional persona and visualise your network.  All of these companies are successful because they provide something of value to their users.  
 
 However, we’ve also made sacrifices in order to achieve these gains, in many cases without fully comprehending the trade-offs.  By adopting large centralised services we’ve made an implicit trade that in exchange for something useful, we will share our habits and data with them. In doing so we’ve empowered Internet behemoths while simultaneously reducing our ability to influence them. We are at the behest of [ever][tos1]-[changing][tos2] [Terms][tos3] of [Service][tos4], which are [not written in the users' interest][tosdr]. We trust services to secure our data but [repeated breaches][dropbox-breaches] undermine that trust.  Services that we come to depend on are [shut down][google-reader-shutdown], forcing us to look elsewhere and adapt our habits.  We are at the the point where so much of our lives are in these silos that [governments demand access to them][guardian-nsa].  
@@ -27,7 +27,7 @@ However, we’ve also made sacrifices in order to achieve these gains, in many c
 [google-reader-shutdown]: http://gigaom.com/2013/07/03/google-readers-shutdown-the-rise-of-walled-gardens-and-the-future-of-the-open-web/
 [guardian-nsa]: http://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data
 
-<img style="float:right; margin-left: 15px;" width="500" src="images/iot-devices.png">
+<img style="float:right; margin-left: 15px;" src="/images/iot-devices.png">
 In addition to the above, we have entered an era where more of our interactions with the world are through mobile devices, like smartphones.  This trend is set to continue and has been described as the [Post-PC era][post-pc], the [5th wave of computing][5th-wave] and the [Internet of Things][iot].  What they all have in common is the idea of remote devices recording data and performing useful services for us, like encouraging us to be more [physically active][activity-monitors] or [monitoring our homes][philips-monitor].  This is an exciting area and is reminiscent of the early days of the World Wide Web.  There are [highly successful][lima-plug] crowd-funded [projects][canary] that demonstrate the demand from users for new products and services.  As this space evolves we are faced with a choice.  One option is to continue along the current path of increasingly centralised services, providing access to even more intimate aspects of our lives, including health and medical data.  We've seen both the benefits and costs of this approach with the way things are now.  An alternative is to create more decentralised systems, which can provide the same benefits but with the user in control at the centre of their network of devices.  
 
 [post-pc]: http://en.wikipedia.org/wiki/Post-PC_era
@@ -42,24 +42,9 @@ As things stand, we are fundamentally limited by the current system unless we ca
 
 This is the mission of the Nymote toolstack. <strong>To enable the creation of resilient decentralised systems that incorporate privacy from the ground up so that users retain control of their networks and data</strong>. Nymote ensures that promises of “your data is safe with us” are underpinned by a technological foundation, which reduces the scope for human error and makes it easy to build scalable systems where users decide when to add features or upgrade.  
 
-<!-- 
-LEFT THIS OUT AS IT WAS SOUNDING WEIRD.
-which reduces the scope for human error and the mission-creep we see in third party business models. You can easily see examples of this mission-creep via the changing behaviour of firms like [Facebook][tos1], [Google][google-tos] or [Instagram][instagram-tos] and [many others][tos1]. -->  
-<!-- In some cases, this means taking existing tools and technologies and making them much easier to use and deploy. In other cases, it means rebuilding tools and creating new products to replace those that are no 
-longer fit for purpose. -->
-
-<!-- In contrast, Nymote is deployable, open-source infrastructure which allows users to decide when to add features or upgrade.  
- -->
-
-<!-- [fb-tos]
-[google-tos]
-[instagram-tos]
- -->
-
-
 ## Open-source building blocks
 
-<a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="images/lego-blocks.jpg"></a>
+<a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="/images/lego-blocks.jpg"></a>
 We're starting with fundamental [infrastructure][] to solve the problems around [operating systems][Mirage] for the future, [identity][Signpost] for users and devices and [data-persistence][Irminsule] across those devices.
 
 [Mirage]: /software/mirage
@@ -94,6 +79,6 @@ Finally, we will cover **[Irminsule][]**, which rethinks how we *persist data* b
 
 The emerging tools form the bedrock on which anyone can build robust and scalable applications.  Applications that provide all the great things we're used to with the additional benefits of resilience, ownership and privacy that come with decentralised networks.
 
-To keep up to date with our posts and updates sign up to the [Nymote mailing list][followers-list].
+To keep up to date with our posts, sign up to the [Nymote mailing list][followers-list].
 
 [followers-list]: http://eepurl.com/mXYb1
