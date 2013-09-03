@@ -6,7 +6,7 @@ tags: [app engine, prototypes, plugins]
 excerpt: "Fleshing out the App Enging node for personal containers"
 ---
 
-<--- OLD Excerpt: excerpt: Personal containers gather data from a wide variety of sources, and normalise them into a format which understands people (address book entries, with a set of services such as e-mail, phone, IM and online IDs), places (GPS, WOEID), media (photos, movies) and messages (Tweets, emails, Facebook messages). -->
+<!--- OLD Excerpt: excerpt: Personal containers gather data from a wide variety of sources, and normalise them into a format which understands people (address book entries, with a set of services such as e-mail, phone, IM and online IDs), places (GPS, WOEID), media (photos, movies) and messages (Tweets, emails, Facebook messages). -->
 
 We've been [hacking](http://github.com/avsm/perscon) away on fleshing out the <a href="http://code.google.com/appengine">App Engine</a> node for personal containers.  We're building this node first because, crucially, deploying an App Engine VM is free to anyone with a Google account.
 <a href="/images/perscon-extjs.png"><img style="float:right" src="/images/perscon-extjs-thumb.png"></a>
