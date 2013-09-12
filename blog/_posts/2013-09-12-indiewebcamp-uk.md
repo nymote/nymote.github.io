@@ -71,16 +71,16 @@ Specific things mentioned include Woot (see video below), [WebRTC][], [Camlistor
 
 Aral spoke about user experience design. Open-source has had a massive positive impact for other developers and industry but very few projects directly make it to mainstream consumer adoption.  Believes that this is because design is treated as something you put on afterwards, rather than a core principle.  
 
-Essentially, people still perceive a difference between design and development where there shouldn't be one.  An analogy would be developers working in isolation from QA.  Designers need to understand developers and developers whould incorporate design.  Introduced [Codename Promethus][] and had a roundtable discussion about design and development practices.
+Essentially, people still perceive a difference between design and development where there shouldn't be one.  An analogy would be developers working in isolation from QA.  Designers need to understand developers and developers should incorporate design.  Introduced [Codename Promethus][] and had a roundtable discussion about design and development practices.
 
-During the discussion, Aral raised an interesting point that scratching your own itch only solves problems for people who have the same itch (i.e people like yourselves, other developers).  To reach mainstream adoption, developers and designers need to think *beyond* their own problems.
+During the discussion, Aral raised an interesting point that 'scratching your own itch' only solves problems for people who have the same itch (i.e people like yourselves, other developers).  To reach mainstream adoption, developers and designers need to think *beyond* their own problems.
 
 
 ### Privacy and tools for the future
 
 An open and wide ranging discussion around privacy online, secure communications and responsibility.  One of the questions posed was whether developers have a responsibility for security and safety regarding the software they create.  The general feeling was that yes, they do but an analogy about food regulations was also made and the role of government was brought up.
 
-There were some practical discussions about problems of key exchange and identity online as well as how people can use their domain as an identifier. The latter is where [Signpost][] will help.
+There were some practical discussions about problems of key exchange and identity online as well as how people can use their domain as an identifier. These are areas where [Signpost][] will help.
 
 ### Movie: Terms and Conditions May Apply
 
