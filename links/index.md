@@ -83,8 +83,8 @@ submit a pull request to the [repository][]!
 - [https://news.ycombinator.com/item?id=6268277](https://news.ycombinator.com/item?id=6268277)
 - [http://www.cl.cam.ac.uk/~jac22/hats.htm](http://www.cl.cam.ac.uk/~jac22/hats.htm)
 
-- - [http://www.jeffkramer.com/2013/06/03/the-personal-cloud-innovation-happens-at-the-edges/](http://www.jeffkramer.com/2013/06/03/the-personal-cloud-innovation-happens-at-the-edges/)
-- - [http://www.tor.com/stories/2008/08/weak-and-strange](http://www.tor.com/stories/2008/08/weak-and-strange)
+- [http://www.jeffkramer.com/2013/06/03/the-personal-cloud-innovation-happens-at-the-edges/](http://www.jeffkramer.com/2013/06/03/the-personal-cloud-innovation-happens-at-the-edges/)
+- [http://www.tor.com/stories/2008/08/weak-and-strange](http://www.tor.com/stories/2008/08/weak-and-strange)
 - [https://news.ycombinator.com/item?id=6255592](https://news.ycombinator.com/item?id=6255592)
 - [http://www.wovyn.com/](http://www.wovyn.com/)
 - [http://scobleizer.com/2012/07/17/the-coming-automatic-freaky-contextual-world-and-why-were-writing-a-book-about-it/](http://scobleizer.com/2012/07/17/the-coming-automatic-freaky-contextual-world-and-why-were-writing-a-book-about-it/)
