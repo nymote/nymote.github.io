@@ -69,7 +69,7 @@ Specific things mentioned include Woot (see video below), [WebRTC][], [Camlistor
 
 ### User Experience Design
 
-Aral spoke about user experience design. Open-source has made a massive positive effect for other developers and industry but very few projects directly make it to mainstream consumer adoption.  Believes that this is because design is treated as something you put on afterwards, rather than a core principle.  
+Aral spoke about user experience design. Open-source has had a massive positive impact for other developers and industry but very few projects directly make it to mainstream consumer adoption.  Believes that this is because design is treated as something you put on afterwards, rather than a core principle.  
 
 Essentially, people still perceive a difference between design and development where there shouldn't be one.  An analogy would be developers working in isolation from QA.  Designers need to understand developers and developers whould incorporate design.  Introduced [Codename Promethus][] and had a roundtable discussion about design and development practices.
 
