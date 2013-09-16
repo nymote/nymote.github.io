@@ -14,8 +14,7 @@ author: Amir Chaudhry
 This is a holding area that contains links to longer form content. It's a 
 mixture of our own work as well as things we find interesting around the web.
 I'll be organising these and summarising them as I go through them.  I may 
-merge this into the [interesting links][] page instead of keeping it separate
-.
+merge this into the [interesting links][] page instead of keeping it separate.
 
 If you know of something I should add here, please do 
 [send me an email][amir-email], 
@@ -31,7 +30,7 @@ submit a pull request to the [repository][]!
 
 - [Unikernels: Library Operating Systems for the Cloud](/docs/2013-asplos-mirage.pdf) - Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (2013)
 
-- **[Unclouded Vision](/docs/2011-icdn-unclouded-vision.pdf)** - Invited paper to the 12th International Conference on Distributed Computing and Networking (2011). Introduces the concepts of 'Droplets' and 'The Mist' as part of the spectrum that includes the 'The Cloud'.
+- [Unclouded Vision](/docs/2011-icdn-unclouded-vision.pdf) - Invited paper to the 12th International Conference on Distributed Computing and Networking (2011). Introduces the concepts of 'Droplets' and 'The Mist' as part of the spectrum that includes the 'The Cloud'.
 
 - [Turning down the LAMP: Software Specialisation for the Cloud](/docs/2010-hotcloud-lamp.pdf) - 2nd USENIX Workshop on Hot Topics in Cloud Computing (2010)
 
