@@ -39,11 +39,13 @@ submit a pull request to the [repository][]!
 
 - [CAWARE: Confidential Carbon Commuting](docs/2012-mpm-caware.pdf)
 
-- [Signpost Demo paper](docs/2012-sigcomm-signposts-demo.pdf)
+- [Signpost Demo paper](/docs/2012-sigcomm-signposts-demo.pdf)
 
-- [Signpost Demo poster](docs/2012-sigcomm-signposts-poster.pdf)
+- [Signpost Demo poster 1](/docs/2012-sigcomm-signposts-poster.pdf)
 
-- [Unikernels](docs/2013-asplos-mirage.pdf)
+- [Signpost Demo poster 2](/docs/2012-signpost-poster-a4.pdf)
+
+- [Unikernels](/docs/2013-asplos-mirage.pdf)
 
 - [Signpost at FOCI](/docs/2013-foci-signposts.pdf)
 
