@@ -105,7 +105,7 @@ and embedded devices.  Together with [Signpost][] and [Irminsule][], Mirage
 forms a core piece of the Nymote toolstack to power the coming wave of 
 [Internet of Things devices][iot-wiki].  
 
-Mirage is primarily supported by [Horizon Digital Economy Research][] - RCUK, and is also an 
+Mirage is primarily supported by [Horizon Digital Economy Research][horizon] - RCUK, and is also an 
 [Incubated Project](http://www.xenproject.org/developers/teams/mirage-os.html) 
 under the umberella of the [Xen Project](http://www.xenproject.org). 
 You can find the source code on [GitHub][mirage-github] and more links at slides on the [Mirage page](/software/mirage).
@@ -125,4 +125,5 @@ You can find the source code on [GitHub][mirage-github] and more links at slides
 [Signpost]: /software/signpost
 [Irminsule]: /software/irminsule
 [iot-wiki]: http://en.wikipedia.org/wiki/Internet_of_Things
+[horizon]: http://www.horizon.ac.uk
 [mirage-github]: http://github.com/mirage
