@@ -14,6 +14,7 @@ command line, I'd encourage you to try out the
 
 ## What is Mirage and why is it important? 
 
+<a href="http://www.berndnaut.nl/images/NimbusNP3web.jpg"><img style="float:right; margin-left: 15px;" width="500" src="/images/nimbus-np3-smilde.jpg"></a>
 Most applications that run in the cloud aren't optimised to do so.  They 
 inherently carry assumptions about the underlying operating system with 
 them, including vulnerabilities and bloat. 
@@ -35,6 +36,7 @@ increased security and scalability.
 
 ## How does Mirage work?
 
+<a href="http://www.xenproject.org/developers/teams/hypervisor.html"><img style="float:left; margin-right: 15px;" width="300" src="/images/Xen-Panda-Ecosystem-1-500px.png"></a>
 Mirage is a unikernel for constructing secure, high-performance network 
 applications across a variety of cloud computing and mobile platforms. It 
 works by treating the [Xen hypervisor][Xen] as a stable hardware platform, allowing 
@@ -63,6 +65,7 @@ distribution), dubbed [Project Windsor][]. -->
 
 ## Where will Mirage be useful?
 
+<a href="http://www.flickr.com/photos/radnezeoz/7343684238/"><img style="float:right; margin-left: 15px;" width="500" src="/images/cumulous-cruisin.jpg"></a>
 An example of a current Mirage appliance can be seen at [openmirage.org][mirage-www], 
 which is a completely self-hosted site, deployed on the public cloud and running directly on the Xen Project hypervisor (in this case, on 
 Amazon EC2). Such appliances could be auto-configured and deployed directly 
@@ -89,6 +92,7 @@ therefore only spending what we actually need when we really need it.
 
 ### Deployment to embedded devices
 
+<a href="http://www.flickr.com/photos/lukew/6171377827/"><img style="float:left; margin-right: 15px;" src="/images/device-love.jpg"></a>
 Using Mirage, we can also create appliances that can run on embedded devices.
 Such appliances can be deployed into small devices that are scattered 
 around your home, for example in plant pots to measure moisture levels to chemical sensors 
