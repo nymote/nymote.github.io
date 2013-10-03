@@ -66,7 +66,8 @@ distribution), dubbed [Project Windsor][]. -->
 ## Where will Mirage be useful?
 
 <a href="http://www.flickr.com/photos/radnezeoz/7343684238/"><img style="float:right; margin-left: 15px;" width="500" src="/images/cumulous-cruisin.jpg"></a>
-An example of a current Mirage appliance can be seen at [openmirage.org][mirage-www], 
+An example of a current Mirage appliance can be seen at 
+[openmirage.org][mirage-www], 
 which is a completely self-hosted site, deployed on the public cloud and running directly on the Xen Project hypervisor (in this case, on 
 Amazon EC2). Such appliances could be auto-configured and deployed directly 
 to the public cloud (e.g. Rackspace or Amazon EC2) or pushed to embedded 
@@ -95,13 +96,22 @@ therefore only spending what we actually need when we really need it.
 <a href="http://www.flickr.com/photos/lukew/6171377827/"><img style="float:left; margin-right: 15px;" src="/images/device-love.jpg"></a>
 Using Mirage, we can also create appliances that can run on embedded devices.
 Such appliances can be deployed into small devices that are scattered 
-around your home, for example in plant pots to measure moisture levels to chemical sensors 
+around your home, for example in plant pots to measure moisture levels to 
+chemical sensors 
 in your fridge, which tell you exactly what has gone off.  You could access 
 the data from these sensors via a web-sever appliance, which is also 
 deployed locally in your home on a device like a [Raspberry Pi][RPi].  
-Installing additional applications into your Raspberry Pi appliance can be a a simple 1-click operation, allowing you to share your data or compare with others.  Creating a home-based network like this ensures you're not affected by any upstream connectivity issues and that your data remains within your control.  
+Installing additional applications into your Raspberry Pi appliance can be a 
+a simple 1-click operation, allowing you to share your data or compare with 
+others.  Creating a home-based network like this ensures you're not affected 
+by any upstream connectivity issues and that your data remains within your 
+control.  
 
-This same scenario can be deployed into a enterprise environment where sensors around a building can monitor environmental conditions, adjust lighting and many other things.  When additional computation is required, more appliances can automatically be created on a cloud provider for the short duration that they're needed.
+This same scenario can be deployed into a enterprise environment where 
+sensors around a building can monitor environmental conditions, adjust 
+lighting and many other things.  When additional computation is required, 
+more appliances can automatically be created on a cloud provider for the 
+short duration that they're needed.
 
 Overall, Mirage provides substantial benefits in terms of increased 
 efficiency and safety and is ideal for deploying to both the public could 
@@ -112,7 +122,8 @@ forms a core piece of the Nymote toolstack to power the coming wave of
 Mirage is primarily supported by [Horizon Digital Economy Research][horizon] - RCUK, and is also an 
 [Incubated Project](http://www.xenproject.org/developers/teams/mirage-os.html) 
 under the umberella of the [Xen Project](http://www.xenproject.org). 
-You can find the source code on [GitHub][mirage-github] and more links at slides on the [Mirage page](/software/mirage).
+You can find the source code on [GitHub][mirage-github] and more links and
+slides on the [Mirage page](/software/mirage).
 
 
 [mirage-install]: http://openmirage.org/wiki/install
