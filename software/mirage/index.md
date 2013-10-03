@@ -39,7 +39,7 @@ There's much more information on the completely self-hosted
 [Mirage website][mirage-www] (running as a Xen appliance), where you'll find 
 the full [list of papers][mirage-www-papers], an up to date 
 [blog][mirage-blog] and [installation instructions][mirage-install], to help 
-you get started quickly.
+you get started quickly. The source code and libraries are available on [GitHub][mirage-github]
 
 
 &#x20; <iframe src="http://www.slideshare.net/slideshow/embed_code/25360521" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width:476px;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">oscon-2013</iframe>
@@ -50,5 +50,6 @@ you get started quickly.
 [mirage-www-papers]:  http://openmirage.org/wiki/papers
 [mirage-blog]: http://openmirage.org/blog/
 [mirage-install]: http://openmirage.org/wiki/install
+[mirage-github]: http://github.com/mirage
 
 <div align="right"><small><em>Image credit: <a href="http://dribbble.com/shots/346027-Cloud-Power-Artwork">Cloud Power</a> by <a href="http://dribbble.com/LeapLogic">Michael Thomas</a></em></small></div>
