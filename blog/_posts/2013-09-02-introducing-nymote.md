@@ -43,7 +43,7 @@ we’ve empowered Internet behemoths while simultaneously reducing our ability
 to influence them. We are at the behest of [ever][tos1]-[changing][tos2] 
 [Terms][tos3] of [Service][tos4], which are 
 [not written in the users' interest][tosdr]. We trust services to secure our 
-data but [repeated breaches][dropbox-breaches] undermine that trust.  
+data but [repeated breaches][dropbox-breaches] undermine that trust. 
 Services that we come to depend on are [shut down][google-reader-shutdown], 
 forcing us to look elsewhere and adapt our habits.  We are at the the point 
 where so much of our lives are in these silos that 
