@@ -1,0 +1,26 @@
+# See http://offog.org/darcs/rawdog/config 
+# for guide on what should be in this config file
+
+splitstate false
+maxarticles 0
+maxage 0
+expireage 365d
+keepmin 20
+currentonly false
+daysections false
+timesections false
+datetimeformat %d %b %g
+pagetemplate ./table_snippet
+itemtemplate ./table_row_item
+outputfile ../pinboard_links.html
+showfeeds false
+verbose true
+blocklevelhtml true
+tidyhtml true
+sortbyfeeddate true
+useids true
+hideduplicates id
+changeconfig true
+
+feed 10m http://feeds.pinboard.in/rss/u:amirmc/t:nymote/?count=400
+

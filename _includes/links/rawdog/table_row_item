@@ -1,0 +1,12 @@
+<tr>
+    <td>
+        <p>__title__</p>
+
+        __if_description__
+        __description__
+        __endif__
+    </td>
+    <td>
+        __date__
+    </td>
+</tr>

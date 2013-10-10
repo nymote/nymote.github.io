@@ -1,0 +1,11 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Interesting Links <a href="http://feeds.pinboard.in/rss/u:amirmc/t:nymote/"><span class="icon-rss"></span></a></th>
+            <th style="alight: right; width: 10%">Added on</th>
+        </tr>
+    </thead>
+    <tbody>
+        __items__
+    </tbody>
+</table>
