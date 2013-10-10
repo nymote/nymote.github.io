@@ -5,7 +5,7 @@ author: Amir Chaudhry
 date: 
 tags: []
 description:
-shorturl: http://amirchaudhry.com/
+shorturl: http://nymote.org/
 ---
 {% include JB/setup %}
 
