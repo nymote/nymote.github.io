@@ -31,7 +31,7 @@ The bookmarklet I added to my browser makes it simple to add new links with
 descriptions and the ability to add links by email has been extremely useful 
 when browsing from my phone.  Pinboard also has the ability to generate RSS 
 feeds so I've been able to take that feed from Pinboard and completely 
-reorganise the [Nymote links page][links].  It now presents a reverse 
+reorganise the **[Nymote links page][links]**.  It now presents a reverse 
 chronological list of all the links so far, together with brief summaries of 
 the content.  In order to filter and browse the tags, you'll need to visit 
 my [Pinboard page][nymote-pinboard] and I'll be going back over the older 
@@ -60,7 +60,7 @@ gives people even more options to keep up with news about Nymote.
 [Pinboard]: https://pinboard.in
 [nymote-pinboard]: https://pinboard.in/u:amirmc/t:nymote/
 [links-feed]: http://feeds.pinboard.in/rss/u:amirmc/t:nymote/
-[amir-email]: mailto:amir@nymote.com?subject=New%20link%20to%add!
+[amir-email]: mailto:amir@nymote.com?subject=New%20link%20to%20add!
 [atom-feed]: http://nymote.org/atom.xml
 [site-repo]: https://github.com/nymote/nymote.github.io
 [mailing list]: http://eepurl.com/mXYb1
