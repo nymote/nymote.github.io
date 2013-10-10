@@ -56,7 +56,7 @@ gives people even more options to keep up with news about Nymote.
 
 
 [links]: \links
-[Ulrich]: http://www.theodi.org/people/ulrich-atz
+[Ulrich]: http://ulrichatz.com
 [Pinboard]: https://pinboard.in
 [nymote-pinboard]: https://pinboard.in/u:amirmc/t:nymote/
 [links-feed]: http://feeds.pinboard.in/rss/u:amirmc/t:nymote/
