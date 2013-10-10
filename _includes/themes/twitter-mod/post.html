@@ -28,7 +28,9 @@
       <div class="span1"></div>
       <div class="span10">
         <div class="title-page">
-
+          <div style="float: right;" class="icon">
+            <small><a href="{{ BASE_PATH }}/atom.xml">subscribe <span class="icon-rss"></span></a></small>
+          </div>
           <div class="page-header">
             <h1><a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">{{ page.title }}</a></h1>
             <span>Posted on {{ page.date | date_to_long_string }} by {{ page.author }}</span>
