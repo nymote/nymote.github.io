@@ -21,8 +21,7 @@ Many third-party services have arisen to tackle the specific issue of how
 our content remains synchronised across our devices. Yet most of them rely 
 on the premise of having one canonical location from which all other devices 
 take their cues.  This is invariably somewhere up in the cloud and is 
-subject to the whims of the providers.  Developers have had good distributed solutions that don't rely on one authority but why have such 
-such approaches not made it into more mainstream products?
+subject to the whims of the providers.  Developers have had good distributed solutions that don't rely on one authority but why have such approaches not made it into more mainstream products?
 
 **Irminsule** is a library database that takes the principles behind tools 
 like Git and applies them to the wider problem of storing and syncing our 
