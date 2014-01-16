@@ -29,7 +29,7 @@ and a file system) together with webserver functionality and create a small,
 fully-functioning appliance.  We'll then run that appliance directly on top 
 of the Xen hypervisor on the public cloud.  The [Mirage website][mirage-www] 
 has been running this way for some time and that unikernel appliance is 
-around 1MB in size (including all content) and compiles in about 1 second. 
+around 1MB in size (including all content). 
 To make it easier for others to generate sites this way we've been creating 
 [new tools][mirage-tools] that help with static site generation.  As the 
 appliances are so small, we're even able to check them into version control 
