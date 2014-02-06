@@ -10,7 +10,7 @@ var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
 CHAKRA.mobileNav = function(){
 	var windowWidth = $(window).width();
-	
+
 	// Show Menu or Hide the Menu
 	if( windowWidth <= 979 ) {
 		if( $('#mobile-nav').length > 0 ) {
@@ -20,21 +20,21 @@ CHAKRA.mobileNav = function(){
 	} else {
 		$('#navigation-mobile').css('display', 'none');
 		if ($('#mobile-nav').hasClass('open')) {
-			$('#mobile-nav').removeClass('open');	
+			$('#mobile-nav').removeClass('open');
 		}
 	}
 }
 
-// Call the Event for Menu 
+// Call the Event for Menu
 CHAKRA.listenerMenu = function(){
 	$('#mobile-nav').on('click', function(e){
 		$(this).toggleClass('open');
-		
+
 		$('#navigation-mobile').stop().slideToggle(350, 'easeOutExpo');
-		
+
 		e.preventDefault();
 	});
-	
+
 	$('#menu-nav-mobile a').on('click', function(){
 		$('#mobile-nav').removeClass('open');
 		$('#navigation-mobile').slideUp(350, 'easeOutExpo');
@@ -62,8 +62,8 @@ CHAKRA.slider = function(){
 		keyboard_nav            :   1,			// Keyboard navigation on/off
 		performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
 		image_protect			:	1,			// Disables image dragging and right click with Javascript
-												   
-		// Size & Position						   
+
+		// Size & Position
 		min_width		        :   0,			// Min width allowed (in pixels)
 		min_height		        :   0,			// Min height allowed (in pixels)
 		vertical_center         :   1,			// Vertically center background
@@ -71,8 +71,8 @@ CHAKRA.slider = function(){
 		fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
 		fit_portrait         	:   1,			// Portrait images will not exceed browser height
 		fit_landscape			:   0,			// Landscape images will not exceed browser width
-												   
-		// Components							
+
+		// Components
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
@@ -80,13 +80,13 @@ CHAKRA.slider = function(){
 											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Chakra</div>', thumb : '', url : ''},
 											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content">Responsive Design</div>', thumb : '', url : ''},
 											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">FullScreen Gallery</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Showcase Your Work</div>', thumb : '', url : ''}  
+											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Showcase Your Work</div>', thumb : '', url : ''}
 									],
-									
-		// Theme Options			   
-		progress_bar			:	0,			// Timer for each slide							
+
+		// Theme Options
+		progress_bar			:	0,			// Timer for each slide
 		mouse_scrub				:	0
-		
+
 	});
 
 }
@@ -106,9 +106,9 @@ CHAKRA.nav = function(){
 ================================================== */
 
 CHAKRA.filter = function (){
-	if($('#projects').length > 0){		
+	if($('#projects').length > 0){
 		var $container = $('#projects');
-		
+
 		$container.imagesLoaded(function() {
 			$container.isotope({
 			  // options
@@ -117,12 +117,12 @@ CHAKRA.filter = function (){
 			  layoutMode : 'fitRows'
 			});
 		});
-	
-		
+
+
 		// filter items when filter link is clicked
 		var $optionSets = $('#options .option-set'),
 			$optionLinks = $optionSets.find('a');
-	
+
 		  $optionLinks.click(function(){
 			var $this = $(this);
 			// don't proceed if already selected
@@ -132,7 +132,7 @@ CHAKRA.filter = function (){
 			var $optionSet = $this.parents('.option-set');
 			$optionSet.find('.selected').removeClass('selected');
 			$this.addClass('selected');
-	  
+
 			// make option object dynamically, i.e. { filter: '.my-filter-class' }
 			var options = {},
 				key = $optionSet.attr('data-option-key'),
@@ -147,7 +147,7 @@ CHAKRA.filter = function (){
 			  // otherwise, apply new options
 			  $container.isotope( options );
 			}
-			
+
 			return false;
 		});
 	}
@@ -160,8 +160,8 @@ CHAKRA.filter = function (){
 
 CHAKRA.fancyBox = function(){
 	if($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0){
-		
-		$(".fancybox").fancybox({				
+
+		$(".fancybox").fancybox({
 			padding : 0,
 			beforeShow: function () {
 				this.title = $(this.element).attr('title');
@@ -171,7 +171,7 @@ CHAKRA.fancyBox = function(){
 				title : { type: 'inside' },
 			}
 		});
-			
+
 		$('.fancybox-media').fancybox({
 			openEffect  : 'none',
 			closeEffect : 'none',
@@ -179,7 +179,7 @@ CHAKRA.fancyBox = function(){
 				media : {}
 			}
 		});
-		
+
 		$(".fancybox-various").fancybox({
 			maxWidth	: 800,
 			maxHeight	: 600,
@@ -202,21 +202,21 @@ CHAKRA.fancyBox = function(){
 CHAKRA.contactForm = function(){
 	$("#contact-submit").on('click',function() {
 		$contact_form = $('#contact-form');
-		
+
 		var fields = $contact_form.serialize();
-		
+
 		$.ajax({
 			type: "POST",
 			url: "_include/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
-				
+
 				if(response.status){
 					$('#contact-form input').val('');
 					$('#contact-form textarea').val('');
 				}
-				
+
 				$('#response').empty().html(response.html);
 			}
 		});
@@ -231,7 +231,7 @@ CHAKRA.contactForm = function(){
 
 CHAKRA.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
-	
+
     $("#ticker").tweet({
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
@@ -246,13 +246,13 @@ CHAKRA.tweetFeed = function(){
 		setTimeout(function() {
 			ul.find('li:first').animate( {marginTop: valueTop + 'px'}, 500, 'linear', function() {
 				$(this).detach().appendTo(ul).removeAttr('style');
-			});	
+			});
 		  ticker();
 		}, 5000);
 	  };
 	  ticker();
 	});
-	
+
 }
 
 
@@ -279,7 +279,7 @@ CHAKRA.menu = function(){
 CHAKRA.goSection = function(){
 	$('#nextsection').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
-		
+
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
@@ -292,7 +292,7 @@ CHAKRA.goSection = function(){
 CHAKRA.goUp = function(){
 	$('#goUp').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
-		
+
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
@@ -337,12 +337,12 @@ CHAKRA.scrollToTop = function(){
 
 // Fix Hover on Touch Devices
 CHAKRA.utils = function(){
-	
+
 	$('.item-thumbs').bind('touchstart', function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-	
+
 }
 
 /* ==================================================
@@ -351,15 +351,15 @@ CHAKRA.utils = function(){
 
 CHAKRA.accordion = function(){
 	var accordion_trigger = $('.accordion-heading.accordionize');
-	
+
 	accordion_trigger.delegate('.accordion-toggle','click', function(event){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
 		   	$(this).addClass('inactive');
 		}
 		else{
-		  	accordion_trigger.find('.active').addClass('inactive');          
-		  	accordion_trigger.find('.active').removeClass('active');   
+		  	accordion_trigger.find('.active').addClass('inactive');
+		  	accordion_trigger.find('.active').removeClass('active');
 		  	$(this).removeClass('inactive');
 		  	$(this).addClass('active');
 	 	}
@@ -373,7 +373,7 @@ CHAKRA.accordion = function(){
 
 CHAKRA.toggle = function(){
 	var accordion_trigger_toggle = $('.accordion-heading.togglize');
-	
+
 	accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
@@ -391,7 +391,7 @@ CHAKRA.toggle = function(){
    Tooltip
 ================================================== */
 
-CHAKRA.toolTip = function(){ 
+CHAKRA.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
 }
 
@@ -411,13 +411,13 @@ CHAKRA.map = function(){
 			$map_lon = $map.attr('data-mapLon');
 			$map_zoom = parseInt($map.attr('data-mapZoom'));
 			$map_title = $map.attr('data-mapTitle');
-			
-			
-			
-			var latlng = new google.maps.LatLng($map_lat, $map_lon);			
-			var options = { 
+
+
+
+			var latlng = new google.maps.LatLng($map_lat, $map_lon);
+			var options = {
 				scrollwheel: false,
-				draggable: false, 
+				draggable: false,
 				zoomControl: false,
 				disableDoubleClickZoom: false,
 				disableDefaultUI: true,
@@ -425,8 +425,8 @@ CHAKRA.map = function(){
 				center: latlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-			
-			var styles = [ 
+
+			var styles = [
 							{
 							  stylers: [
 								{ hue: "#2F3238" },
@@ -447,11 +447,11 @@ CHAKRA.map = function(){
 							  ]
 							}
 						];
-			
+
 			var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
-			
+
 			var map = new google.maps.Map(document.getElementById($map_id), options);
-		
+
 			var image = '_include/img/marker.png';
 			var marker = new google.maps.Marker({
 				position: latlng,
@@ -459,22 +459,22 @@ CHAKRA.map = function(){
 				title: $map_title,
 				icon: image
 			});
-			
+
 			map.mapTypes.set('map_style', styledMap);
   			map.setMapTypeId('map_style');
-			
+
 			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
-       
+
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
-			
+
 			google.maps.event.addListener(marker, 'click', function() {
       			infowindow.open(map,marker);
     		});
 
 		});
-	}	
+	}
 }
 
 /* ==================================================
@@ -488,7 +488,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: '_include/js/placeholder.js',
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
@@ -496,20 +496,20 @@ $(document).ready(function(){
 						hideOnFocus: false,
 						className: "yourClass",
 						textColor: "#999"
-						});    
+						});
 				}
 		}
 	}
 	]);
-	
+
 	// Preload the page with jPreLoader
-	$('body').jpreLoader({
-		splashID: "#jSplash",
-		showSplash: true,
-		showPercentage: true,
-		autoClose: true
-	});
-	
+	// $('body').jpreLoader({
+	// 	splashID: "#jSplash",
+	// 	showSplash: true,
+	// 	showPercentage: true,
+	// 	autoClose: true
+	// });
+
 	CHAKRA.nav();
 	CHAKRA.mobileNav();
 	CHAKRA.listenerMenu();
