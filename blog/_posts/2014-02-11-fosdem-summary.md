@@ -5,7 +5,7 @@ author: Amir Chaudhry
 date: 2014-02-11 13:40:00
 tags: [conference, demo, irminsule, mirage]
 excerpt: "It's been just over a week since FOSDEM ended and it was even more hectic than we imagined.  Thousands of open source developers across dozens of rooms and speakers and lots of delicious waffles.  I'm still in awe that this is a completely volunteer organised event and that everything appeared to run smoothly."
-shorturl: http://nymote.org/blog/2014/fosdem-summary/
+shorturl: http://bit.ly/1fcKu8o
 ---
 {% include JB/setup %}
 
