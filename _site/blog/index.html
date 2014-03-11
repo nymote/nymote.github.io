@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>   
+    <meta charset="utf-8">
+    <title>Nymote Blog</title>
+    
+    <meta name="author" content="Nymote">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/twitter-mod/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/main.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.shutter.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fonts.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/shortcodes.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/responsive.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- ATOM and RSS Feeds -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <link href="/images/nymote-logo-blue-large.png" rel="image_src">
+
+  </head>
+
+  <body>
+
+  <!-- NAVIGATION -->
+
+  
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+          <a id="goUp" href="/#top"></a>
+        </div>
+        
+        <nav id="menu">
+          <ul id="menu-nav">
+              <li><a href="/#home" class="external">Home</a></li>
+                <li><a href="/#overview" class="external">Overview</a></li>
+                <li><a href="/#software" class="external">Software</a></li>
+                <li class="current"><a href="/blog">Blog</a></li>
+                <li><a href="/#about" class="external">About Us</a></li>
+            </ul>
+        </nav>
+            
+    </div>
+</header>
+<!-- End Header -->
+
+<div id="blog" class="page-alternate">
+  <div class="container">
+    <div class="row">     
+      <div class="span1"></div>
+      <div class="span10">
+        <div class="title-page">
+          <span style="float: right; margin-left: 15px;"><h4><a href="/atom.xml">subscribe <span class="icon-rss"></span></a></h4></span>
+          
+          <div class="page-header">
+            <h1><a class="post-title" href="/blog/2014/fosdem-summary">Summary of FOSDEM 2014</a></h1>
+            <span>Posted on 11 February 2014 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>It's been just over a week since FOSDEM ended and it was even more hectic
+than we imagined.  Thousands of open source developers across dozens of
+rooms and speakers and lots of delicious waffles.  I'm still in awe that
+this is a completely volunteer organised event and that everything appeared
+to run smoothly.  Especially, since this has to be the <em>only</em> conference
+I've been at where the wifi was usable (and ubiquitous).</p>
+
+<p>The most interesting aspect was how crowded some of the rooms became and how
+quickly.  For example, the <a href="https://fosdem.org/2014/schedule/track/configuration_management/">configuration management track</a> was
+pretty much full throughout the day with a crowd of people trying to get in.
+I heard that the Mozilla track was equally busy as were some other devrooms.
+This may be in indication of relative popularity but also the sheer scale
+that this annual event has reached. It may be outgrowing ULB.  Thankfully,
+<a href="https://fosdem.org/2014/news/2014-02-03-videos/">videos will be available</a> this year so I hope I can catchup
+up with the sessions I couldn't get to!  One that I was particularly
+interested in is the <a href="http://www.xenproject.org/developers/teams/arm-hypervisor.html">Xen/ARM</a> talk in the <a href="https://fosdem.org/2014/schedule/track/automotive_development/">Automotive track</a>.
+Since cars are now getting smarter and Xen works on embedded devices it
+would be an excellent use case for Mirage to ensure that the software
+running in vehicles is safe and does only what it's supposed to.  There were
+many other Xen talks too and you catchup with them on the
+<a href="http://blog.xen.org/index.php/2014/02/07/xen-fosdem14-an-even-report/">Xen blog</a>.</p>
+
+<p>The Mail track talks were crowded and during the
+<a href="https://fosdem.org/2014/schedule/track/mail/">postfix talk</a> we were treated to an interesting review of
+spam around the globe, which was followed up by the Mailpile team announcing
+their <a href="https://www.mailpile.is/blog/2014-01-31_Alpha_Release_Shipping_Bits_and_Atoms.html">alpha release</a> on stage! The
+<a href="https://fosdem.org/2014/schedule/track/internet_of_things/">Internet of Things devroom</a> had a number of interesting talks
+but there need to be more people thinking about the underlying
+infrastructure needs before we can begin building resilient, decentralised
+networks.</p>
+
+<p>For the Mirage talk, Mort and Anil gave a great demo by building unikernels
+on stage to show the process in action.  They continued the demos at the Xen
+stall to a number of people including some surprisingly young FOSDEM
+attendees.  We'll soon be moving our personal websites to become self-hosted
+unikernels, and from there we can build out more of the Nymote toolstack.</p>
+
+<p>We've captured some of the interesting tweets and pictures below and
+hopefully next year we'll be speaking at FOSDEM about how we're using the
+Nymote toolstack.</p>
+
+<div class="storify"><iframe src="//storify.com/amirmc/fosdem/embed?header=false&border=false" width="100%" height=750 frameborder=no allowtransparency=true></iframe><script src="//storify.com/amirmc/fosdem.js?header=false&border=false"></script><noscript>[<a href="//storify.com/amirmc/fosdem" target="_blank">View the story "Summary of FOSDEM 2014" on Storify</a>]</noscript></div>
+
+
+                <a href="/blog/2014/fosdem-summary/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+          <div class="page-header">
+            <h1><a class="post-title" href="/blog/2014/heading-to-fosdem-2014">Heading to FOSDEM!</a></h1>
+            <span>Posted on 30 January 2014 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>We're heading to <a href="https://fosdem.org/2014/">FOSDEM</a> in a few days!  If you haven't heard of FOSDEM
+before, it's a two-day, volunteer-organised event to promote open source
+software.  It takes place in Brussels and there will be over 500 talks,
+across 44 tracks attended by around 5000 people. The numbers alone don't
+capture the scale of the event so click though the image below for a view of
+the schedule -- and that's just for the Saturday. Did I mention this is all
+run by volunteers?</p>
+
+<p><a href="https://fosdem.org/2014/schedule/day/saturday/"><img src="http://nymote.org/images/fosdem-sat.jpg" alt="FOSDEM on Saturday" /></a></p>
+
+<p>We'll be meeting a bunch of like-minded people in the various sessions and
+talking more about how the Nymote stack is progressing, especially as Mirage
+is gaining momentum after the <a href="http://nymote.org/blog/2014/announcing-first-mirage-release/">1.0 release</a>.  Anil and Mort
+will be giving a talk about Mirage on Sunday at 1pm (<a href="https://fosdem.org/2014/schedule/event/mirageos/">details</a>)
+and also giving demos at the Xen Booth from 2:30pm-4:30pm (in Building K on
+the 1st floor).  Since deployment to embedded systems is also important,
+we're interested in open source efforts on ARM devices like the
+<a href="https://fosdem.org/2014/schedule/event/arm_allwinner_sunxi_socs/">Allwinner SoC community</a> -- especially since Anil has been hacking
+on <a href="http://www.xenproject.org/developers/teams/arm-hypervisor.html">Xen/ARM</a> on a cubieboard. There are a number of other Xen-related
+talks and you can find out more from the <a href="http://blog.xen.org/index.php/2014/01/10/xen-related-talks-fosdem-2014/">Xen blog</a>.</p>
+
+<p>Given the use-cases for Nymote, there are some obvious places you can expect
+to find us.  On Saturday there's the <a href="https://fosdem.org/2014/schedule/track/mail/">Mail track</a>, where we'll
+be discussing existing tools and catching up up with the Mailpile guys, who
+we last <a href="http://nymote.org/blog/2013/indiewebcamp-uk/">met at IndieWebCamp</a>.  On the Sunday, there's the
+<a href="https://fosdem.org/2014/schedule/track/internet_of_things/">Internet of Things dev-room</a>, where we'll bring up the upcoming
+problems we see regarding centralised IoT services and how Nymote will
+change this.  In addition, a colleague from the lab, <a href="http://www.cl.cam.ac.uk/~jra40/">Jon Anderson</a>,
+is speaking about security and the <a href="http://www.cl.cam.ac.uk/research/security/capsicum/">Capscium project</a>, which is
+relevant for sandboxing security (<a href="https://fosdem.org/2014/schedule/event/capiscum/">details</a>).</p>
+
+<p>We'll be writing up our experiences shortly after we return and in the
+meantime, the real issue will be deciding which sessions to go to.  If
+you're in Brussels for that weekend do get in touch with us!  We love to
+meet people working towards the same goals.</p>
+
+                <a href="/blog/2014/heading-to-fosdem-2014/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+          <div class="page-header">
+            <h1><a class="post-title" href="/blog/2014/announcing-first-mirage-release">Announcing the first major release of Mirage - the Cloud Operating System</a></h1>
+            <span>Posted on 13 January 2014 by Amir Chaudhry and Anil Madhavapeddy</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>We're very pleased to announce that version 1.0 of Mirage, the first of the
+components, has been released! This is the first major release of Mirage and
+represents many years of development, testing and community building. As
+mentioned previously, there are three main components of the
+<a href="http://nymote.org/blog/2013/introducing-nymote/">Nymote toolstack</a>, which are: <a href="http://nymote.org/software/mirage/">Mirage</a> - an
+operating system for the cloud, <a href="http://nymote.org/software/signpost/">Signpost</a> - an identity and
+connectivity system and <a href="http://nymote.org/software/irminsule/">Irminsule</a> - a distributed database. As
+always, the best way to learn is to try things out, so follow the revamped
+<a href="http://openmirage.org/wiki/install">install instructions</a> and create your own webserver to host
+a static website!</p>
+
+<p>We've written before <a href="http://nymote.org/blog/2013/overview-of-mirage/">about Mirage and its importance</a> and this
+1.0 release represents the first stable toolkit for creating appliances.
+One of the first places where we'll be using Mirage is this (and other)
+websites.  We will take all the content you see on this site and compile it,
+along with the required components from a operating system (e.g networking
+and a file system) together with webserver functionality and create a small,
+fully-functioning appliance.  We'll then run that appliance directly on top
+of the Xen hypervisor on the public cloud.  The <a href="http://openmirage.org">Mirage website</a>
+has been running this way for some time and that unikernel appliance is
+around 1MB in size (including all content).
+To make it easier for others to generate sites this way we've been creating
+<a href="http://openmirage.org/blog/decks-n-drums">new tools</a> that help with static site generation.  As the
+appliances are so small, we're even able to check them into version control
+systems so you can easily roll-back to a previous version without having to
+recompile anything! You can see the
+<a href="https://github.com/mirage/mirage-www-deployment">repository of previous unikernels</a> to get an idea of this
+in action.</p>
+
+<p>The Mirage team will also be using the new tools to convert their personal
+websites into unikernel appliances and as we create and release more
+libraries we'll be incorporating those also.  For example, once we have a
+workflow with unikernel websites it becomes much easier to add other
+functionality because it's a simple matter of using the appropriate
+libraries, writing some application code and then deploying to the cloud.
+In other words, you begin to reap the benefits of having a operating system
+that works for you in the cloud, while ensuring it remains lean and safe.
+For example, we could incorporate <a href="http://en.wikipedia.org/wiki/CardDAV%E2%80%8E">CardDAV</a> and then use our own
+infrastructure to synchronise contacts between our mobile devices, instead
+of relying on third-parties to do it for us.  As this process becomes more
+streamlined, it's easy to see how we can build up to having our own personal
+cloud by incorporating only the features we need, when we need them and
+always under our control.</p>
+
+<p>There have been a number of articles about Mirage, and a good introduction
+to the concept and direction is in the recent Communications of the ACM
+article called
+<a href="http://queue.acm.org/detail.cfm?id=2566628">Unikernels: Rise of the Virtual Library Operating System</a>.
+There are also write ups about the Mirage release at <a href="http://www.eweek.com/cloud/xen-project-builds-its-own-cloud-os-mirage.html/">eWeek</a>, <a href="http://www.infoworld.com/t/operating-systems/xen-mirage-the-less-more-cloud-os-233823">InfoWorld</a>
+and a general overview on <a href="http://www.linux.com/news/enterprise/cloud-computing/751156-are-cloud-operating-systems-the-next-big-thing">Linux.com</a> (a full list is
+on the self-hosted <a href="http://openmirage.org/links">Mirage website</a>).  We're looking
+forward to the upcoming activities for 2014 and the new avenues that Mirage
+will open up for us!</p>
+
+                <a href="/blog/2014/announcing-first-mirage-release/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+          <div class="page-header">
+            <h1><a class="post-title" href="/blog/2013/looking-forward-to-2014">Looking forward to 2014</a></h1>
+            <span>Posted on 19 December 2013 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>This year has been an interesting one for proponents of decentralisation,
+privacy and open protocols.  We've had revelations about
+<a href="http://www.theguardian.com/world/the-nsa-files">mass-surveillance</a> by Governments, a number of open source
+projects, who want to put the user back in control (<a href="https://www.mailpile.is">Mailpile</a>, <a href="https://arkos.io">arkOS</a>,
+<a href="http://darkmail.info">Dark Mail Alliance</a> and many others), as well as efforts to
+bring more of these projects to light (e.g. <a href="http://redecentralize.org">redecentralize</a>). We also
+have a number of exciting new research initiatives to work on the technology
+problems of decentralisation (e.g <a href="http://usercentricnetworking.eu]">User Centric Networking</a>). Overall,
+2014 promises to be an exciting year of new software releases and increasing
+momentum for such projects.</p>
+
+<p>From our point of view we'll be having some imminent software releases,
+which will make significant advances to safely hosting your own content in a
+manner that is secure, economical and scalable. This will be the beginning
+of the move to a personal cloud and we'll start by moving our personal
+websites (as well as this one) onto a self-hosting platform.  This platform
+will be something to build on and experiment with over the rest of the year,
+replacing parts of the third-party infrastructure we use today. In the
+meantime, we wish you a great holiday season and look forward to the New
+Year!</p>
+
+                <a href="/blog/2013/looking-forward-to-2014/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+          <div class="page-header">
+            <h1><a class="post-title" href="/blog/2013/smart-tvs-that-watch-you">Smart TVs that watch you</a></h1>
+            <span>Posted on 19 November 2013 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>As our devices grow smarter and more connected it's reasonable to expect
+that we'll get better services and features as a result.  One such device
+that's already making its way into our homes is the humble TV.  We already
+have smart devices that <em>connect</em> to our TVs, such as the AppleTV and
+Google's Chromecast device, but the manufacturers themselves are also adding
+more functionality.  However, what these devices are doing is worth a second
+look.</p>
+
+<p>A recent post by <a href="http://doctorbeet.blogspot.co.uk">DoctorBeet</a>, examines what his LG TV was doing when he
+noticed advertising on the homescreen.  This led him to discover that LG was
+offering a Smart Ad service to advertisers, based on customers' data.  The
+LG site has since been taken down but apparently <em>"LG Smart Ad analyses
+users favourite programs, online behaviour, search keywords and other
+information to offer relevant ads to target audiences."</em> Furthermore, there
+was a setting on the TV itself called "Collection of watching info", where
+the default setting was 'ON'.  All of this seems quite invasive, since the
+TV was purchased outright so it's not a case of trading privacy for
+something that's free.  You'd think that turning the collection setting to
+'OFF' would largely solve the issue but this story isn't that simple.  You
+should <a href="http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html">read the post in full</a>, but a brief summary is below.</p>
+
+<p>DocterBeet turned off the collection setting and then decided to examine his
+internet traffic.  Apparently the viewing data was being <em>regardless</em> of the
+setting on the TV, which completely breaks user expectations.  As if that
+wasn't bad enough, the TV was scanning external USB drives and sending back
+that data too.  Sometimes just the filenames but sometimes all the content
+too.  When LG was contacted about the problems, their response was baffling.
+Essentially, they claimed that DoctorBeet had <em>"accepted the Terms and
+Conditions on [their] TV"</em> and implied there was nothing they could do.
+Since DoctorBeet is a technically savvy customer, he created rules on his
+home router to prevent any further connections to LG's computers, while
+ensuring he could still get the software updates.</p>
+
+<p>This case highlights a potential trend where devices that we've paid for are
+still attempting to collect user-data for the purpose of advertising.  A
+case of you are <em>both</em> the customer <em>and</em> the product. What's equally
+concerning is that one technically able customer was able to understand what
+was going on but the majority of users would have been none-the-wiser.</p>
+
+<p>The next few years are going to be interesting as more news like this breaks
+and people become more aware of how desperate companies are to learn about
+their users.  The irony is that if the customers had a real voice, many of
+them may be willing to trade with the companies and provide them access to
+data-sets, assuming a safe and secure way to do so was available.  We're
+working on a platform as part of the <a href="http://hubofallthings.wordpress.com">Hub of all Things</a> project, where
+companies and customers can do exactly this.  There may be other users who
+want to have more control over their home networks so we're also looking at
+<a href="http://homenetworks.ac.uk">novel ways to allow people to interact and configure home routers</a>.</p>
+
+<p>The Internet of Things and connected devices have the potential to be as
+ground-breaking as the Web but end-users must also be empowered if we are to
+reap all the benefits.</p>
+
+<p><em>Read the full story at: <a href="http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html">http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html</a></em></p>
+
+                <a href="/blog/2013/smart-tvs-that-watch-you/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+
+          <h3><a href="/archive/">More posts</a></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row bordertop">
+          <div class="span6 footertext">
+            <span class="icon-github" style="float: left; font-size: 60px;"></span>
+            <div class="span3">Find us on <a href="https://github.com/nymote" target="_blank">GitHub</a> <br/> or send us an <a href="mailto:amir@nymote.com">email</a><p></p></div>
+          </div>
+          <div class="span6">
+            <div class="icon">
+              <span class="icon-inbox" style="float: left; margin-top: 19px; font-size: 60px;"></span>
+            </div>
+            <!--- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  #mc_embed_signup{background-color:transparent; clear:right; font:14px Helvetica,Arial,sans-serif; }
+  <!--- /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ -->
+  .footeremail {width:100%;}
+</style>
+<div id="mc_embed_signup">
+  <form action="http://nymote.us5.list-manage.com/subscribe/post?u=8a83b2d5453bba2ee5838b4ad&amp;id=a41245094c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+    <div class="text" style="margin: 10px; margin-left: 73px;">Signup to our newsletter</div>
+    <div class="span3">
+      <input type="email" value="" name="EMAIL" class="footeremail" placeholder="email address" style="width: 100%; padding: 15px;">
+    </div>
+    <div class="span2"><div class="clear">
+      <input type="submit" class="subscribebutton" value="Subscribe" name="subscribe" style="padding: 6px;">
+    </div>
+    </div>
+  </form>
+</div>
+<!-- End mc_embed_signup -->        
+          </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/assets/themes/twitter-mod/js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+    <script src="/assets/themes/twitter-mod/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+    <script src="/assets/themes/twitter-mod/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+    <script src="/assets/themes/twitter-mod/js/waypoints.js"></script> <!-- WayPoints -->
+    <script src="/assets/themes/twitter-mod/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+    <script src="/assets/themes/twitter-mod/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+    <script src="/assets/themes/twitter-mod/js/jquery.tweet.js"></script> <!-- Tweet -->
+    <script src="/assets/themes/twitter-mod/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="/assets/themes/twitter-mod/js/main.js"></script> <!-- Default JS -->
+    <!-- unused -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>--> <!-- Google Map API -->
+    
+  </body>
+</html>
+

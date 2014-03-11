@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Nymote</title>
+        <description>Nymote - Nymote</description>
+        <link>http://nymote.org</link>
+        <link>http://nymote.org</link>
+        <lastBuildDate>2014-03-11T13:29:50+00:00</lastBuildDate>
+        <pubDate>2014-03-11T13:29:50+00:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Summary of FOSDEM 2014</title>
+                <description>&lt;p&gt;It's been just over a week since FOSDEM ended and it was even more hectic
+than we imagined.  Thousands of open source developers across dozens of
+rooms and speakers and lots of delicious waffles.  I'm still in awe that
+this is a completely volunteer organised event and that everything appeared
+to run smoothly.  Especially, since this has to be the &lt;em&gt;only&lt;/em&gt; conference
+I've been at where the wifi was usable (and ubiquitous).&lt;/p&gt;
+
+&lt;p&gt;The most interesting aspect was how crowded some of the rooms became and how
+quickly.  For example, the &lt;a href=&quot;https://fosdem.org/2014/schedule/track/configuration_management/&quot;&gt;configuration management track&lt;/a&gt; was
+pretty much full throughout the day with a crowd of people trying to get in.
+I heard that the Mozilla track was equally busy as were some other devrooms.
+This may be in indication of relative popularity but also the sheer scale
+that this annual event has reached. It may be outgrowing ULB.  Thankfully,
+&lt;a href=&quot;https://fosdem.org/2014/news/2014-02-03-videos/&quot;&gt;videos will be available&lt;/a&gt; this year so I hope I can catchup
+up with the sessions I couldn't get to!  One that I was particularly
+interested in is the &lt;a href=&quot;http://www.xenproject.org/developers/teams/arm-hypervisor.html&quot;&gt;Xen/ARM&lt;/a&gt; talk in the &lt;a href=&quot;https://fosdem.org/2014/schedule/track/automotive_development/&quot;&gt;Automotive track&lt;/a&gt;.
+Since cars are now getting smarter and Xen works on embedded devices it
+would be an excellent use case for Mirage to ensure that the software
+running in vehicles is safe and does only what it's supposed to.  There were
+many other Xen talks too and you catchup with them on the
+&lt;a href=&quot;http://blog.xen.org/index.php/2014/02/07/xen-fosdem14-an-even-report/&quot;&gt;Xen blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Mail track talks were crowded and during the
+&lt;a href=&quot;https://fosdem.org/2014/schedule/track/mail/&quot;&gt;postfix talk&lt;/a&gt; we were treated to an interesting review of
+spam around the globe, which was followed up by the Mailpile team announcing
+their &lt;a href=&quot;https://www.mailpile.is/blog/2014-01-31_Alpha_Release_Shipping_Bits_and_Atoms.html&quot;&gt;alpha release&lt;/a&gt; on stage! The
+&lt;a href=&quot;https://fosdem.org/2014/schedule/track/internet_of_things/&quot;&gt;Internet of Things devroom&lt;/a&gt; had a number of interesting talks
+but there need to be more people thinking about the underlying
+infrastructure needs before we can begin building resilient, decentralised
+networks.&lt;/p&gt;
+
+&lt;p&gt;For the Mirage talk, Mort and Anil gave a great demo by building unikernels
+on stage to show the process in action.  They continued the demos at the Xen
+stall to a number of people including some surprisingly young FOSDEM
+attendees.  We'll soon be moving our personal websites to become self-hosted
+unikernels, and from there we can build out more of the Nymote toolstack.&lt;/p&gt;
+
+&lt;p&gt;We've captured some of the interesting tweets and pictures below and
+hopefully next year we'll be speaking at FOSDEM about how we're using the
+Nymote toolstack.&lt;/p&gt;
+
+&lt;div class=&quot;storify&quot;&gt;&lt;iframe src=&quot;//storify.com/amirmc/fosdem/embed?header=false&amp;border=false&quot; width=&quot;100%&quot; height=750 frameborder=no allowtransparency=true&gt;&lt;/iframe&gt;&lt;script src=&quot;//storify.com/amirmc/fosdem.js?header=false&amp;border=false&quot;&gt;&lt;/script&gt;&lt;noscript&gt;[&lt;a href=&quot;//storify.com/amirmc/fosdem&quot; target=&quot;_blank&quot;&gt;View the story &quot;Summary of FOSDEM 2014&quot; on Storify&lt;/a&gt;]&lt;/noscript&gt;&lt;/div&gt;
+
+</description>
+                <link>http://nymote.org/blog/2014/fosdem-summary</link>
+                <guid>http://nymote.org/blog/2014/fosdem-summary</guid>
+                <pubDate>2014-02-11T13:40:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Heading to FOSDEM!</title>
+                <description>&lt;p&gt;We're heading to &lt;a href=&quot;https://fosdem.org/2014/&quot;&gt;FOSDEM&lt;/a&gt; in a few days!  If you haven't heard of FOSDEM
+before, it's a two-day, volunteer-organised event to promote open source
+software.  It takes place in Brussels and there will be over 500 talks,
+across 44 tracks attended by around 5000 people. The numbers alone don't
+capture the scale of the event so click though the image below for a view of
+the schedule -- and that's just for the Saturday. Did I mention this is all
+run by volunteers?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fosdem.org/2014/schedule/day/saturday/&quot;&gt;&lt;img src=&quot;http://nymote.org/images/fosdem-sat.jpg&quot; alt=&quot;FOSDEM on Saturday&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We'll be meeting a bunch of like-minded people in the various sessions and
+talking more about how the Nymote stack is progressing, especially as Mirage
+is gaining momentum after the &lt;a href=&quot;http://nymote.org/blog/2014/announcing-first-mirage-release/&quot;&gt;1.0 release&lt;/a&gt;.  Anil and Mort
+will be giving a talk about Mirage on Sunday at 1pm (&lt;a href=&quot;https://fosdem.org/2014/schedule/event/mirageos/&quot;&gt;details&lt;/a&gt;)
+and also giving demos at the Xen Booth from 2:30pm-4:30pm (in Building K on
+the 1st floor).  Since deployment to embedded systems is also important,
+we're interested in open source efforts on ARM devices like the
+&lt;a href=&quot;https://fosdem.org/2014/schedule/event/arm_allwinner_sunxi_socs/&quot;&gt;Allwinner SoC community&lt;/a&gt; -- especially since Anil has been hacking
+on &lt;a href=&quot;http://www.xenproject.org/developers/teams/arm-hypervisor.html&quot;&gt;Xen/ARM&lt;/a&gt; on a cubieboard. There are a number of other Xen-related
+talks and you can find out more from the &lt;a href=&quot;http://blog.xen.org/index.php/2014/01/10/xen-related-talks-fosdem-2014/&quot;&gt;Xen blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Given the use-cases for Nymote, there are some obvious places you can expect
+to find us.  On Saturday there's the &lt;a href=&quot;https://fosdem.org/2014/schedule/track/mail/&quot;&gt;Mail track&lt;/a&gt;, where we'll
+be discussing existing tools and catching up up with the Mailpile guys, who
+we last &lt;a href=&quot;http://nymote.org/blog/2013/indiewebcamp-uk/&quot;&gt;met at IndieWebCamp&lt;/a&gt;.  On the Sunday, there's the
+&lt;a href=&quot;https://fosdem.org/2014/schedule/track/internet_of_things/&quot;&gt;Internet of Things dev-room&lt;/a&gt;, where we'll bring up the upcoming
+problems we see regarding centralised IoT services and how Nymote will
+change this.  In addition, a colleague from the lab, &lt;a href=&quot;http://www.cl.cam.ac.uk/~jra40/&quot;&gt;Jon Anderson&lt;/a&gt;,
+is speaking about security and the &lt;a href=&quot;http://www.cl.cam.ac.uk/research/security/capsicum/&quot;&gt;Capscium project&lt;/a&gt;, which is
+relevant for sandboxing security (&lt;a href=&quot;https://fosdem.org/2014/schedule/event/capiscum/&quot;&gt;details&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;We'll be writing up our experiences shortly after we return and in the
+meantime, the real issue will be deciding which sessions to go to.  If
+you're in Brussels for that weekend do get in touch with us!  We love to
+meet people working towards the same goals.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2014/heading-to-fosdem-2014</link>
+                <guid>http://nymote.org/blog/2014/heading-to-fosdem-2014</guid>
+                <pubDate>2014-01-30T09:00:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Announcing the first major release of Mirage - the Cloud Operating System</title>
+                <description>&lt;p&gt;We're very pleased to announce that version 1.0 of Mirage, the first of the
+components, has been released! This is the first major release of Mirage and
+represents many years of development, testing and community building. As
+mentioned previously, there are three main components of the
+&lt;a href=&quot;http://nymote.org/blog/2013/introducing-nymote/&quot;&gt;Nymote toolstack&lt;/a&gt;, which are: &lt;a href=&quot;http://nymote.org/software/mirage/&quot;&gt;Mirage&lt;/a&gt; - an
+operating system for the cloud, &lt;a href=&quot;http://nymote.org/software/signpost/&quot;&gt;Signpost&lt;/a&gt; - an identity and
+connectivity system and &lt;a href=&quot;http://nymote.org/software/irminsule/&quot;&gt;Irminsule&lt;/a&gt; - a distributed database. As
+always, the best way to learn is to try things out, so follow the revamped
+&lt;a href=&quot;http://openmirage.org/wiki/install&quot;&gt;install instructions&lt;/a&gt; and create your own webserver to host
+a static website!&lt;/p&gt;
+
+&lt;p&gt;We've written before &lt;a href=&quot;http://nymote.org/blog/2013/overview-of-mirage/&quot;&gt;about Mirage and its importance&lt;/a&gt; and this
+1.0 release represents the first stable toolkit for creating appliances.
+One of the first places where we'll be using Mirage is this (and other)
+websites.  We will take all the content you see on this site and compile it,
+along with the required components from a operating system (e.g networking
+and a file system) together with webserver functionality and create a small,
+fully-functioning appliance.  We'll then run that appliance directly on top
+of the Xen hypervisor on the public cloud.  The &lt;a href=&quot;http://openmirage.org&quot;&gt;Mirage website&lt;/a&gt;
+has been running this way for some time and that unikernel appliance is
+around 1MB in size (including all content).
+To make it easier for others to generate sites this way we've been creating
+&lt;a href=&quot;http://openmirage.org/blog/decks-n-drums&quot;&gt;new tools&lt;/a&gt; that help with static site generation.  As the
+appliances are so small, we're even able to check them into version control
+systems so you can easily roll-back to a previous version without having to
+recompile anything! You can see the
+&lt;a href=&quot;https://github.com/mirage/mirage-www-deployment&quot;&gt;repository of previous unikernels&lt;/a&gt; to get an idea of this
+in action.&lt;/p&gt;
+
+&lt;p&gt;The Mirage team will also be using the new tools to convert their personal
+websites into unikernel appliances and as we create and release more
+libraries we'll be incorporating those also.  For example, once we have a
+workflow with unikernel websites it becomes much easier to add other
+functionality because it's a simple matter of using the appropriate
+libraries, writing some application code and then deploying to the cloud.
+In other words, you begin to reap the benefits of having a operating system
+that works for you in the cloud, while ensuring it remains lean and safe.
+For example, we could incorporate &lt;a href=&quot;http://en.wikipedia.org/wiki/CardDAV%E2%80%8E&quot;&gt;CardDAV&lt;/a&gt; and then use our own
+infrastructure to synchronise contacts between our mobile devices, instead
+of relying on third-parties to do it for us.  As this process becomes more
+streamlined, it's easy to see how we can build up to having our own personal
+cloud by incorporating only the features we need, when we need them and
+always under our control.&lt;/p&gt;
+
+&lt;p&gt;There have been a number of articles about Mirage, and a good introduction
+to the concept and direction is in the recent Communications of the ACM
+article called
+&lt;a href=&quot;http://queue.acm.org/detail.cfm?id=2566628&quot;&gt;Unikernels: Rise of the Virtual Library Operating System&lt;/a&gt;.
+There are also write ups about the Mirage release at &lt;a href=&quot;http://www.eweek.com/cloud/xen-project-builds-its-own-cloud-os-mirage.html/&quot;&gt;eWeek&lt;/a&gt;, &lt;a href=&quot;http://www.infoworld.com/t/operating-systems/xen-mirage-the-less-more-cloud-os-233823&quot;&gt;InfoWorld&lt;/a&gt;
+and a general overview on &lt;a href=&quot;http://www.linux.com/news/enterprise/cloud-computing/751156-are-cloud-operating-systems-the-next-big-thing&quot;&gt;Linux.com&lt;/a&gt; (a full list is
+on the self-hosted &lt;a href=&quot;http://openmirage.org/links&quot;&gt;Mirage website&lt;/a&gt;).  We're looking
+forward to the upcoming activities for 2014 and the new avenues that Mirage
+will open up for us!&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2014/announcing-first-mirage-release</link>
+                <guid>http://nymote.org/blog/2014/announcing-first-mirage-release</guid>
+                <pubDate>2014-01-13T17:00:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Looking forward to 2014</title>
+                <description>&lt;p&gt;This year has been an interesting one for proponents of decentralisation,
+privacy and open protocols.  We've had revelations about
+&lt;a href=&quot;http://www.theguardian.com/world/the-nsa-files&quot;&gt;mass-surveillance&lt;/a&gt; by Governments, a number of open source
+projects, who want to put the user back in control (&lt;a href=&quot;https://www.mailpile.is&quot;&gt;Mailpile&lt;/a&gt;, &lt;a href=&quot;https://arkos.io&quot;&gt;arkOS&lt;/a&gt;,
+&lt;a href=&quot;http://darkmail.info&quot;&gt;Dark Mail Alliance&lt;/a&gt; and many others), as well as efforts to
+bring more of these projects to light (e.g. &lt;a href=&quot;http://redecentralize.org&quot;&gt;redecentralize&lt;/a&gt;). We also
+have a number of exciting new research initiatives to work on the technology
+problems of decentralisation (e.g &lt;a href=&quot;http://usercentricnetworking.eu]&quot;&gt;User Centric Networking&lt;/a&gt;). Overall,
+2014 promises to be an exciting year of new software releases and increasing
+momentum for such projects.&lt;/p&gt;
+
+&lt;p&gt;From our point of view we'll be having some imminent software releases,
+which will make significant advances to safely hosting your own content in a
+manner that is secure, economical and scalable. This will be the beginning
+of the move to a personal cloud and we'll start by moving our personal
+websites (as well as this one) onto a self-hosting platform.  This platform
+will be something to build on and experiment with over the rest of the year,
+replacing parts of the third-party infrastructure we use today. In the
+meantime, we wish you a great holiday season and look forward to the New
+Year!&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/looking-forward-to-2014</link>
+                <guid>http://nymote.org/blog/2013/looking-forward-to-2014</guid>
+                <pubDate>2013-12-19T20:30:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Smart TVs that watch you</title>
+                <description>&lt;p&gt;As our devices grow smarter and more connected it's reasonable to expect
+that we'll get better services and features as a result.  One such device
+that's already making its way into our homes is the humble TV.  We already
+have smart devices that &lt;em&gt;connect&lt;/em&gt; to our TVs, such as the AppleTV and
+Google's Chromecast device, but the manufacturers themselves are also adding
+more functionality.  However, what these devices are doing is worth a second
+look.&lt;/p&gt;
+
+&lt;p&gt;A recent post by &lt;a href=&quot;http://doctorbeet.blogspot.co.uk&quot;&gt;DoctorBeet&lt;/a&gt;, examines what his LG TV was doing when he
+noticed advertising on the homescreen.  This led him to discover that LG was
+offering a Smart Ad service to advertisers, based on customers' data.  The
+LG site has since been taken down but apparently &lt;em&gt;&quot;LG Smart Ad analyses
+users favourite programs, online behaviour, search keywords and other
+information to offer relevant ads to target audiences.&quot;&lt;/em&gt; Furthermore, there
+was a setting on the TV itself called &quot;Collection of watching info&quot;, where
+the default setting was 'ON'.  All of this seems quite invasive, since the
+TV was purchased outright so it's not a case of trading privacy for
+something that's free.  You'd think that turning the collection setting to
+'OFF' would largely solve the issue but this story isn't that simple.  You
+should &lt;a href=&quot;http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html&quot;&gt;read the post in full&lt;/a&gt;, but a brief summary is below.&lt;/p&gt;
+
+&lt;p&gt;DocterBeet turned off the collection setting and then decided to examine his
+internet traffic.  Apparently the viewing data was being &lt;em&gt;regardless&lt;/em&gt; of the
+setting on the TV, which completely breaks user expectations.  As if that
+wasn't bad enough, the TV was scanning external USB drives and sending back
+that data too.  Sometimes just the filenames but sometimes all the content
+too.  When LG was contacted about the problems, their response was baffling.
+Essentially, they claimed that DoctorBeet had &lt;em&gt;&quot;accepted the Terms and
+Conditions on [their] TV&quot;&lt;/em&gt; and implied there was nothing they could do.
+Since DoctorBeet is a technically savvy customer, he created rules on his
+home router to prevent any further connections to LG's computers, while
+ensuring he could still get the software updates.&lt;/p&gt;
+
+&lt;p&gt;This case highlights a potential trend where devices that we've paid for are
+still attempting to collect user-data for the purpose of advertising.  A
+case of you are &lt;em&gt;both&lt;/em&gt; the customer &lt;em&gt;and&lt;/em&gt; the product. What's equally
+concerning is that one technically able customer was able to understand what
+was going on but the majority of users would have been none-the-wiser.&lt;/p&gt;
+
+&lt;p&gt;The next few years are going to be interesting as more news like this breaks
+and people become more aware of how desperate companies are to learn about
+their users.  The irony is that if the customers had a real voice, many of
+them may be willing to trade with the companies and provide them access to
+data-sets, assuming a safe and secure way to do so was available.  We're
+working on a platform as part of the &lt;a href=&quot;http://hubofallthings.wordpress.com&quot;&gt;Hub of all Things&lt;/a&gt; project, where
+companies and customers can do exactly this.  There may be other users who
+want to have more control over their home networks so we're also looking at
+&lt;a href=&quot;http://homenetworks.ac.uk&quot;&gt;novel ways to allow people to interact and configure home routers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Internet of Things and connected devices have the potential to be as
+ground-breaking as the Web but end-users must also be empowered if we are to
+reap all the benefits.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Read the full story at: &lt;a href=&quot;http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html&quot;&gt;http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/smart-tvs-that-watch-you</link>
+                <guid>http://nymote.org/blog/2013/smart-tvs-that-watch-you</guid>
+                <pubDate>2013-11-19T19:00:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Using Pinboard to tag interesting links</title>
+                <description>&lt;p&gt;For some time now, I've been collecting links to news articles, products and
+discussions relating to the Internet of Things, Personal Clouds, data
+privacy/ownership and products.  This is a rapidly growing list and there
+are nearly 200 bookmarks already.  Trying to sift through them to find
+something specific is getting difficult and it must be even more difficult
+for anyone else trying to browse the collection.&lt;/p&gt;
+
+&lt;h2&gt;Organising a collection of bookmarks&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/abirdie/355066859&quot;&gt;&lt;img style=&quot;float:left; margin-right: 15px;&quot; src=&quot;/images/bookmarks.jpg&quot;&gt;&lt;/a&gt;
+After looking around and asking people about social bookmarking sites, I was
+pointed to &lt;a href=&quot;https://pinboard.in&quot;&gt;Pinboard&lt;/a&gt; (&lt;em&gt;thanks, &lt;a href=&quot;http://ulrichatz.com&quot;&gt;Ulrich&lt;/a&gt;!&lt;/em&gt;). This is a simple and
+efficient site that helps you to gather links, tag and comment on them and,
+in my case, make them publicly accessible.  A few days ago I imported all my
+Nymote bookmarks into Pinboard and have been testing it out since then.&lt;br/&gt;
+I've been extremely happy with how it works and it's dramatically improved
+the workflow for getting the links onto this site.&lt;/p&gt;
+
+&lt;p&gt;The bookmarklet I added to my browser makes it simple to add new links with
+descriptions and the ability to add links by email has been extremely useful
+when browsing from my phone.  Pinboard also has the ability to generate RSS
+feeds so I've been able to take that feed from Pinboard and completely
+reorganise the &lt;strong&gt;&lt;a href=&quot;\links&quot;&gt;Nymote links page&lt;/a&gt;&lt;/strong&gt;.  It now presents a reverse
+chronological list of all the links so far, together with brief summaries of
+the content.  In order to filter and browse the tags, you'll need to visit
+my &lt;a href=&quot;https://pinboard.in/u:amirmc/t:nymote/&quot;&gt;Pinboard page&lt;/a&gt; and I'll be going back over the older
+links to add more descriptions.  To stay completely up to date with the
+things I find online, you can even subscribe to my
+&lt;a href=&quot;http://feeds.pinboard.in/rss/u:amirmc/t:nymote/&quot;&gt;nymote-links feed&lt;/a&gt; directly.  If you come across something
+you'd like me to add, please do &lt;a href=&quot;mailto:amir@nymote.com?subject=New%20link%20to%20add!&quot;&gt;send me an email&lt;/a&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;services-box&quot;&gt;
+    &lt;a href=&quot;http://nymote.org/atom.xml&quot;&gt;&lt;div style=&quot;float: right; margin-left: 20px;&quot; class=&quot;icon&quot;&gt;
+        &lt;span class=&quot;icon-rss&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;h3&gt;Subscribe to the blog via news feeds&lt;/h3&gt;
+
+&lt;p&gt;In addition to the above changes, I've also added links on the website to
+enable people to &lt;a href=&quot;http://nymote.org/atom.xml&quot;&gt;subscribe to the blog&lt;/a&gt; using feed readers.  A
+news feed was always available if you knew the URL (or found it in the
+&lt;a href=&quot;https://github.com/nymote/nymote.github.io&quot;&gt;source code&lt;/a&gt; of the site) but there are now more prominent
+subscribe links on the blog pages. Along with the &lt;a href=&quot;http://eepurl.com/mXYb1&quot;&gt;mailing list&lt;/a&gt;, this
+gives people even more options to keep up with news about Nymote.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links</link>
+                <guid>http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links</guid>
+                <pubDate>2013-10-10T23:30:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>Overview of Mirage</title>
+                <description>&lt;p&gt;Mirage is one of the key components of the Nymote toolstack and this post
+introduces the principles behind it. If you're familiar with the using the
+command line, I'd encourage you to try out the
+&lt;a href=&quot;http://openmirage.org/wiki/install&quot;&gt;installation instructions&lt;/a&gt; for yourself!&lt;/p&gt;
+
+&lt;h2&gt;What is Mirage and why is it important?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.berndnaut.nl/images/NimbusNP3web.jpg&quot;&gt;&lt;img style=&quot;float:right; margin-left: 15px;&quot; width=&quot;500&quot; src=&quot;/images/nimbus-np3-smilde.jpg&quot;&gt;&lt;/a&gt;
+Most applications that run in the cloud aren't optimised to do so.  They
+inherently carry assumptions about the underlying operating system with
+them, including vulnerabilities and bloat.
+Compartmentalisation of large servers into smaller &lt;a href=&quot;http://en.wikipedia.org/wiki/Virtual_machine&quot;&gt;virtual machines&lt;/a&gt; has
+enabled many new businesses to get started and achieve scale.  This has been
+great for new services but many of those virtual machines are single-purpose
+and yet they contain largely complete operating systems which themselves run
+applications like web-servers.  This means a large part of the footprint is
+unused and unnecessary, which is both costly and a security risk (due to the
+larger attack surface).&lt;/p&gt;
+
+&lt;p&gt;Mirage represents a new approach where only the necessary components of the
+OS are included and compiled along with the application into a
+&lt;a href=&quot;/docs/2013-asplos-mirage.pdf&quot;&gt;unikernel&lt;/a&gt;.
+This results in highly efficient and extremely lean &lt;em&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Virtual_appliance&quot;&gt;appliances&lt;/a&gt;&lt;/em&gt;, with a
+much smaller attack surface.  These appliances can be deployed directly to
+the cloud and embedded devices, with the benefits of reduced costs and
+increased security and scalability.&lt;/p&gt;
+
+&lt;h2&gt;How does Mirage work?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.xenproject.org/developers/teams/hypervisor.html&quot;&gt;&lt;img style=&quot;float:left; margin-right: 15px;&quot; width=&quot;300&quot; src=&quot;/images/Xen-Panda-Ecosystem-1-500px.png&quot;&gt;&lt;/a&gt;
+Mirage is a unikernel for constructing secure, high-performance network
+applications across a variety of cloud computing and mobile platforms. It
+works by treating the &lt;a href=&quot;http://www.xenproject.org/developers/teams/hypervisor.html&quot;&gt;Xen hypervisor&lt;/a&gt; as a stable hardware platform, allowing
+us to focus on high-performance protocol implementations without worrying
+about having to support the thousands of device drivers found in a
+traditional OS.&lt;/p&gt;
+
+&lt;p&gt;Code can be developed in a high-level functional programming language (OCaml)
+on a desktop OS such as Linux or Mac OSX, and is then compiled into a
+fully-standalone, specialised unikernel. These unikernels run directly
+on Xen Project hypervisor APIs. Since the Xen Project powers most public
+clouds such as &lt;a href=&quot;http://aws.amazon.com/ec2/&quot;&gt;Amazon EC2&lt;/a&gt;, &lt;a href=&quot;http://www.rackspace.com/cloud/&quot;&gt;Rackspace Cloud&lt;/a&gt;, and many others, Mirage
+lets your servers run more cheaply, securely and faster in any Xen Project
+based cloud or hosting service.&lt;/p&gt;
+
+&lt;p&gt;Mirage is based around the OCaml language, with syntax extensions and
+&lt;a href=&quot;https://github.com/mirage&quot;&gt;35+ libraries&lt;/a&gt; which map directly to operating system constructs when being
+compiled for production deployment. As such, Mirage includes clean-slate
+functional implementations of protocols ranging from TCP/IP, DNS, SSH,
+Openflow (switch/controller), HTTP, XMPP and Xen Project inter-VM transports.&lt;/p&gt;
+
+&lt;!--Some of the new applications we are building using Mirage include the 
+next-generation Xen Cloud Platform (a widely deployed open-source Xen 
+distribution), dubbed [Project Windsor][]. --&gt;
+
+
+&lt;h2&gt;Where will Mirage be useful?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/radnezeoz/7343684238/&quot;&gt;&lt;img style=&quot;float:right; margin-left: 15px;&quot; width=&quot;500&quot; src=&quot;/images/cumulous-cruisin.jpg&quot;&gt;&lt;/a&gt;
+An example of a current Mirage appliance can be seen at
+&lt;a href=&quot;http://openmirage.org&quot;&gt;openmirage.org&lt;/a&gt;,
+which is a completely self-hosted site, deployed on the public cloud and running directly on the Xen Project hypervisor (in this case, on
+Amazon EC2). Such appliances could be auto-configured and deployed directly
+to the public cloud (e.g. Rackspace or Amazon EC2) or pushed to embedded
+devices. There is also
+&lt;a href=&quot;http://decks.openmirage.org&quot;&gt;http://decks.openmirage.org&lt;/a&gt;, where separate
+Mirage unikernels are being used to present slides for conferences.  These
+are both example of how Mirage is working right now and below are examples
+of what we can do in the future.&lt;/p&gt;
+
+&lt;h3&gt;Self-scaling architecture&lt;/h3&gt;
+
+&lt;p&gt;We can create auto-scaling web-servers with very small footprints.  These
+would be cheaper to run than current solutions due to the small size but
+they would also be highly elastic.  If a sudden spike in traffic occurs, the
+web-servers can be configured to create and deploy copies of themselves to
+service the demand.  This auto-scaling happens so quickly that an incoming
+connection can trigger the creation of new server and the &lt;em&gt;new server&lt;/em&gt; can
+then handle that request before it times out (which is on the order of
+milliseconds). When the demand dies down again, these web-servers can
+automatically shut themselves down. Since these machines boot fast we can be
+more elastic, raising and lowering capacity to precisely meet demand and
+therefore only spending what we actually need when we really need it.&lt;/p&gt;
+
+&lt;h3&gt;Deployment to embedded devices&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/lukew/6171377827/&quot;&gt;&lt;img style=&quot;float:left; margin-right: 15px;&quot; src=&quot;/images/device-love.jpg&quot;&gt;&lt;/a&gt;
+Using Mirage, we can also create appliances that can run on embedded devices.
+Such appliances can be deployed into small devices that are scattered
+around your home, for example in plant pots to measure moisture levels to
+chemical sensors
+in your fridge, which tell you exactly what has gone off.  You could access
+the data from these sensors via a web-sever appliance, which is also
+deployed locally in your home on a device like a &lt;a href=&quot;http://www.raspberrypi.org&quot;&gt;Raspberry Pi&lt;/a&gt;.&lt;br/&gt;
+Installing additional applications into your Raspberry Pi appliance can be a
+a simple 1-click operation, allowing you to share your data or compare with
+others.  Creating a home-based network like this ensures you're not affected
+by any upstream connectivity issues and that your data remains within your
+control.&lt;/p&gt;
+
+&lt;p&gt;This same scenario can be deployed into a enterprise environment where
+sensors around a building can monitor environmental conditions, adjust
+lighting and many other things.  When additional computation is required,
+more appliances can automatically be created on a cloud provider for the
+short duration that they're needed.&lt;/p&gt;
+
+&lt;p&gt;Overall, Mirage provides substantial benefits in terms of increased
+efficiency and safety and is ideal for deploying to both the public could
+and embedded devices.  Together with &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; and &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;, Mirage
+forms a core piece of the Nymote toolstack to power the coming wave of
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Internet_of_Things&quot;&gt;Internet of Things devices&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mirage is primarily supported by &lt;a href=&quot;http://www.horizon.ac.uk&quot;&gt;Horizon Digital Economy Research&lt;/a&gt; - RCUK, and is also an
+&lt;a href=&quot;http://www.xenproject.org/developers/teams/mirage-os.html&quot;&gt;Incubated Project&lt;/a&gt;
+under the umberella of the &lt;a href=&quot;http://www.xenproject.org&quot;&gt;Xen Project&lt;/a&gt;.
+You can find the source code on &lt;a href=&quot;http://github.com/mirage&quot;&gt;GitHub&lt;/a&gt; and more links and
+slides on the &lt;a href=&quot;/software/mirage&quot;&gt;Mirage page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/overview-of-mirage</link>
+                <guid>http://nymote.org/blog/2013/overview-of-mirage</guid>
+                <pubDate>2013-10-03T12:00:00Z</pubDate>
+        </item>
+
+        <item>
+                <title>IndieWebCamp UK</title>
+                <description>&lt;p&gt;Last weekend I went down to Brighton for IndieWebCamp UK. I first heard
+about Indie Web via a &lt;a href=&quot;http://www.wired.com/wiredenterprise/2013/08/indie-web/&quot;&gt;Wired article&lt;/a&gt; which led me to
+discover &lt;a href=&quot;http://indiewebcamp.com/2013/UK&quot;&gt;IndieWebCamp UK&lt;/a&gt; in Brighton.  The original idea behind Indie
+Web was around people owning their content and creating tools that syndicate
+to elsewhere on the web.&lt;/p&gt;
+
+&lt;h2&gt;About Indie Web Camp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/indiewebcampuk-2013/01-large.png&quot;&gt;&lt;img style=&quot;float:right; margin-left: 15px;&quot; src=&quot;/images/indiewebcampuk-2013/01.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;What is the IndieWeb?&lt;/p&gt;
+
+&lt;p&gt;We should all own the content we're creating,
+rather than just posting to third-party content silos.
+Publish on your own domain, and syndicate out to silos.
+This is the basis of the 'Indie Web' movement.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The aims are now much wider than this as the discussions on the day covered
+topics from design to peer-to-peer networking and the digital self, all from
+the perspective of individual ownership.  There was an emerging concept of
+'Indie Data', under which all aspects of a user's data (and digital self)
+could be discussed.  It was a great event and the goals of Indie Web mirror
+our own.&lt;/p&gt;
+
+&lt;!--I was there for the unconference format on Saturday and below is a summary of the day.--&gt;
+
+
+&lt;h2&gt;Saturday unconference&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/indiewebcampuk-2013/02-large.png&quot;&gt;&lt;img style=&quot;float:left; margin-right: 15px;&quot; src=&quot;/images/indiewebcampuk-2013/02.jpg&quot;&gt;&lt;/a&gt;
+During the morning everyone gave 3 minute introductions about their projects
+and tools.  Lots of people talked about their blogging infrastructure and
+mechanisms for syndicating the information out to twitter and elsewhere.  I
+spoke about the &lt;a href=&quot;http://nymote.org&quot;&gt;Nymote&lt;/a&gt; toolstack, focusing more on &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; as a
+means of providing resilient connections between an individual's devices.&lt;br/&gt;
+It would have been great if there was time for a demo of
+&lt;a href=&quot;/software/mirage&quot;&gt;Mirage&lt;/a&gt;, especially creating the self-hosting website, as
+that would fit well with the workflows I saw.  You can run through the
+instructions and &lt;a href=&quot;http://www.openmirage.org/wiki/install&quot;&gt;try for yourself&lt;/a&gt;!  In any case, my talk
+led to discussions later on about how we're represented online, and how we
+can gather our data under our control.  For example, Tom and Mike are
+working on &lt;a href=&quot;http://www.keybits.net&quot;&gt;Keybits&lt;/a&gt;, making it simple and easy for people to set up
+personal servers and &lt;a href=&quot;https://twitter.com/aral&quot;&gt;Aral&lt;/a&gt; is working on &lt;a href=&quot;http://aralbalkan.com/notes/codename-prometheus/&quot;&gt;Codename Promethus&lt;/a&gt;, which is
+a user-experience-driven open-source project (he'll reveal more himself in
+due course -- but it's pretty exciting).  The guys from &lt;a href=&quot;http://www.mailpile.is&quot;&gt;Mailpile&lt;/a&gt; were
+also there, after their hugely successful
+&lt;a href=&quot;http://www.indiegogo.com/projects/mailpile-taking-e-mail-back&quot;&gt;crowdfunding campaign&lt;/a&gt;, and it was great to chat about
+problems and solutions related to how we use email.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/99930774@N08/9712260140/&quot;&gt;&lt;img style=&quot;float:right; margin-left: 15px;&quot; width=&quot;540&quot; src=&quot;/images/brighton-food-fest.jpg&quot;&gt;&lt;/a&gt;
+Lunch was fantastic because we had the
+&lt;a href=&quot;http://brightonfoodfestival.com&quot;&gt;Brighton and Hove food festival&lt;/a&gt; literally on our doorstep.
+There were so many stalls to choose from with food from all over the world.
+At times it felt like the whole town had turned up and there was a great
+atmosphere.  Brighton is definitely a great place.&lt;/p&gt;
+
+&lt;p&gt;Overall, &lt;a href=&quot;http://nymote.org&quot;&gt;Nymote&lt;/a&gt; as a toolstack fits extremely well with the projects I
+saw because it deals with some of the fundamental problems people need to
+solve.  For the case of Indie Web participants that meant dealing with
+identity and authentication (&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt;) as well as connectivity
+(&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; again) and deployment (&lt;a href=&quot;/software/mirage&quot;&gt;Mirage&lt;/a&gt;).  We did briefly discuss
+immutable datastores and sync problems, where &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt; is relevant.
+I've collected some of these projects on a &lt;a href=&quot;/links&quot;&gt;links page&lt;/a&gt;, which I'll be
+adding to over time.  Please do &lt;a href=&quot;mailto:amir@nymote.com?subject=New%20link%20to%20consider!&quot;&gt;send me&lt;/a&gt; any interesting things
+which should go on that list.&lt;/p&gt;
+
+&lt;p&gt;On a personal note, it was great to meet &lt;a href=&quot;https://twitter.com/invisiblecomma&quot;&gt;Alf&lt;/a&gt; for the first time who is
+the guy behind &lt;a href=&quot;http://www.hubmed.org&quot;&gt;HubMed&lt;/a&gt;, an alternative interface to &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed&quot;&gt;PubMed&lt;/a&gt; (a
+biomedical academic papers database).  I used HubMed while writing my PhD
+Thesis because it output BibTex for me and I remember emailing Alf with bug
+reports way back in January 2006.  The site was so useful that I've never
+forgotten it and it was a pleasure to be able to thank him directly (albeit
+7 years later).&lt;/p&gt;
+
+&lt;p&gt;Below are some quick notes I took during the sessions I attended.&lt;/p&gt;
+
+&lt;h3&gt;Collaborative real-time data&lt;/h3&gt;
+
+&lt;p&gt;&amp;#x20; &lt;iframe style=&quot;float:right; margin-left: 15px; margin-bottom: 15px&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/NSTZ4mIv_wk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;Aral on Woot&lt;/iframe&gt;
+Specific things mentioned include Woot (see video below), &lt;a href=&quot;http://www.webrtc.org&quot;&gt;WebRTC&lt;/a&gt;,
+&lt;a href=&quot;http://camlistore.org&quot;&gt;Camlistore&lt;/a&gt; and &lt;a href=&quot;https://peercdn.com&quot;&gt;PeerCDN&lt;/a&gt;.  Also some brief discussion about
+peer-to-peer and how it can benefit companies, with the example of Spotify.
+Apparently 80% of plays on Spotify come from only 12% of their catalogue and
+they use P2P technology to get content to users faster and reduce their own
+bandwidth costs.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Instead of downloading a single song file from its own server to you,
+Spotify searches for copies of the song wherever it can find them,
+including the computers of other Spotify users.&lt;br/&gt;
+&lt;em&gt;(from &lt;a href=&quot;http://www.npr.org/blogs/therecord/2011/11/09/141594727/how-spotify-works-pay-the-majors-use-p2p-technology&quot;&gt;NPR&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;User Experience Design&lt;/h3&gt;
+
+&lt;p&gt;Aral spoke about user experience design. Open-source has had a massive
+positive impact for other developers and industry but very few projects
+directly make it to mainstream consumer adoption.  Believes that this is
+because design is treated as something you put on afterwards, rather than a
+core principle.&lt;/p&gt;
+
+&lt;p&gt;Essentially, people still perceive a difference between design and
+development where there shouldn't be one.  An analogy would be developers
+working in isolation from QA.  Designers need to understand developers and
+developers should incorporate design.  Introduced &lt;a href=&quot;http://aralbalkan.com/notes/codename-prometheus/&quot;&gt;Codename Promethus&lt;/a&gt; and
+had a roundtable discussion about design and development practices.&lt;/p&gt;
+
+&lt;p&gt;During the discussion, Aral raised an interesting point that 'scratching
+your own itch' only solves problems for people who have the same itch (i.e
+people like yourselves, other developers).  To reach mainstream adoption,
+developers and designers need to think &lt;em&gt;beyond&lt;/em&gt; their own problems.&lt;/p&gt;
+
+&lt;h3&gt;Privacy and tools for the future&lt;/h3&gt;
+
+&lt;p&gt;An open and wide ranging discussion around privacy online, secure
+communications and responsibility.  One of the questions posed was whether
+developers have a responsibility for security and safety regarding the
+software they create.  The general feeling was that yes, they do but an
+analogy about food regulations was also made and the role of government was
+brought up.&lt;/p&gt;
+
+&lt;p&gt;There were some practical discussions about problems of key exchange and
+identity online as well as how people can use their domain as an identifier.
+These are areas where &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; will help.&lt;/p&gt;
+
+&lt;h3&gt;Movie: Terms and Conditions May Apply&lt;/h3&gt;
+
+&lt;p&gt;&amp;#x20; &lt;iframe style=&quot;float:left; margin-right: 15px; margin-bottom: 15px&quot; src=&quot;//player.vimeo.com/video/57182041?byline=0&amp;amp;portrait=0&quot; width=&quot;540&quot; height=&quot;304&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;tacma vimeo trailer&lt;/iframe&gt;
+To wrap up the day we had the first UK screening of
+&lt;a href=&quot;http://tacma.net&quot;&gt;Terms and Conditions May Apply&lt;/a&gt;.  This was a fascinating look at how
+the interests of centralised companies diverge from what is best for the end
+users and how incremental changes over time have led us to a world where we
+routinely hand over ongoing access to our personal lives.  It's a great
+movie to show people who may not understand the problem but at the same time
+it doesn't do enough at the end to demonstrate ways out of the current
+situation.&lt;/p&gt;
+
+&lt;p&gt;You can find reviews of the movie on &lt;a href=&quot;http://www.imdb.com/title/tt2084953/&quot;&gt;IMDB&lt;/a&gt; and the trailer is above.  If
+you happen to be in Cambridge UK and would like me to set up a screening of
+the movie, please do &lt;a href=&quot;mailto:amir@nymote.com?&amp;amp;subject=Terms%20and%20Conditions%20movie&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/indiewebcamp-uk</link>
+                <guid>http://nymote.org/blog/2013/indiewebcamp-uk</guid>
+                <pubDate>2013-09-12T00:00:00+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Introducing Nymote</title>
+                <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://nymote.org&quot;&gt;Nymote&lt;/a&gt;&lt;/strong&gt; is a set of tools and software &lt;a href=&quot;/#infrastructure&quot;&gt;infrastructure&lt;/a&gt;, created
+from the ground up, to provide end-users with life-long control of their
+networks and personal data.  Think of it as the &lt;a href=&quot;http://en.wikipedia.org/wiki/Solution_stack&quot;&gt;toolstack&lt;/a&gt; to recapture
+the original vision of a resilient, decentralised Internet.   This site
+brings together the open-source technology we're building and describes what
+we're working towards --- infrastructure that empowers users and
+organisations to regain control over their digital data.&lt;/p&gt;
+
+&lt;h2&gt;Infrastructure matters&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/suzumenonamida/8206148949/&quot;&gt;&lt;img style=&quot;float:left; margin-right: 15px;&quot; src=&quot;/images/higashi-osaka-junction.jpg&quot;&gt;&lt;/a&gt;
+The Internet has become such a huge part of our daily lives to the extent
+that it’s difficult to imagine a world without information and connectivity
+(literally) at your fingertips. Collaboration is easier, communication
+simpler and generally work is more productive than it's ever been.  For
+example, companies such as Apple, Google and Microsoft provide services that
+manage our emails, while reducing spam, and seamlessly keep our mobile
+devices in sync for us. Services such as Dropbox and Google Drive make the
+process of collaborating in teams trivially simple.  Social services like
+Facebook and Twitter make it fun and easy to keep up to date with friends,
+while LinkedIn helps you to manage your professional persona and visualise
+your network.  All of these companies are successful because they provide
+something of value to their users.&lt;/p&gt;
+
+&lt;p&gt;However, we’ve also made sacrifices in order to achieve these gains, in many
+cases without fully comprehending the trade-offs.  By adopting large
+centralised services we’ve made an implicit trade that in exchange for
+something useful, we will share our habits and data with them. In doing so
+we’ve empowered Internet behemoths while simultaneously reducing our ability
+to influence them. We are at the behest of &lt;a href=&quot;http://www.telegraph.co.uk/technology/social-media/9780565/Facebook-terms-and-conditions-why-you-dont-own-your-online-life.html&quot;&gt;ever&lt;/a&gt;-&lt;a href=&quot;http://consumerist.com/2009/02/15/facebooks-new-terms-of-service-we-can-do-anything-we-want-with-your-content-forever&quot;&gt;changing&lt;/a&gt;
+&lt;a href=&quot;http://bits.blogs.nytimes.com/2012/12/17/what-instagrams-new-terms-of-service-mean-for-you/?_r=0&quot;&gt;Terms&lt;/a&gt; of &lt;a href=&quot;http://mattmckeon.com/facebook-privacy/&quot;&gt;Service&lt;/a&gt;, which are
+&lt;a href=&quot;http://tosdr.org&quot;&gt;not written in the users' interest&lt;/a&gt;. We trust services to secure our
+data but &lt;a href=&quot;http://venturebeat.com/2012/08/01/dropbox-has-become-problem-child-of-cloud-security/&quot;&gt;repeated breaches&lt;/a&gt; undermine that trust.
+Services that we come to depend on are &lt;a href=&quot;http://gigaom.com/2013/07/03/google-readers-shutdown-the-rise-of-walled-gardens-and-the-future-of-the-open-web/&quot;&gt;shut down&lt;/a&gt;,
+forcing us to look elsewhere and adapt our habits.  We are at the the point
+where so much of our lives are in these silos that
+&lt;a href=&quot;http://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data&quot;&gt;governments demand access to them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;float:right; margin-left: 15px;&quot; src=&quot;/images/iot-devices.png&quot;&gt;
+In addition to the above, we have entered an era where more of our
+interactions with the world are through mobile devices, like smartphones.&lt;br/&gt;
+This trend is set to continue and has been described as the
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Post-PC_era&quot;&gt;Post-PC era&lt;/a&gt;, the &lt;a href=&quot;http://academy.bcs.org/content/2012-lecture-0&quot;&gt;5th wave of computing&lt;/a&gt; and the
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Internet_of_Things&quot;&gt;Internet of Things&lt;/a&gt;.  What they all have in common is the idea of
+remote devices recording data and performing useful services for us, like
+encouraging us to be more &lt;a href=&quot;http://allthingsd.com/20130715/fitbit-flex-vs-jawbone-up-and-more-a-wearables-comparison/&quot;&gt;physically active&lt;/a&gt; or
+&lt;a href=&quot;http://www.usa.philips.com/c/app-enhanced-accessories/double-pack-m100d_37/prd/en/&quot;&gt;monitoring our homes&lt;/a&gt;.  This is an exciting area and is
+reminiscent of the early days of the World Wide Web.  There are
+&lt;a href=&quot;http://www.kickstarter.com/projects/cloud-guys/plug-the-brain-of-your-devices&quot;&gt;highly successful&lt;/a&gt; crowd-funded &lt;a href=&quot;http://www.indiegogo.com/projects/canary-the-first-smart-home-security-device-for-everyone&quot;&gt;projects&lt;/a&gt; that
+demonstrate the demand from users for new products and services.  As this
+space evolves we are faced with a choice.  One option is to continue along
+the current path of increasingly centralised services, providing access to
+even more intimate aspects of our lives, including health and medical data.
+We've seen both the benefits and costs of this approach with the way things
+are now.  An alternative is to create more decentralised systems, which can
+provide the same benefits but with the user in control at the centre of
+their network of devices.&lt;/p&gt;
+
+&lt;p&gt;As things stand, we are fundamentally limited by the current system unless
+we can create decentralised alternatives that compete. Many of the services
+we enjoy today require a constant connection to the Internet in order to be
+useful. This is becoming more important as the current wave of Internet of
+Things devices find their way into our homes, with each of them tethered to
+a new wave of centralised services and any interruption in power or
+bandwidth having tangible effects on our lives.  The one truism in depending
+on other people's services is that they will change or disappear, so
+decentralised solutions are &lt;em&gt;easier&lt;/em&gt; in the long term as &lt;em&gt;users&lt;/em&gt; can control
+when they change or update things.  Such systems allow users to maintain the
+benefits of a networked world as well as achieve &lt;em&gt;life-long control&lt;/em&gt; of
+their data.  Just as the current incarnation of the Internet is built on a
+range of open-source technologies, we need a set of robust tools that allow
+the developers of the future to build distributed systems and services that
+empower users.&lt;/p&gt;
+
+&lt;p&gt;This is the mission of the Nymote toolstack. &lt;strong&gt;To enable the creation
+of resilient decentralised systems that incorporate privacy from the ground
+up so that users retain control of their networks and data&lt;/strong&gt;. Nymote
+ensures that promises of “your data is safe with us” are underpinned by a
+technological foundation, which reduces the scope for human error and makes
+it easy to build scalable systems where users decide when to add features or
+upgrade.&lt;/p&gt;
+
+&lt;h2&gt;Open-source building blocks&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/jezpage/4990873353/&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/lego-blocks.jpg&quot;&gt;&lt;/a&gt;
+We're starting with fundamental &lt;a href=&quot;/#infrastructure&quot;&gt;infrastructure&lt;/a&gt; to solve the problems
+around &lt;a href=&quot;/software/mirage&quot;&gt;operating systems&lt;/a&gt; for the future, &lt;a href=&quot;/software/signpost&quot;&gt;identity&lt;/a&gt; for
+users and devices and &lt;a href=&quot;/software/irminsule&quot;&gt;data-persistence&lt;/a&gt; across those devices.&lt;/p&gt;
+
+&lt;p&gt;We began work on these issues four years ago under the umbrella of the
+&lt;a href=&quot;http://www.horizon.ac.uk&quot;&gt;Horizon Digital Economy programme&lt;/a&gt;, at Cambridge University and
+Nottingham University.  As a result many &lt;a href=&quot;/#about&quot;&gt;contributors&lt;/a&gt; have worked
+on these tools and published a number of &lt;a href=&quot;/docs&quot;&gt;papers&lt;/a&gt;.  In the coming weeks we
+will introduce you to each of these key technology pieces, which together
+form a new toolstack for the personal Internet. In the next post, we'll
+explain more about &lt;strong&gt;&lt;a href=&quot;/software/mirage&quot;&gt;Mirage&lt;/a&gt;&lt;/strong&gt;, how it fits into the overall stack and
+deals with the problems of managing your own infrastructure.  Mirage takes a
+clean-slate approach to the &lt;em&gt;operating system&lt;/em&gt;, with a view to whole-system
+optimisation and use on embedded devices.  It deals with issues of how to
+deploy applications and manage complex infrastructure by creating custom
+'appliances', which can be run in a wide variety of environments.  If you'd
+like to read more about it in advance, you can check out the self-hosted
+&lt;a href=&quot;http://openmirage.org&quot;&gt;Mirage website&lt;/a&gt;, read the &lt;a href=&quot;http://anil.recoil.org/papers/2013-asplos-mirage.pdf&quot;&gt;award-winning paper&lt;/a&gt;,
+presented at &lt;a href=&quot;http://asplos13.rice.edu/programme/&quot;&gt;ASPLOS 2013&lt;/a&gt;, and the earlier
+&lt;a href=&quot;http://anil.recoil.org/papers/2010-hotcloud-lamp.pdf&quot;&gt;HotCloud Paper&lt;/a&gt;.  There are also &lt;a href=&quot;http://www.slideshare.net/amirmc/mirage-extreme-specialization-of-cloud-appliances-oscon-2013&quot;&gt;slides&lt;/a&gt;
+presented at &lt;a href=&quot;http://www.oscon.com/oscon2013/public/schedule/detail/28956&quot;&gt;OSCON&lt;/a&gt; this year and a &lt;a href=&quot;http://vimeo.com/57412215&quot;&gt;video&lt;/a&gt; from
+&lt;a href=&quot;http://www-archive.xenproject.org/xensummit/xs12na_talks/xensummit.html&quot;&gt;XenSummit&lt;/a&gt;.  You can try it out for yourself by following the
+&lt;a href=&quot;http://openmirage.org/wiki/install&quot;&gt;installation instructions&lt;/a&gt; and looking through the 35+
+repos on &lt;a href=&quot;https://github.com/mirage&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Following this, we will discuss &lt;strong&gt;&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt;&lt;/strong&gt;, which deals with the
+growing problems around &lt;em&gt;identity&lt;/em&gt; and returns the &lt;em&gt;end-to-end principle&lt;/em&gt; of
+connectivity to our devices.  It answers the question of 'who are you?' on
+the Internet and provides users with the mechanisms needed to create peer-to-
+peer connections between their devices.  Creating networks of devices this
+way increases their resilience and was one of the founding principles of the
+Internet.  If you'd like to read ahead, you can look over our recent
+&lt;a href=&quot;/docs/2013-foci-signposts.pdf&quot;&gt;USENIX FOCI paper&lt;/a&gt;, where we describe the architecture and scenarios.&lt;br/&gt;
+There are also &lt;a href=&quot;/docs/2012-signpost-poster-a4.pdf&quot;&gt;two&lt;/a&gt; &lt;a href=&quot;/docs/2012-sigcomm-signposts-poster.pdf&quot;&gt;posters&lt;/a&gt; that summarise the
+approach.&lt;/p&gt;
+
+&lt;p&gt;Finally, we will cover &lt;strong&gt;&lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;&lt;/strong&gt;, which rethinks how we *persist data
+* based on the principles of version control systems such as Git (or
+historically, &lt;a href=&quot;http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps&quot;&gt;Bayou&lt;/a&gt;).  Irminsule incorporates provenance and sync and
+solves the problems of how all a user's devices coordinate and remain
+synchronised with each other, and how that data is seamlessly backed up and
+encrypted to prevent third-party snooping. This is increasingly important as
+the number of connected devices continues to grow.&lt;/p&gt;
+
+&lt;p&gt;The emerging tools form the bedrock on which anyone can build robust and
+scalable applications.  Applications that provide all the great things we're
+used to with the additional benefits of resilience, ownership and privacy
+that come with decentralised networks.&lt;/p&gt;
+
+&lt;p&gt;To keep up to date with our posts, sign up to the
+&lt;a href=&quot;http://eepurl.com/mXYb1&quot;&gt;Nymote mailing list&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2013/introducing-nymote</link>
+                <guid>http://nymote.org/blog/2013/introducing-nymote</guid>
+                <pubDate>2013-09-02T00:00:00+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Frictionless sharing could erode rights</title>
+                <description>&lt;!-- Frictionless sharing could erode rights --&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/42787205@N00/4477454044/&quot; title=&quot;US Constitution by Mark Rasmussen, on Flickr&quot;&gt;&lt;img src=&quot;http://farm5.staticflickr.com/4069/4477454044_6f8b33c8ff_m.jpg&quot; width=&quot;159&quot; height=&quot;240&quot; align='right'  hspace=&quot;10&quot; vspace=&quot;10&quot; alt=&quot;US Constitution&quot;&gt;&lt;/a&gt;
+As services become 'social' the ability to seamlessly share things with your colleagues and friends becomes widespread.  For example, Facebook allows users to connect their music services and share what they're listening to with their friends.&lt;/p&gt;
+
+&lt;p&gt;In general, this type of sharing is considered largely innocuous, unless you count those occasions where your friends catch you listening to something embarrassing (though some services do offer a 'private listening' mode).  However, it seems that users who take advantage of this kind of frictionless sharing might inadvertently be eroding their rights.  At least in the USA.&lt;/p&gt;
+
+&lt;p&gt;An &lt;a href=&quot;http://wakeforestlawreview.com/reading-over-your-shoulder-social-readers-and-privacy-law&quot;&gt;article in a student law journal&lt;/a&gt; makes some intriguing points about ubiquitous sharing, privacy law and social readers (which automatically share what you're reading online).  You may feel that sharing individual reading items is probably of little consequence but as all the major social networks have demonstrated, pieces of information can combine into valuable datasets.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;... reading choices that seem innocuous to you can cumulatively be
+indicative of patterns, intent, or allegiances ...&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;A fact already known to the American Library Association, who have been advocates of reader privacy since since 1939.&lt;/p&gt;
+
+&lt;p&gt;The question of rights arises when you consider what information the government can collect about you.  The &lt;a href=&quot;http://en.wikipedia.org/wiki/Fourth_Amendment_to_the_United_States_Constitution&quot;&gt;Fourth Amendment&lt;/a&gt; of the US Constitution guards against unreasonable searches and seizures and also relates to the &quot;reasonable expectation of privacy&quot;.  It's this expectation of privacy where the issues comes about.&lt;/p&gt;
+
+&lt;p&gt;In cases where the Fourth Amendment applies, the Supreme Court may need to decide what's reasonable and whether warrants are required before the government can collect information.  The fact that 'expectations' are involved necessarily means that cultural norms play a role in such decisions. If courts believe that sharing information through social networks with hundreds of 'friends' reduces the expectation of privacy, then warrants would no longer be required.  In addition, law enforcement could argue that content was shared with the platform itself, thus no longer considered private. This is where individual rights begin to erode.&lt;/p&gt;
+
+&lt;p&gt;Overall, this is another indication that technology and behaviour are evolving much faster than the judicial process.  People will still share articles and music choices but this shouldn't imply that such items are de-facto considered as public.&lt;/p&gt;
+
+&lt;p&gt;Although the above refers to the US legal system, the discussion is still relevant for the UK.  As our lives grow to include more digital interactions, the legal framework we operate in needs to adapt.  Both to afford protection for individuals and also provide due process for law enforcement.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2012/erosion-of-rights-via-sharing</link>
+                <guid>http://nymote.org/blog/2012/erosion-of-rights-via-sharing</guid>
+                <pubDate>2012-03-16T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Friend recommendations and Address Book Privacy</title>
+                <description>&lt;!-- # Friend recommendations and address book privacy --&gt;
+
+
+&lt;p&gt;In the last couple of weeks another news story about privacy flared-up, gathered some momentum and appears to have died down.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/moonbindery/3312836664/&quot; title=&quot;Handbound address book. green fern cover by Barbara Simler, on Flickr&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3641/3312836664_ef8e302412_m.jpg&quot; width=&quot;240&quot; height=&quot;232&quot; align=&quot;right&quot; hspace=&quot;10&quot; vspace=&quot;10&quot; alt=&quot;Handbound address book. green fern cover&quot;&gt;&lt;/a&gt;
+The story was about how Path, a social networking app for the iPhone, was silently copying users' address books to its servers.  &lt;em&gt;How&lt;/em&gt; it was discovered probably added some fuel to the story, since it involved a developer running a proxy and noticing what kind of information was being sent back and forth.  The headline was that the entire address book was sent from the phone to Path's servers.  There was no indication in Path's privacy policy that they collected information in this way (whether anyone actually &lt;em&gt;reads&lt;/em&gt; such policies is a topic for another time).  You can follow the unfolding events in the rough timeline below.&lt;/p&gt;
+
+&lt;p&gt;The justification for needing the address book data is to improve friend recommendations.  For example, Alice joins a service and by accessing her address book, the service realises she has Bob's contact details.  Since Bob is already a member, the service can suggest that they connect.  This 'feature' is commonplace in almost every social networking application.  The issue with Path was that it occurred without users' explicit consent and that the data was then stored on their servers.  The CEO even commented that it was &quot;industry best practice&quot;.&lt;/p&gt;
+
+&lt;p&gt;It's this last comment that is concerning.  Mostly because it's true.&lt;/p&gt;
+
+&lt;p&gt;Path wasn't alone in quietly scraping users' data.  Although they didn't suffer the same backlash, sites like Instagram, Twitter, Foursquare and others were also taking copies of users' address books. All without the users' explicit knowledge.&lt;/p&gt;
+
+&lt;p&gt;It appears that in the race to deliver excellent, well-designed user experiences, the simple act of &lt;em&gt;informing users what you're doing&lt;/em&gt; with their data is completely overlooked.  Perhaps it's one dialog box too far for the developers?&lt;/p&gt;
+
+&lt;p&gt;The surprising thing that's come out of this isn't only that data-copying is so prevalent but the attitude that it's somehow Apple's responsibility.  Since Apple explicitly didn't lock-down address book access, it must be acceptable to do whatever you want with it.  Apple may be at fault for allowing unfettered access but their guidelines do state that:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Para 17.1 - Apps cannot transmit data about a user without obtaining the
+user's prior permission and providing the user with access to information
+about how and where the data will be used&lt;/p&gt;
+
+&lt;p&gt;Para 17.2 - Apps that require users to share personal information, such as
+email address and date of birth, in order to function will be rejected&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The meaning of &quot;data about a user&quot; could be considered a little ambiguous and this viewpoint also seems to be shared by two US Congressmen, who promptly sent a letter to Apple asking for clarification on data access.&lt;/p&gt;
+
+&lt;p&gt;In general, I find the annoyance directed at Apple to be counter-productive. Despite the seemingly failed app approval process, it's still the social networks who wrote the code to copy data, &lt;em&gt;without user prompting&lt;/em&gt;.  Claims that it's Apple's fault for 'letting them get away with it' seem to be missing the point.  That those networks should hold themselves to higher standards.&lt;/p&gt;
+
+&lt;p&gt;Each of these 'privacy-leak' stories seem to be short-lived but the growing frequency indicates that control over &lt;a href=&quot;http://perscon.net/overview/&quot;&gt;personal data&lt;/a&gt; and awareness of your '&lt;a href=&quot;http://www.horizon.ac.uk/Horizon-Research&quot;&gt;lifelong digital footprint&lt;/a&gt;' is becoming a more visible topic.  As well it should be.&lt;/p&gt;
+
+&lt;h3&gt;Rough timeline of events&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[8 Feb] - Arun Thanmpi &lt;a href=&quot;http://mclov.in/2012/02/08/path-uploads-your-entire-address-book-to-their-servers.html&quot;&gt;writes about&lt;/a&gt; the exact &lt;code&gt;POST&lt;/code&gt; request which sends his entire address book to Path&lt;/li&gt;
+&lt;li&gt;[8 Feb] - Path CEO responds to comments on Thanmpi's blog post, and mentions that this behaviour is &lt;a href=&quot;http://mclov.in/2012/02/08/path-uploads-your-entire-address-book-to-their-servers.html#comment-432242293&quot;&gt;&quot;Industry best practice&quot;&lt;/a&gt;, among other things&lt;/li&gt;
+&lt;li&gt;[8 Feb] - Another developer &lt;a href=&quot;http://dcurt.is/stealing-your-address-book&quot;&gt;confirms&lt;/a&gt; that such behaviour is commonplace, but believes Apple is to blame&lt;/li&gt;
+&lt;li&gt;[9 Feb] - Path CEO &lt;a href=&quot;http://blog.path.com/post/17274932484/we-are-sorry&quot;&gt;apologises on their blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[12 Feb] - &lt;a href=&quot;http://bits.blogs.nytimes.com/2012/02/12/disruptions-so-many-apologies-so-much-data-mining/&quot;&gt;NY Times article&lt;/a&gt; about the sensitivity of address book data&lt;/li&gt;
+&lt;li&gt;[14 Feb] - &lt;a href=&quot;http://venturebeat.com/2012/02/14/iphone-address-book/&quot;&gt;Venture Beat article&lt;/a&gt; mentioning other services that transmit address book data, including in plain-text&lt;/li&gt;
+&lt;li&gt;[15 Feb] - &lt;a href=&quot;http://thenextweb.com/apple/2012/02/15/congress-sends-letter-to-apple-questioning-the-path-debacle-developer-data-access/&quot;&gt;Congressmen write to Apple&lt;/a&gt; with several questions about Apple policies.&lt;/li&gt;
+&lt;li&gt;[15 Feb] - Apple makes a statement that &lt;a href=&quot;http://allthingsd.com/20120215/apple-app-access-to-contact-data-will-require-explicit-user-permission/&quot;&gt;&quot;any app wishing to access contact data will require explicit user approval&quot;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[22 Feb] - California Attorney General brings major tech vendors together to ensure &lt;a href=&quot;http://techcrunch.com/2012/02/22/apple-google-and-others-agree-to-mobile-app-privacy-policy-guidelines/&quot;&gt;all mobile apps come with a privacy policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;!-- ### Links --&gt;
+
+
+
+</description>
+                <link>http://nymote.org/blog/2012/friend-recommendations-and-address-book-privacy</link>
+                <guid>http://nymote.org/blog/2012/friend-recommendations-and-address-book-privacy</guid>
+                <pubDate>2012-02-23T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Connected devices, web services and Signpost</title>
+                <description>&lt;h2&gt;Connected devices are here&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/craigjewell/3375525952/&quot; title=&quot;Antique Doorbell Button on a Sandstone Building by Craig Jewell Photography, on Flickr&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3618/3375525952_ee8b4820c9_m.jpg&quot; width=&quot;161&quot; height=&quot;240&quot; align=&quot;right&quot; hspace=&quot;10&quot; vspace=&quot;10&quot; alt=&quot;Antique Doorbell Button on a Sandstone Building&quot;&gt;&lt;/a&gt;
+The number of internet-enabled devices is increasing and mobile phones only represent one category.  Other types of 'enabled' devices can be made quite cheaply, contain a multitude of sensors and be situated almost anywhere.  For example, there are a couple of projects on Kickstarter that promise small boxes with a variety of sensors and even actuators, that can be used for a variety of purposes (see &lt;a href=&quot;http://www.kickstarter.com/projects/supermechanical/twine-listen-to-your-world-talk-to-the-internet&quot;&gt;Twine&lt;/a&gt; and &lt;a href=&quot;http://ninjablocks.com/&quot;&gt;Ninja Blocks&lt;/a&gt;).  The fact that these projects surpassed their funding goals so quickly and spectacularly indicates how excited people are about the possibilities of smart sensors and connected devices.  Commercial products also exist, such as the &lt;a href=&quot;http://www.nest.com&quot;&gt;Nest thermostat&lt;/a&gt;, which communicates with a cloud-based service to regulate the temperature in the home.&lt;/p&gt;
+
+&lt;p&gt;You can easily imagine many uses for such linked-sensor networks.  One example might be a security and access system for your home.  For example, imagine that you have a camera attached to your doorbell, which can send a video-feed directly to your smart-phone at work.  You could then talk to the postman who's trying to deliver a parcel and make sure he leaves it with people at No.3 or No.10 (people you actually know), and definitely &lt;em&gt;not&lt;/em&gt; with the guy at No.1 (who you've never got on with).  Perhaps you could also control the lock and let a trusted friend in if they've arrived while you're still on your way home.  The possibilities are only limited by the sensors, actuators and people's imaginations.&lt;/p&gt;
+
+&lt;p&gt;The key point about these types of devices is that they're '&lt;em&gt;connected&lt;/em&gt;', which usually means '&lt;em&gt;connected-to-the-internet&lt;/em&gt;'.  The implicit message is that they're linked to some kind of centralised service but most people don't delve into what that actually means.&lt;/p&gt;
+
+&lt;h2&gt;All your device are belong to us ... ?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/katodog/4411945975/&quot; title=&quot;The Old Ball and Chain by Ed Durbin (Katodog), on Flickr&quot;&gt;&lt;img src=&quot;http://farm5.staticflickr.com/4003/4411945975_142f8282ed.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; align=&quot;left&quot; hspace=&quot;10&quot; vspace=&quot;10&quot; alt=&quot;The Old Ball and Chain&quot;&gt;&lt;/a&gt;
+Something common to all the rhetoric about connected devices (phones included) are references to cloud-based services.  In fact, there's a surprising &lt;em&gt;lack&lt;/em&gt; of discussion about this aspect.  It's almost taken for granted that such devices will need to 'dial home' to achieve anything useful.  'Home' is typically a third-party service to which users are granted access (possibly as a subscription).  It's a little lax to discuss the 'internet-of-things' without also mentioning the centralised services that may underlie it.&lt;/p&gt;
+
+&lt;p&gt;Nikesh Arora of Google recently mentioned that &lt;a href=&quot;https://plus.google.com/104376123433741873548/posts/4RcwiHbS7ME&quot;&gt;&quot;Consumers want a divergence of devices but a convergence of services&quot;&lt;/a&gt;.  It's safe to assume that Google would like to be a point of convergence and have begun to position themselves in this way*. Arora, like many others, makes the implicit assumption that cloud-based services will provide the connectivity between devices.  Specifically, that these web-based services will act to host, co-ordinate and route data from whichever devices are authenticated with them.&lt;/p&gt;
+
+&lt;p&gt;In all the excitement, what &lt;em&gt;isn't&lt;/em&gt; really discussed is the increasing amount of personal data that would have to be shared with such centralised services (of course, they would all claim that data security is paramount for them).  Something to consider is whether the organisations even &lt;em&gt;need&lt;/em&gt; to hold such information at all.  For some companies, there may be a clear, strategic desire to collate and analyse user data (e.g Google is adept at monetising what it learns from users).  However, in other cases, the back-end service may only exist to solve the problem of connectivity.  Put bluntly, it's difficult to get all your devices to talk to each other but much more straightforward to get them talking to one central point on the internet.  For example, your phone can usually 'find and connect' to the internet, but it's a lot more complicated if a device needs to 'find and connect' to your phone.&lt;/p&gt;
+
+&lt;p&gt;If a mechanism existed to allow devices to quickly and efficiently make direct connections with each-other, then perhaps many of the coming services could focus on the value-adding features, instead of how to get data from device A (my doorbell camera) to device B (my smart-phone screen).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://perscon.net/overview/signpost.html&quot;&gt;Signpost&lt;/a&gt; addresses the difficult yet &lt;strong&gt;fundamental problem&lt;/strong&gt; for properly enabling the 'internet-of-things'.  That of creating robust, ad-hoc, private connections between devices.&lt;/p&gt;
+
+&lt;h2&gt;Signpost enables truly connected devices&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/heavytpro70/3373700465/&quot; title=&quot;Tin cans and string by heavytpro70, on Flickr&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3456/3373700465_2e2863f2cb.jpg&quot; width=&quot;236&quot; height=&quot;240&quot; align=&quot;right&quot; hspace=&quot;10&quot; vspace=&quot;10&quot; alt=&quot;Tin cans and string&quot;&gt;&lt;/a&gt;
+Signpost enables devices to create bi-directional connections between each-other which can be used by applications to route data.  It could be used by any arbitrary application that needs to get information from one device to another and can also achieve this in a way that doesn't involve directly handling the data itself.&lt;/p&gt;
+
+&lt;p&gt;Since devices can be highly mobile, moving from wifi networks to 3G and back, Signpost maintains two useful pieces of information for each device.  The first is a universal &lt;em&gt;name&lt;/em&gt; for each device, which acts as a pointer.  The second is a list of &lt;em&gt;tactics&lt;/em&gt;, which can be enacted to create connections between two trusted devices. In some sense this is similar to the way DNS works, resolving device names into methods for connecting to those devices.  Initially, a personal, centralised Signpost can act to co-ordinate these connections but an individual could have multiple Signposts.  For example one could run on your network at home to enable connectivity between home devices in the absence of the external internet.&lt;/p&gt;
+
+&lt;p&gt;In this way, the critical problem that Signpost solves is the ability to traverse the messy and chaotic structure of the internet to provide &lt;em&gt;end-to-end&lt;/em&gt; connectivity.  More importantly, it can be done in an automated way that doesn't require the end users of devices to behave differently and can enable new services to grow that don't need to create web-services solely to co-ordinate devices.&lt;/p&gt;
+
+&lt;p&gt;Work is still progressing towards an alpha version and early results are very promising.&lt;/p&gt;
+
+&lt;p&gt;* &lt;small&gt;For example, Google has recently merged its privacy policies to allow all their services to share data between them.&lt;/small&gt;&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2012/connected-devices-and-signpost</link>
+                <guid>http://nymote.org/blog/2012/connected-devices-and-signpost</guid>
+                <pubDate>2012-02-08T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Towards Statistical Queries over Distributed Data</title>
+                <description>&lt;p&gt;One of the issues with the distributed nature of personal data is the ability to perform statistical queries over it.  This is true of both aggregated data stores and those that only catalog data, which remains in its original location.  In both cases, a client that wishes to run a query still has to request access to a number of stores and aggregate the results in an efficient manner.  This last piece is exactly the scenario for which &lt;a href=&quot;http://perscon.net/overview/dataware.html&quot;&gt;Dataware&lt;/a&gt; is being designed.&lt;/p&gt;
+
+&lt;p&gt;A new project is taking shape, which will use personal containers and the principles of Dataware to build an employee incentive scheme to optimise energy usage. It's taking place at Cambridge University in two phases.  The first phase is to gather fine-grained data from employees regarding travel habits and energy usage.  The second phase aims to use this information to construct incentive schemes to help optimise the energy usage of employees and monitor the changes.&lt;/p&gt;
+
+&lt;p&gt;Energy use in buildings and in transport systems is rapidly becoming part of our lifelong contextual footprint so the study needs to be completed without participants sacrificing their privacy.  Therefore, the project will enable a user to collect their private information into a personal container which &lt;em&gt;they own&lt;/em&gt;.  Then the project team can request the ability to run queries over subsets of the data contained in those stores.  This arrangement facilitates the following:-&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Allows the research team to calculate energy use accurately&lt;/li&gt;
+&lt;li&gt;Assures users that the data is only used for this application&lt;/li&gt;
+&lt;li&gt;Denies the team access to other data that is not relevant&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The type of sensitive data relevant to the study will be daily commutes (e.g. GPS information between 8am-10am and 4pm-6pm on weekdays only).  This information could be combined with public data (e.g. traffic data) and a series of incentives constructed to optimise the overall energy usage.  A particularly exciting possibility would be the ability to test various types of incentives with different groups to see which are most effective.  All while preserving the individual privacy of users.&lt;/p&gt;
+
+&lt;p&gt;We'll post more information as the project develops, including the hurdles and technical challenges that need to be overcome.  In the meantime, you can read more about the project itself at the &lt;a href=&quot;http://www.cl.cam.ac.uk/research/srg/netos/c-aware/&quot;&gt;C-AWARE site&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2012/queries-over-distributed-data</link>
+                <guid>http://nymote.org/blog/2012/queries-over-distributed-data</guid>
+                <pubDate>2012-01-26T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Privacy needs to be built in</title>
+                <description>&lt;p&gt;Today, news broke about how O2, a Mobile Network Operator, reveals customers' mobile numbers when they browse from their phones.  A site put together &lt;a href=&quot;http://lew.io/headers.php&quot;&gt;by Lewis Peckover&lt;/a&gt; simply displays the headers sent to his servers when people visit the page.  If you visit from an O2 phone, then you &lt;strike&gt;can&lt;/strike&gt; could easily see your phone number displayed.   In other words, the phone number is simply given to the requesting server as plain text in the http headers (specifically &lt;em&gt;x-up-calling-line-id&lt;/em&gt;).  There was nothing particularly special about Lewis' site so it's reasonable to assume that any site people have browsed using their 3G connection could have kept a copy of the user's number.&lt;/p&gt;
+
+&lt;p&gt;This is obviously a massive breach of privacy and as you can imagine, news of it spread fairly quickly via twitter.  A few customers even posted templates to help others file complaints with the UK's Data Protection office (who have &lt;a href=&quot;http://www.zdnet.co.uk/news/regulation/2012/01/25/privacy-watchdog-to-probe-o2-over-phone-number-leaks-40094902/&quot;&gt;now contacted O2&lt;/a&gt; to &quot;remind them of their data breach notification obligations&quot;).  One of the main objections was that advertisers who can track visitors now also have access to phone numbers which can be used to tie different visits together.&lt;/p&gt;
+
+&lt;p&gt;In fact, this isn't the first time that mobile browsing has been shown to leak data.  A prior &lt;a href=&quot;http://www.mulliner.org/collin/academic/publications/mobile_web_privacy_icin10_mulliner.pdf&quot;&gt;study by Collin Mulliner&lt;/a&gt; in 2010 showed that the phone number could appear in any number of headers as well as other information (e.g your roaming status).&lt;/p&gt;
+
+&lt;p&gt;This highlights how 'spread-out' personal data has become and breaches like this serve to remind us how lax some organisations can be.  As more and more people access the web via mobile devices, issues like this become more important.  Products and services should be designed to be privacy-preserving from the very beginning.  To some extent this can mitigate any mistakes that others can make but can also empower users by giving them the option to explicitly share information if they deem it sensitive.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(O2 has now written &lt;a href=&quot;http://blog.o2.co.uk/home/2012/01/o2-mobile-numbers-and-web-browsing.html&quot;&gt;a post about what happened&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2012/o2-privacy-leak</link>
+                <guid>http://nymote.org/blog/2012/o2-privacy-leak</guid>
+                <pubDate>2012-01-25T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Growing awareness of Personal Data</title>
+                <description>&lt;p&gt;Awareness of Personal Data issues have risen in prominence in recent years and there have even been a number of new companies springing up around the idea of personal data stores.  At the moment, only a handful of these are public and it's likely that more of them are working away behind the scenes.&lt;/p&gt;
+
+&lt;p&gt;Although we won't necessarily be discussing these sites in any detail it's interesting that what they all have in common is the aim of aggregating a user's data in one place.  Once a user has collected all her data, the suggestion is that she can share those 'data-streams' with others, including services that she's granted access to.  At the moment there's limited information on how this aspect would work in practice but it's certainly important in order to liberate the &lt;em&gt;value&lt;/em&gt; of that data.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/harmony19490/362527788/&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/open-padlock.png&quot;&gt;&lt;/a&gt;
+In general, this approach seems similar to the previous iteration of Personal Containers.  The idea of aggregating data into one place is fairly intuitive but as we've &lt;a href=&quot;http://perscon.net/blog/2011/08/31/refresh.html&quot;&gt;learned from prior feedback&lt;/a&gt;, there is valid concern about having &quot;all your eggs in one basket&quot;.&lt;/p&gt;
+
+&lt;p&gt;There have been security issues that highlight this problem.  Last year a &lt;a href=&quot;http://www.wired.com/threatlevel/2011/06/dropbox&quot;&gt;programming error at Dropbox&lt;/a&gt;, a popular file-syncing service, led to customer accounts being accessible.  For a few hours you could access any user account with any arbitrary password.  The flaw was possible because of the way Dropbox handles encryption, specifically that they hold users' encryption keys and therefore have access to files.*&lt;/p&gt;
+
+&lt;p&gt;The situation above is a clear example that there should be more separation of privileges among our data.  Our response to feedback was the concept of &lt;a href=&quot;http://perscon.net/overview/dataware.html&quot;&gt;Dataware&lt;/a&gt;.  The premise is to leave the data themselves in the most appropriate place but facilitate access to them.  We achieve this by creating shims that can interface with services and at the moment the team has put together a couple that interface with social networking sites and another for &lt;a href=&quot;http://perscon.net/blog/2011/09/01/aethers-notebook.html&quot;&gt;Aether's Notebook&lt;/a&gt;.  These look very promising and we hope to continue developing these and others, along with the ability to run authorised computations on the data.&lt;/p&gt;
+
+&lt;p&gt;There'll be more to follow in the coming weeks on different aspects of Personal Containers, covering both &lt;a href=&quot;http://perscon.net/overview/dataware.html&quot;&gt;Dataware&lt;/a&gt; and &lt;a href=&quot;http://perscon.net/overview/signpost.html&quot;&gt;Signpost&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;*&lt;em&gt;Although this might sound odd, many services do this.  If a user forgets their password, the files can still be recovered.  In this case there was some confusion about how security was presented to users.  In order to have a fully secure system, users would need to accept that if they lost their passwords, the service wouldn't be able to help.&lt;/em&gt;&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2012/growing-awareness-of-personal-data</link>
+                <guid>http://nymote.org/blog/2012/growing-awareness-of-personal-data</guid>
+                <pubDate>2012-01-20T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Yurts for Digital Nomads</title>
+                <description>&lt;!--- OLD Excerpt: excerpt: The App Engine data collector for Personal Containers is coming on nicely, and working with AppEngine has been interesting; it's got excellent availability and you can't beat the price (free), but coding robust Python that doesn't trip over the tight resource limits for individual requests and asynchronous tasks and queries is tricky.  While it is good for small records such as my iPhone or FindMyiPhone GPS traces traces, it doesn't work so well with my gigabytes of photographs or decades of e-mail. --&gt;
+
+
+&lt;p&gt;The App Engine data collector for Personal Containers is coming on nicely, and is on track for an alpha preview release &lt;a href=&quot;http://github.com/avsm/perscon/blob/master/README.md&quot;&gt;fairly soon&lt;/a&gt;. Working with AppEngine has been interesting; it's got excellent availability and you can't beat the price (free), but coding robust Python that doesn't trip over the tight resource limits for individual requests, asynchronous tasks and queries is tricky.  While it is good for small records such as my &lt;a href=&quot;http://github.com/avsm/perscon/tree/master/plugins/iPhone/&quot;&gt;iPhone&lt;/a&gt; or Find My iPhone &lt;a href=&quot;http://github.com/avsm/perscon/blob/master/appengine/perscon/drivers/fmi.py&quot;&gt;GPS traces&lt;/a&gt; traces, it doesn't work so well with my gigabytes of photographs or decades of e-mail.&lt;/p&gt;
+
+&lt;p&gt;This confirmed our earlier intuition that there is no one perfect solution for personal data handling; instead, we need to &lt;em&gt;embrace diversity&lt;/em&gt; and construct an infrastructure that can cope with change over the coming decades. Mobile programming has changed beyond recognition in just a few years, and cloud providers are specialising in different ways (e.g. &lt;a href=&quot;http://www.picloud.com/&quot;&gt;PiCloud&lt;/a&gt; for simple compute, or &lt;a href=&quot;http://aws.amazon.com&quot;&gt;EC2&lt;/a&gt; for fancy services like elastic &lt;a href=&quot;http://aws.amazon.com/elasticloadbalancing/&quot;&gt;load balancing&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/nomads-diagram.png&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/nomads-diagram-300.png&quot;&gt;&lt;/a&gt;
+So to recognise this, we are building components that all interoperate with your personal data, keep it secure, and ensure it persists for more than a few years.  &lt;a href=&quot;http://www.malteschwarzkopf.de/&quot;&gt;Malte Schwarzkopf&lt;/a&gt; came up with the term &quot;digital &lt;a href=&quot;http://en.wikipedia.org/wiki/Yurt&quot;&gt;yurts&lt;/a&gt;&quot;, and it's stuck.  We've written a &lt;a href=&quot;/papers/digital-yurts-draft1.pdf&quot;&gt;draft paper&lt;/a&gt; about it, and would love to hear your comments and feedback on the approach.&lt;/p&gt;
+
+&lt;p&gt;There are some interesting recent trends that make doing this particularly important:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The New York Times wrote about the &lt;a href=&quot;http://www.nytimes.com/2010/05/02/magazine/02self-measurement-t.html&quot;&gt;data-driven life&lt;/a&gt; increasingly influencing our decision making. Current sensor data such as GPS traces are just harbringers for the privacy disaster that would be information such as heart rates or your consumption habits getting into the public domain. &lt;em&gt;(link via &lt;a href=&quot;http://www.cl.cam.ac.uk/~dgm36/&quot;&gt;Derek Murray&lt;/a&gt;)&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Facebook has announced a brand new API platform to get access to your information. The &lt;a href=&quot;http://eff.org&quot;&gt;EFF&lt;/a&gt; has a fantastic timeline of &lt;a href=&quot;http://www.eff.org/deeplinks/2010/04/facebook-timeline&quot;&gt;Facebook's Eroding Privacy&lt;/a&gt; over the last five years, to demonstrate how unsafe it is to trust your data to any third-party.  We've started developing an information dump plugin for Facebook, but the API just changed mid-way and so it has to be started again (volunteers welcome!).&lt;/li&gt;
+&lt;li&gt;In the UK, the &lt;a href=&quot;http://en.wikipedia.org/wiki/Digital_Economy_Act_2010&quot;&gt;Digital Economy Act&lt;/a&gt; is an extremely controversial act that makes anonymity and privacy all the more important.  We're assembling an open-source &lt;a href=&quot;http://www.scribd.com/doc/28393106/Using-Dust-Clouds-to-Enhance-Anonymous-Communication&quot;&gt;dust cloud&lt;/a&gt; that integrates Tor into personal containers to automatically grant you anonymity as you communicate with your friends.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;If you're interested, join our &lt;a href=&quot;/contact.html&quot;&gt;group&lt;/a&gt; or contact &lt;a href=&quot;http://anil.recoil.org&quot;&gt;me&lt;/a&gt; directly.  At this stage, you need desire and the ability to hack code, but things are settling down over the next few months...&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2010/yurts-for-digital-nomads</link>
+                <guid>http://nymote.org/blog/2010/yurts-for-digital-nomads</guid>
+                <pubDate>2010-04-29T00:00:00+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Pulling together a user interface</title>
+                <description>&lt;!--- OLD Excerpt: excerpt: Personal containers gather data from a wide variety of sources, and normalise them into a format which understands people (address book entries, with a set of services such as e-mail, phone, IM and online IDs), places (GPS, WOEID), media (photos, movies) and messages (Tweets, emails, Facebook messages). --&gt;
+
+
+&lt;p&gt;We've been &lt;a href=&quot;http://github.com/avsm/perscon&quot;&gt;hacking&lt;/a&gt; away on fleshing out the &lt;a href=&quot;http://code.google.com/appengine&quot;&gt;App Engine&lt;/a&gt; node for personal containers.  We're building this node first because, crucially, deploying an App Engine VM is free to anyone with a Google account.
+&lt;a href=&quot;/images/perscon-extjs.png&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/perscon-extjs-thumb.png&quot;&gt;&lt;/a&gt;
+The service itself is limited since you can only respond to HTTP or XMPP requests and do HTTP fetches, and so its primary use is as an always-on data collection service with a webmail-style UI written using &lt;a href=&quot;http://www.extjs.com/&quot;&gt;extjs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Personal containers gather data from a wide variety of sources, and normalise them into a format which understands people (address book entries, with a set of services such as e-mail, phone, IM and online IDs), places (GPS, WOEID), media (photos, movies) and messages (Tweets, emails, Facebook messages). I'll post more about the data model behind personal containers in a follow-up as the format settles.&lt;/p&gt;
+
+&lt;p&gt;The App Engine node has a number of plugins to gather data and aggregate them into a single view (see screenshot). Plugins include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/avsm/perscon/tree/master/plugins/iPhoto/&quot;&gt;iPhoto&lt;/a&gt; &lt;img src=&quot;/images/iphoto_30x30.png&quot; width=&quot;15&quot; /&gt; extracts location (via EXIF), people present (associated via &lt;a href=&quot;http://gizmodo.com/5141741/what-to-know-about-iphoto-09-face-detection-and-recognition&quot;&gt;faces&lt;/a&gt;), and of course, the actual photograph.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/avsm/perscon/tree/master/plugins/Adium/&quot;&gt;Adium&lt;/a&gt; &lt;img src=&quot;/images/chat_30x30.png&quot; width=&quot;15&quot; /&gt; logs all IMs into a threaded chat view.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/avsm/perscon/tree/master/plugins/iPhone/&quot;&gt;iPhone&lt;/a&gt; &lt;img src=&quot;/images/phone_30x30.png&quot; width=&quot;15&quot; /&gt; uses the backup files on a Mac to extract SMS messages, phone call records (and it could also get photographs and browsing history, although it currently doesn't).  An AppEngine tracker can also use &lt;a href=&quot;http://www.apple.com/mobileme/features/find-my-iphone.html&quot;&gt;FindMyIPhone&lt;/a&gt; to poll your iPhone regularly to keep track of your location without publishing it to Google or Yahoo (and hopefully in iPhone 4.0, we can operate as a background service at last!).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/avsm/perscon/tree/master/appengine/twitter.py&quot;&gt;Twitter&lt;/a&gt; &lt;img src=&quot;/images/twitter_30x30.png&quot; width=&quot;15&quot; /&gt; runs directly on AppEngine (authenticated via OAuth) and synchronizes with a Twitter feed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/avsm/perscon/tree/master/plugins/MacOS-SyncServices/&quot;&gt;SyncServices&lt;/a&gt; hooks into the MacOS X &lt;a href=&quot;http://developer.apple.com/macosx/syncservices.html&quot;&gt;sync framework&lt;/a&gt; and initially subscribes to Address Book updates. This seems to be the first open-source sync alternative to the expensive Mobile Me, as far as I can tell.  I'm planning to expand this to also subscribe to the full set of sync information (e.g. calendars).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I'm switching tacks briefly; we received an &lt;a href=&quot;http://aws.amazon.com/education/aws-in-education-research-grants/&quot;&gt;Amazon Research Grant&lt;/a&gt; recently and I'm building a node that runs as a Linux server to act as a longer-term archival and search server.  This is being written in OCaml and uses &lt;a href=&quot;http://1978th.net/tokyocabinet/&quot;&gt;Tokyo Cabinet&lt;/a&gt; (with Jake Donham's excellent &lt;a href=&quot;http://github.com/jaked/otoky&quot;&gt;bindings&lt;/a&gt;) and so should be speedy and a useful alternative implementation of the HTTP REST interface.  The plan is to automatically synchronize meta-data across all the nodes of a personal container, but store large and historical data away from expensive cloud storage such as App Engine.&lt;/p&gt;
+
+&lt;p&gt;There are lots more plugins in development, such as &lt;a href=&quot;http://foursquare.com&quot;&gt;Foursquare&lt;/a&gt; and &lt;a href=&quot;http://gowalla.com&quot;&gt;Gowalla&lt;/a&gt; OAuth collectors, an &lt;a href=&quot;http://github.com/avsm/perscon/tree/master/android&quot;&gt;Android&lt;/a&gt; mobile application to upload location and contacts information, and Google GData synchronization.  If you're interested in one of these or something else, please do &lt;a href=&quot;/contact.html&quot;&gt;get in touch&lt;/a&gt; or just fork the &lt;a href=&quot;http://github.com/avsm/perscon&quot;&gt;project&lt;/a&gt; and start hacking!&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2010/uiprototype</link>
+                <guid>http://nymote.org/blog/2010/uiprototype</guid>
+                <pubDate>2010-04-15T00:00:00+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Opening a website</title>
+                <description>&lt;p&gt;We've been working away at building a new type of database to help
+individuals keep reigns on their ever-increasing personal digital
+information.  The first prototypes run freely on &lt;a
+href=&quot;http://code.google.com/appengine&quot;&gt;Google App Engine&lt;/a&gt; to
+gather your data behind-the-scenes, and we are working on more
+advanced versions that run on embedded devices and the cloud.&lt;/p&gt;
+
+&lt;p&gt;If you're interested in keeping track of your personal data, you can
+start off with the &lt;a href=&quot;/install.html&quot;&gt;installation&lt;/a&gt;
+instructions to clone your own version.  After that, read up on the &lt;a
+href=&quot;/design.html&quot;&gt;design&lt;/a&gt; of the system (which is still changing
+as we research new ideas around it).  When you find something you want
+to fix, or add a new plugin data source, just clone the &lt;a
+href=&quot;http://github.com/avsm/perscon&quot;&gt;code&lt;/a&gt; and send us back fixes!&lt;/p&gt;
+</description>
+                <link>http://nymote.org/blog/2010/intro</link>
+                <guid>http://nymote.org/blog/2010/intro</guid>
+                <pubDate>2010-03-29T00:00:00+01:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>

@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>   
+    <meta charset="utf-8">
+    <title>Announcing the first major release of Mirage - the Cloud Operating System</title>
+    
+    <meta name="author" content="Nymote">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/twitter-mod/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/main.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.shutter.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fonts.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/shortcodes.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/responsive.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- ATOM and RSS Feeds -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <link href="/images/nymote-logo-blue-large.png" rel="image_src">
+
+  </head>
+
+  <body>
+
+  <!-- NAVIGATION -->
+
+  
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+          <a id="goUp" href="/#top"></a>
+        </div>
+        
+        <nav id="menu">
+          <ul id="menu-nav">
+              <li><a href="/#home" class="external">Home</a></li>
+                <li><a href="/#overview" class="external">Overview</a></li>
+                <li><a href="/#software" class="external">Software</a></li>
+                <li class="current"><a href="/blog">Blog</a></li>
+                <li><a href="/#about" class="external">About Us</a></li>
+            </ul>
+        </nav>
+            
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Blog post -->
+<div class="page-alternate">
+  <div class="container">
+    <div class="row">     
+      <div class="span1"></div>
+      <div class="span10">
+        <div class="title-page">
+          <div style="float: right;" class="icon">
+            <small><a href="/atom.xml">subscribe <span class="icon-rss"></span></a></small>
+          </div>
+          <div class="page-header">
+            <h1><a class="post-title" href="">Announcing the first major release of Mirage - the Cloud Operating System</a></h1>
+            <span>Posted on 13 January 2014 by Amir Chaudhry and Anil Madhavapeddy</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>We're very pleased to announce that version 1.0 of Mirage, the first of the
+components, has been released! This is the first major release of Mirage and
+represents many years of development, testing and community building. As
+mentioned previously, there are three main components of the
+<a href="http://nymote.org/blog/2013/introducing-nymote/">Nymote toolstack</a>, which are: <a href="http://nymote.org/software/mirage/">Mirage</a> - an
+operating system for the cloud, <a href="http://nymote.org/software/signpost/">Signpost</a> - an identity and
+connectivity system and <a href="http://nymote.org/software/irminsule/">Irminsule</a> - a distributed database. As
+always, the best way to learn is to try things out, so follow the revamped
+<a href="http://openmirage.org/wiki/install">install instructions</a> and create your own webserver to host
+a static website!</p>
+
+<p>We've written before <a href="http://nymote.org/blog/2013/overview-of-mirage/">about Mirage and its importance</a> and this
+1.0 release represents the first stable toolkit for creating appliances.
+One of the first places where we'll be using Mirage is this (and other)
+websites.  We will take all the content you see on this site and compile it,
+along with the required components from a operating system (e.g networking
+and a file system) together with webserver functionality and create a small,
+fully-functioning appliance.  We'll then run that appliance directly on top
+of the Xen hypervisor on the public cloud.  The <a href="http://openmirage.org">Mirage website</a>
+has been running this way for some time and that unikernel appliance is
+around 1MB in size (including all content).
+To make it easier for others to generate sites this way we've been creating
+<a href="http://openmirage.org/blog/decks-n-drums">new tools</a> that help with static site generation.  As the
+appliances are so small, we're even able to check them into version control
+systems so you can easily roll-back to a previous version without having to
+recompile anything! You can see the
+<a href="https://github.com/mirage/mirage-www-deployment">repository of previous unikernels</a> to get an idea of this
+in action.</p>
+
+<p>The Mirage team will also be using the new tools to convert their personal
+websites into unikernel appliances and as we create and release more
+libraries we'll be incorporating those also.  For example, once we have a
+workflow with unikernel websites it becomes much easier to add other
+functionality because it's a simple matter of using the appropriate
+libraries, writing some application code and then deploying to the cloud.
+In other words, you begin to reap the benefits of having a operating system
+that works for you in the cloud, while ensuring it remains lean and safe.
+For example, we could incorporate <a href="http://en.wikipedia.org/wiki/CardDAV%E2%80%8E">CardDAV</a> and then use our own
+infrastructure to synchronise contacts between our mobile devices, instead
+of relying on third-parties to do it for us.  As this process becomes more
+streamlined, it's easy to see how we can build up to having our own personal
+cloud by incorporating only the features we need, when we need them and
+always under our control.</p>
+
+<p>There have been a number of articles about Mirage, and a good introduction
+to the concept and direction is in the recent Communications of the ACM
+article called
+<a href="http://queue.acm.org/detail.cfm?id=2566628">Unikernels: Rise of the Virtual Library Operating System</a>.
+There are also write ups about the Mirage release at <a href="http://www.eweek.com/cloud/xen-project-builds-its-own-cloud-os-mirage.html/">eWeek</a>, <a href="http://www.infoworld.com/t/operating-systems/xen-mirage-the-less-more-cloud-os-233823">InfoWorld</a>
+and a general overview on <a href="http://www.linux.com/news/enterprise/cloud-computing/751156-are-cloud-operating-systems-the-next-big-thing">Linux.com</a> (a full list is
+on the self-hosted <a href="http://openmirage.org/links">Mirage website</a>).  We're looking
+forward to the upcoming activities for 2014 and the new avenues that Mirage
+will open up for us!</p>
+
+              </div>
+
+              
+              <ul class="tag_box inline">
+              <!-- <li><i class="icon-tags"></i></li> -->
+                <small>Filed under:</small><br />
+                
+                
+     
+        <li><a href="/tags/#mirage">mirage</a></li>
+     
+        <li><a href="/tags/#releases">releases</a></li>
+     
+        <li><a href="/tags/#software">software</a></li>
+    
+
+
+
+
+
+
+              </ul>
+                
+              
+              <div class="pagination">
+                <ul>
+                  
+                  <li class="prev"><a href="/blog/2013/looking-forward-to-2014" title="Looking forward to 2014">&larr; Previous</a></li>
+                  
+                  <li><a href="/archive/">Archive</a></li>
+                  
+                  <li class="next"><a href="/blog/2014/heading-to-fosdem-2014" title="Heading to FOSDEM!">Next &rarr;</a></li>
+                  
+                </ul>
+              </div>
+              <hr id='share-comment'>
+              
+
+
+  <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+<script type='text/javascript'>
+    var fyre = LF({
+        site_id: 336188
+    });
+</script>
+
+
+
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+      
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row bordertop">
+          <div class="span6 footertext">
+            <span class="icon-github" style="float: left; font-size: 60px;"></span>
+            <div class="span3">Find us on <a href="https://github.com/nymote" target="_blank">GitHub</a> <br/> or send us an <a href="mailto:amir@nymote.com">email</a><p></p></div>
+          </div>
+          <div class="span6">
+            <div class="icon">
+              <span class="icon-inbox" style="float: left; margin-top: 19px; font-size: 60px;"></span>
+            </div>
+            <!--- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  #mc_embed_signup{background-color:transparent; clear:right; font:14px Helvetica,Arial,sans-serif; }
+  <!--- /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ -->
+  .footeremail {width:100%;}
+</style>
+<div id="mc_embed_signup">
+  <form action="http://nymote.us5.list-manage.com/subscribe/post?u=8a83b2d5453bba2ee5838b4ad&amp;id=a41245094c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+    <div class="text" style="margin: 10px; margin-left: 73px;">Signup to our newsletter</div>
+    <div class="span3">
+      <input type="email" value="" name="EMAIL" class="footeremail" placeholder="email address" style="width: 100%; padding: 15px;">
+    </div>
+    <div class="span2"><div class="clear">
+      <input type="submit" class="subscribebutton" value="Subscribe" name="subscribe" style="padding: 6px;">
+    </div>
+    </div>
+  </form>
+</div>
+<!-- End mc_embed_signup -->        
+          </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/assets/themes/twitter-mod/js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+    <script src="/assets/themes/twitter-mod/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+    <script src="/assets/themes/twitter-mod/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+    <script src="/assets/themes/twitter-mod/js/waypoints.js"></script> <!-- WayPoints -->
+    <script src="/assets/themes/twitter-mod/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+    <script src="/assets/themes/twitter-mod/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+    <script src="/assets/themes/twitter-mod/js/jquery.tweet.js"></script> <!-- Tweet -->
+    <script src="/assets/themes/twitter-mod/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="/assets/themes/twitter-mod/js/main.js"></script> <!-- Default JS -->
+    <!-- unused -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>--> <!-- Google Map API -->
+    
+  </body>
+</html>
+

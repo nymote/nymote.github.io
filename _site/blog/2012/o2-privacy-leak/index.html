@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>   
+    <meta charset="utf-8">
+    <title>Privacy needs to be built in</title>
+    
+    <meta name="author" content="Nymote">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/twitter-mod/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/main.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/supersized.shutter.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/fonts.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/shortcodes.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/responsive.css" rel="stylesheet">
+    <link href="/assets/themes/twitter-mod/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- ATOM and RSS Feeds -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <link href="/images/nymote-logo-blue-large.png" rel="image_src">
+
+  </head>
+
+  <body>
+
+  <!-- NAVIGATION -->
+
+  
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+          <a id="goUp" href="/#top"></a>
+        </div>
+        
+        <nav id="menu">
+          <ul id="menu-nav">
+              <li><a href="/#home" class="external">Home</a></li>
+                <li><a href="/#overview" class="external">Overview</a></li>
+                <li><a href="/#software" class="external">Software</a></li>
+                <li class="current"><a href="/blog">Blog</a></li>
+                <li><a href="/#about" class="external">About Us</a></li>
+            </ul>
+        </nav>
+            
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Blog post -->
+<div class="page-alternate">
+  <div class="container">
+    <div class="row">     
+      <div class="span1"></div>
+      <div class="span10">
+        <div class="title-page">
+          <div style="float: right;" class="icon">
+            <small><a href="/atom.xml">subscribe <span class="icon-rss"></span></a></small>
+          </div>
+          <div class="page-header">
+            <h1><a class="post-title" href="">Privacy needs to be built in</a></h1>
+            <span>Posted on 25 January 2012 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p>Today, news broke about how O2, a Mobile Network Operator, reveals customers' mobile numbers when they browse from their phones.  A site put together <a href="http://lew.io/headers.php">by Lewis Peckover</a> simply displays the headers sent to his servers when people visit the page.  If you visit from an O2 phone, then you <strike>can</strike> could easily see your phone number displayed.   In other words, the phone number is simply given to the requesting server as plain text in the http headers (specifically <em>x-up-calling-line-id</em>).  There was nothing particularly special about Lewis' site so it's reasonable to assume that any site people have browsed using their 3G connection could have kept a copy of the user's number.</p>
+
+<p>This is obviously a massive breach of privacy and as you can imagine, news of it spread fairly quickly via twitter.  A few customers even posted templates to help others file complaints with the UK's Data Protection office (who have <a href="http://www.zdnet.co.uk/news/regulation/2012/01/25/privacy-watchdog-to-probe-o2-over-phone-number-leaks-40094902/">now contacted O2</a> to "remind them of their data breach notification obligations").  One of the main objections was that advertisers who can track visitors now also have access to phone numbers which can be used to tie different visits together.</p>
+
+<p>In fact, this isn't the first time that mobile browsing has been shown to leak data.  A prior <a href="http://www.mulliner.org/collin/academic/publications/mobile_web_privacy_icin10_mulliner.pdf">study by Collin Mulliner</a> in 2010 showed that the phone number could appear in any number of headers as well as other information (e.g your roaming status).</p>
+
+<p>This highlights how 'spread-out' personal data has become and breaches like this serve to remind us how lax some organisations can be.  As more and more people access the web via mobile devices, issues like this become more important.  Products and services should be designed to be privacy-preserving from the very beginning.  To some extent this can mitigate any mistakes that others can make but can also empower users by giving them the option to explicitly share information if they deem it sensitive.</p>
+
+<p><em>(O2 has now written <a href="http://blog.o2.co.uk/home/2012/01/o2-mobile-numbers-and-web-browsing.html">a post about what happened</a>)</em></p>
+
+              </div>
+
+              
+              <ul class="tag_box inline">
+              <!-- <li><i class="icon-tags"></i></li> -->
+                <small>Filed under:</small><br />
+                
+                
+     
+        <li><a href="/tags/#companies">companies</a></li>
+     
+        <li><a href="/tags/#leaks">leaks</a></li>
+     
+        <li><a href="/tags/#mobile">mobile</a></li>
+     
+        <li><a href="/tags/#phone">phone</a></li>
+    
+
+
+
+
+
+
+              </ul>
+                
+              
+              <div class="pagination">
+                <ul>
+                  
+                  <li class="prev"><a href="/blog/2012/growing-awareness-of-personal-data" title="Growing awareness of Personal Data">&larr; Previous</a></li>
+                  
+                  <li><a href="/archive/">Archive</a></li>
+                  
+                  <li class="next"><a href="/blog/2012/queries-over-distributed-data" title="Towards Statistical Queries over Distributed Data">Next &rarr;</a></li>
+                  
+                </ul>
+              </div>
+              <hr id='share-comment'>
+              
+
+
+  <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+<script type='text/javascript'>
+    var fyre = LF({
+        site_id: 336188
+    });
+</script>
+
+
+
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+      
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row bordertop">
+          <div class="span6 footertext">
+            <span class="icon-github" style="float: left; font-size: 60px;"></span>
+            <div class="span3">Find us on <a href="https://github.com/nymote" target="_blank">GitHub</a> <br/> or send us an <a href="mailto:amir@nymote.com">email</a><p></p></div>
+          </div>
+          <div class="span6">
+            <div class="icon">
+              <span class="icon-inbox" style="float: left; margin-top: 19px; font-size: 60px;"></span>
+            </div>
+            <!--- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  #mc_embed_signup{background-color:transparent; clear:right; font:14px Helvetica,Arial,sans-serif; }
+  <!--- /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ -->
+  .footeremail {width:100%;}
+</style>
+<div id="mc_embed_signup">
+  <form action="http://nymote.us5.list-manage.com/subscribe/post?u=8a83b2d5453bba2ee5838b4ad&amp;id=a41245094c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+    <div class="text" style="margin: 10px; margin-left: 73px;">Signup to our newsletter</div>
+    <div class="span3">
+      <input type="email" value="" name="EMAIL" class="footeremail" placeholder="email address" style="width: 100%; padding: 15px;">
+    </div>
+    <div class="span2"><div class="clear">
+      <input type="submit" class="subscribebutton" value="Subscribe" name="subscribe" style="padding: 6px;">
+    </div>
+    </div>
+  </form>
+</div>
+<!-- End mc_embed_signup -->        
+          </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/assets/themes/twitter-mod/js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+    <script src="/assets/themes/twitter-mod/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+    <script src="/assets/themes/twitter-mod/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+    <script src="/assets/themes/twitter-mod/js/waypoints.js"></script> <!-- WayPoints -->
+    <script src="/assets/themes/twitter-mod/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+    <script src="/assets/themes/twitter-mod/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+    <script src="/assets/themes/twitter-mod/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+    <script src="/assets/themes/twitter-mod/js/jquery.tweet.js"></script> <!-- Tweet -->
+    <script src="/assets/themes/twitter-mod/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="/assets/themes/twitter-mod/js/main.js"></script> <!-- Default JS -->
+    <!-- unused -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>--> <!-- Google Map API -->
+    
+  </body>
+</html>
+
