@@ -9,7 +9,7 @@ let mode =
     | "fat" -> `Fat
     | _     -> `Crunch
   with Not_found ->
-    `Fat
+    `Crunch
 
 let fat_ro dir =
   kv_ro_of_fs (fat_of_files ~dir ())

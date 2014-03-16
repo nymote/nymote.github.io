@@ -34,7 +34,7 @@ echo Mirage version
 mirage --version
 
 # run the commands to build from here
-mirage configure --$MIRAGE_BACKEND
+FS=fat mirage configure --$MIRAGE_BACKEND
 mirage build
 
 #############################
@@ -47,6 +47,7 @@ if [ "$DEPLOY" = "1" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
     SSH_DEPLOY_KEY=~/.ssh/id_rsa
     XEN_DIR=xen/$TRAVIS_COMMIT
     DEPLOY_IMAGE=mir-www.xen
+    FAT_IMAGE=fat1.img
     DEPLOY_USER=amcdeploy               # for github deployment repo
     DEPLOY_ACCOUNT=nymote               # for github deployment repo
     DEPLOY_REPO=nymote-www-deploy    # for github deployment repo
@@ -77,6 +78,10 @@ if [ "$DEPLOY" = "1" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
             mkdir -p $XEN_DIR
             cp ../$DEPLOY_IMAGE ../config.ml $XEN_DIR
             bzip2 -9 $XEN_DIR/$DEPLOY_IMAGE
+            if [ -f ../$FAT_IMAGE ] then
+                cp ../$FAT_IMAGE $XEN_DIR
+                bzip2 -9 $XEN_DIR/$FAT_IMAGE
+            fi
             git pull --rebase   # in case there are changes since cloning
             echo $TRAVIS_COMMIT > xen/latest    # update ref to most recent
             git add $XEN_DIR xen/latest         # add VM and ref to staging
