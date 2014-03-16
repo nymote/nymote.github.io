@@ -78,7 +78,7 @@ if [ "$DEPLOY" = "1" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
             mkdir -p $XEN_DIR
             cp ../$DEPLOY_IMAGE ../config.ml $XEN_DIR
             bzip2 -9 $XEN_DIR/$DEPLOY_IMAGE
-            if [ -f ../$FAT_IMAGE ] then
+            if [ -f ../$FAT_IMAGE ]; then
                 cp ../$FAT_IMAGE $XEN_DIR
                 bzip2 -9 $XEN_DIR/$FAT_IMAGE
             fi
