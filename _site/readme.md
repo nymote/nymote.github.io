@@ -1,3 +1,5 @@
+Unikernel: [![Build Status](https://travis-ci.org/nymote/nymote.github.io.png?branch=master)](https://travis-ci.org/nymote/nymote.github.io)
+
 Website pages for [Nymote](http://nymote.org)
 
 This site aims to pull together the different projects and showcase the 

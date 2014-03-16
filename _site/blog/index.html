@@ -76,6 +76,477 @@
           <span style="float: right; margin-left: 15px;"><h4><a href="/atom.xml">subscribe <span class="icon-rss"></span></a></h4></span>
           
           <div class="page-header">
+            <h1><a class="post-title" href="/blog/2014/from-jekyll-site-to-unikernel">From Jekyll site to Unikernel</a></h1>
+            <span>Posted on 16 March 2014 by Amir Chaudhry</span>
+            
+          </div>
+          <div class="row">
+            <div class="span10">
+              <div class="title-page">
+                <h4 class="title-description"></h4>
+                <p><a href="http://nymote.org/software/mirage">Mirage</a> has reached a point where it's possible to easily set up
+end-to-end toolchains to build <a href="http://queue.acm.org/detail.cfm?id=2566628">unikernels</a>! <!--\[If you're not sure what that is, read the post [What is a unikernel?][amc-unikernel]\]-->
+My first use-case is to be able to generate a unikernel which can serve my
+personal static site but to do it with as much automation as possible. It
+turns out this is possible with less than 50 lines of code.</p>
+
+<p>I use Jekyll and GitHub Pages at the moment so I wanted a workflow that's as
+easy to use, though I'm happy to spend some time up front to set up and
+configure things.
+The tools for achieving what I want are in good shape so
+this post takes the example of a Jekyll site and goes through
+the steps to produce a unikernel on
+<a href="https://travis-ci.org">Travis CI</a> (a continuous integration service) which can later be
+deployed.  Many of these instructions already exist in various forms but
+they're collated here to aid this use-case.</p>
+
+<p>I will take you, dear reader, through the process and when we're finished,
+the workflow will be as follows:</p>
+
+<ol>
+<li>You'll write your posts on your local machine as normal</li>
+<li>A push to GitHub will trigger a unikernel build for each commit</li>
+<li>The Xen unikernel will be pushed to a repo for deployment</li>
+</ol>
+
+
+<p>To achieve this, we'll first check that we can build a unikernel VM locally,
+then we'll set up a continuous integration service to automatically build
+them for us and finally we'll adapt the CI service to also deploy the built
+VM.  Although the amount of code required is small, each of these steps is
+covered below in some detail.
+For simplicity, I'll assume you already have OCaml and Opam
+installed -- if not, you can find out how via the
+<a href="http://realworldocaml.org/install">Real Word OCaml install instructions</a>.</p>
+
+<h2>Building locally</h2>
+
+<p>To ensure that the build actually works, you should run things locally at
+least once before pushing to Travis.  It's worth noting that the
+<a href="https://github.com/mirage/mirage-skeleton">mirage-skeleton</a> repo contains a lot of useful, public domain examples
+and helpfully, the specific code we need is in
+<a href="https://github.com/mirage/mirage-skeleton/tree/master/static_website">mirage-skeleton/static_website</a>.  Copy both the <code>config.ml</code>
+and <code>dispatch.ml</code> files from that folder into a new <code>_mirage</code> folder in your
+jekyll repository.</p>
+
+<p>Edit <code>config.ml</code> so that the two mentions of <code>./htdocs</code> are replaced with
+<code>../_site</code>.  This is the only change you'll need to make and you should now
+be able to build the unikernel with the unix backend.  Make sure you have
+the mirage package installed by running <code>$ opam install mirage</code> and then run:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">cd </span>_mirage
+<span class="nv">$ </span>mirage configure --unix
+<span class="nv">$ </span>mirage build
+<span class="nv">$ </span><span class="nb">cd</span> ..
+</code></pre></div>
+
+
+<p>That's all it takes!  In a few minutes there will be a unikernel built on
+your system (symlinked as <code>_mirage/mir-www</code>).  If there are any errors, make
+sure that Opam is up to date and that you have the latest version of the
+static_website files from <a href="https://github.com/mirage/mirage-skeleton">mirage-skeleton</a>.</p>
+
+<h3>Serving the site locally</h3>
+
+<p>If you'd like to see this site locally, you can do so from within the
+<code>_mirage</code> folder by running unikernel you just built.  There's more
+information about the details of this on the <a href="http://openmirage.org/wiki/mirage-www">Mirage docs site</a>
+but the quick instructions are:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">cd </span>_mirage
+<span class="nv">$ </span>sudo mirage run
+
+<span class="c"># in another terminal window</span>
+<span class="nv">$ </span>sudo ifconfig tap0 10.0.0.1 255.255.255.0
+</code></pre></div>
+
+
+<p>You can now point your browser at http://10.0.0.2/ and see your site!
+Once you're finished browsing, <code>$ mirage clean</code> will clear up all the
+generated files.</p>
+
+<p>Since the build is working locally, we can set up a continuous integration
+system to perform the builds for us.</p>
+
+<h2>Setting up Travis CI</h2>
+
+<p><img style="float: right; margin-left: 10px" src="http://amirchaudhry.com/images/jekyll-unikernel/travis.png"></img></p>
+
+<p>We'll be using the <a href="https://travis-ci.org">Travis CI</a> service, which is free for open-source
+projects (so this assumes you're using a public repo).  The benefit of using
+Travis is that you can build a unikernel <em>without</em> needing a local OCaml
+environment, but it's always quicker to debug things locally.</p>
+
+<p>Log in to Travis using your GitHub ID which will then trigger a scan of your
+repositories.  When this is complete, go to your Travis accounts page and
+find the repo you'll be building the unikernel from.  Switch it 'on' and
+Travis will automatically set your GitHub post-commit hook and token for you.
+That's all you need to do on the website.</p>
+
+<p>When you next make a push to your repository, GitHub will inform Travis,
+which will then look for a YAML file in the root of the repo called
+<code>.travis.yml</code>.  That file describes what Travis should do and what the build
+matrix is.  Since OCaml is not one of the supported languages, we'll be
+writing our build script manually (this is actually easier than it sounds).
+First, let's set up the YAML file and then we'll examine the build script.</p>
+
+<h3>The Travis YAML file - .travis.yml</h3>
+
+<p>The <a href="http://docs.travis-ci.com/user/ci-environment/#CI-environment-OS">Travis CI environment</a> is based on Ubuntu 12.04, with a
+number of things pre-installed (e.g Git, networking tools etc).  Travis
+doesn't support OCaml (yet) so we'll use the <code>c</code> environment to get the
+packages we need, specifically, the OCaml compiler, Opam and Mirage. Once
+those are set up, our build should run pretty much the same as it did locally.</p>
+
+<p>For now, let's keep things simple and only focus on the latest releases
+(OCaml 4.01.0 and Opam 1.1.1), which means our build matrix is very simple.
+The build instructions will be in the file <code>_mirage/travis.sh</code>, which we
+will move to and trigger from the <code>.travis.yml</code> file.  This means our YAML
+file should look like:</p>
+
+<div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">language</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">c</span>
+<span class="l-Scalar-Plain">before_script</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">cd _mirage</span>
+<span class="l-Scalar-Plain">script</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bash -ex travis.sh</span>
+<span class="l-Scalar-Plain">env</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">matrix</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">MIRAGE_BACKEND=xen DEPLOY=0</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">MIRAGE_BACKEND=unix</span>
+</code></pre></div>
+
+
+<p>The matrix enables us to have parallel builds for different environments and
+this one is very simple as it's only building two unikernels. One worker
+will build for the Xen backend and another worker will build for the Unix
+backend. The <code>_mirage/travis.sh</code> script will clarify what each of these
+environments translates to.  We'll come back to the <code>DEPLOY</code> flag later on
+(it's not necessary yet).  Now that this file is set up, we can work on the
+build script itself.</p>
+
+<h3>The build script - travis.sh</h3>
+
+<p>To save time, we'll be using an Ubuntu PPA to quickly get
+<a href="https://launchpad.net/~avsm">pre-packaged versions of the OCaml compiler and Opam</a>, so the
+first thing to do is define which PPAs each line of the build matrix
+corresponds to.  Since we're keeping things simple, we only need one PPA
+that has the most recent releases of OCaml and Opam.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c">#!/usr/bin/env bash</span>
+<span class="nv">ppa</span><span class="o">=</span>avsm/ocaml41+opam11
+<span class="nb">echo</span> <span class="s2">&quot;yes&quot;</span> <span class="p">|</span> sudo add-apt-repository ppa:<span class="nv">$ppa</span>
+sudo apt-get update -qq
+sudo apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam
+</code></pre></div>
+
+
+<p>[NB: There are many <a href="https://launchpad.net/~avsm">other PPAs</a> for different combinations of
+OCaml/Opam which are useful for testing].  Once the appropriate PPAs have
+been set up it's time to initialise Opam and install Mirage.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">export </span><span class="nv">OPAMYES</span><span class="o">=</span>1
+opam init
+opam install mirage
+<span class="nb">eval</span> <span class="sb">`</span>opam config env<span class="sb">`</span>
+</code></pre></div>
+
+
+<p>We set <code>OPAMYES=1</code> to get non-interactive use of Opam (it defaults to 'yes'
+for any user input) and if we want full build logs, we could also set
+<code>OPAMVERBOSE=1</code> (I haven't in this example).
+The rest should be straight-forward and you'll end up with an
+Ubuntu machine with OCaml, Opam and the Mirage package installed.  It's now
+trivial to do the next step of actually building the unikernel!</p>
+
+<div class="highlight"><pre><code class="bash">mirage configure --<span class="nv">$MIRAGE_BACKEND</span>
+mirage build
+</code></pre></div>
+
+
+<p>You can see how we've used the environment variable from the Travis file and
+this is where our two parallel builds begin to diverge.  When you've saved
+this file, you'll need to change permissions to make it executable by doing
+<code>$ chmod +x _mirage/travis.sh</code>.</p>
+
+<p>That's all you need to build the unikernel on Travis!  You should now commit
+both the YAML file and the build script to the repo and push the changes to
+GitHub.  Travis should automatically start your first build and you can
+watch the console output online to check that both the Xen and Unix backends
+complete properly.  If you notice any errors, you should go back over your
+build script and fix it before the next step.</p>
+
+<p><em>[NB: If you have a larger site, you may have to use a different file system
+option for the configuration. Specifically,
+</em><code>$ FS=fat mirage configure --$MIRAGE_BACKEND</code><em>, which will crate a disk
+image of the website content using the <a href="http://en.wikipedia.org/wiki/File_Allocation_Table">FAT file system</a> format
+(</em><code>fat1.img</code><em>). This means you'll also need to keep track of the disk image
+for the deployment stage as your unikernel VM will connect to it. Look at the
+<a href="https://github.com/nymote/nymote.github.io/blob/master/_mirage/travis.sh">nymote build script</a> for an example.]</em></p>
+
+<h2>Deploying your unikernel</h2>
+
+<p><img style="float: right; margin-left: 10px" src="http://amirchaudhry.com/images/jekyll-unikernel/octocat.png"></img></p>
+
+<p>When Travis has finished its builds it will simply destroy the worker and
+all its contents, including the unikernels we just built.  This is perfectly
+fine for testing but if we want to also <em>deploy</em> a unikernel, we need to get
+it out of the Travis worker after it's built. In this case, we want to
+extract the Xen-based unikernel so that we can later start it on a Xen-based
+machine (e.g Amazon, Rackspace or - in our case - a machine on <a href="http://www.bytemark.co.uk">Bytemark</a>).</p>
+
+<p>Since the unikernel VMs are small (only tens of MB), our method for
+exporting will be to commit the Xen unikernel into a repository on GitHub.
+It can be retrieved and started later on and keeping the VMs in version
+control gives us very effective snapshots (we can roll back the site without
+having to rebuild).  This is something that would be much more challenging
+if we were using the 'standard' web toolstack.</p>
+
+<p>The deployment step is a little more complex as we have to send the
+Travis worker a private SSH key, which will give it push access to a GitHub
+repository.  Of course, we don't want to expose that key by simply adding it
+to the Travis file so we have to encrypt it somehow.</p>
+
+<h3>Sending Travis a private SSH key</h3>
+
+<p>Travis supports <a href="http://docs.travis-ci.com/user/encryption-keys/">encrypted environment variables</a>. Each
+repository has its own public key and the <a href="http://rubygems.org/gems/travis">Travis gem</a> uses
+this public key to encrypt data, which you then add to your <code>.travis.yml</code>
+file for decryption by the worker.  This is meant for sending things like
+private API tokens and other small amounts of data. Trying to encrypt an SSH
+key isn't going to work as it's too large.  Instead we'll use
+<a href="https://github.com/avsm/travis-senv">travis-senv</a>, which encodes, encrypts and chunks up the key into smaller
+pieces and then reassembles those pieces on the Travis worker.  We still use
+the Travis gem to encrypt the pieces to add them to the <code>.travis.yml</code> file.</p>
+
+<p>While you could give Travis a key that accesses your whole GitHub account, my
+preference is to create a <em>new</em> deploy key, which will only be used for
+<a href="https://help.github.com/articles/managing-deploy-keys#deploy-keys">deployment to one repository</a>.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># make a key pair on your local machine</span>
+<span class="nv">$ </span><span class="nb">cd</span> ~/.ssh/
+<span class="nv">$ </span>ssh-keygen -t dsa -C <span class="s2">&quot;travis.deploy&quot;</span> -f travis-deploy_dsa
+<span class="nv">$ </span><span class="nb">cd</span> -
+</code></pre></div>
+
+
+<p>Note that this is a 1024 bit key so if you decide to use a 2048 bit key,
+then be aware that Travis <a href="https://github.com/avsm/travis-senv/issues/1">sometimes has issues</a>. Now that we have
+a key, we can encrypt it and add it to the Travis file.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># on your local machine</span>
+
+<span class="c"># install the necessary components</span>
+<span class="nv">$ </span>gem install travis
+<span class="nv">$ </span>opam install travis-senv
+
+<span class="c"># chunk the key, add to yml file and rm the intermediate</span>
+<span class="nv">$ </span>travis-senv encrypt ~/.ssh/travis-deploy_dsa _travis_env
+<span class="nv">$ </span>cat _travis_env <span class="p">|</span> travis encrypt -ps --add
+<span class="nv">$ </span>rm _travis_env
+</code></pre></div>
+
+
+<p><code>travis-senv</code> encrypts and chunks the key locally on your machine, placing
+its output in a file you decide (<code>_travis_env</code>).  We then take that output
+file and pipe it to the <code>travis</code> ruby gem, asking it to encrypt the input,
+treating each line as separate and to be appended (<code>-ps</code>) and then actually
+adding that to the Travis file (<code>--add</code>).  You can run <code>$ travis encrypt -h</code>
+to understand these options.  Once you've run the above commands,
+<code>.travis.yml</code> will look as follows.</p>
+
+<div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">language</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">c</span>
+<span class="l-Scalar-Plain">before_script</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">cd _mirage</span>
+<span class="l-Scalar-Plain">script</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bash -ex travis.sh</span>
+<span class="l-Scalar-Plain">env</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">matrix</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">MIRAGE_BACKEND=xen DEPLOY=0</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">MIRAGE_BACKEND=unix</span>
+  <span class="l-Scalar-Plain">global</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">secure</span><span class="p-Indicator">:</span> <span class="s">&quot;....</span><span class="nv"> </span><span class="s">encrypted</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">....&quot;</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">secure</span><span class="p-Indicator">:</span> <span class="s">&quot;....</span><span class="nv"> </span><span class="s">encrypted</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">....&quot;</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">secure</span><span class="p-Indicator">:</span> <span class="s">&quot;....</span><span class="nv"> </span><span class="s">encrypted</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">....&quot;</span>
+  <span class="l-Scalar-Plain">...</span>
+</code></pre></div>
+
+
+<p>The number of secure variables added depends on the type and size of the key
+you had to chunk, so it could vary from 8 up to 29. We'll commit
+these additions later on, alongside additions to the build script.</p>
+
+<p>At this point, we also need to make a repository on GitHub
+and add the public deploy key so
+that Travis can push to it.  Once you've created your repo and added a
+README, follow GitHub's instructions on <a href="https://help.github.com/articles/managing-deploy-keys#deploy-keys">adding deploy keys</a>
+and paste in the public key (i.e. the content of <code>travis-deploy_dsa.pub</code>).</p>
+
+<p>Now that we can securely pass a private SSH key to the worker
+and have a repo that the worker can push to, we need to
+make additions to the build script.</p>
+
+<h3>Committing the unikernel to a repository</h3>
+
+<p>Since we can set <code>DEPLOY=1</code> in the YAML file we only need to make
+additions to the build script.  Specifically, we want to assure that: only
+the Xen backend is deployed; only <em>pushes</em> to the repo result in
+deployments, not pull requests (we do still want <em>builds</em> for pull requests).</p>
+
+<p>In the build script (<code>_mirage/travis.sh</code>), which is being run by the worker,
+we'll have to reconstruct the SSH key and configure Git.  In addition,
+Travis gives us a set of useful <a href="http://docs.travis-ci.com/user/ci-environment/#Environment-variables">environment variables</a> so we'll
+use the latest commit hash (<code>$TRAVIS_COMMIT</code>) to name the the VM (which also
+helps us trace which commit it was built from).</p>
+
+<p>It's easier to consider this section of code at once so I've explained the
+details in the comments. This section is what you need to add at the end of
+your existing build script (i.e straight after <code>mirage build</code>).</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Only deploy if the following conditions are met.</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$MIRAGE_BACKEND&quot;</span> <span class="o">=</span> <span class="s2">&quot;xen&quot;</span> <span class="se">\</span>
+            -a <span class="s2">&quot;$DEPLOY&quot;</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span> <span class="se">\</span>
+            -a <span class="s2">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="o">=</span> <span class="s2">&quot;false&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+
+    <span class="c"># The Travis worker will already have access to the chunks</span>
+    <span class="c"># passed in via the yaml file. Now we need to reconstruct </span>
+    <span class="c"># the GitHub SSH key from those and set up the config file.</span>
+    opam install travis-senv
+    mkdir -p ~/.ssh
+    travis-senv decrypt &gt; ~/.ssh/id_dsa <span class="c"># This doesn&#39;t expose it</span>
+    chmod 600 ~/.ssh/id_dsa             <span class="c"># Owner can read and write</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Host some_user github.com&quot;</span>   &gt;&gt; ~/.ssh/config
+    <span class="nb">echo</span> <span class="s2">&quot;  Hostname github.com&quot;</span>          &gt;&gt; ~/.ssh/config
+    <span class="nb">echo</span> <span class="s2">&quot;  StrictHostKeyChecking no&quot;</span>     &gt;&gt; ~/.ssh/config
+    <span class="nb">echo</span> <span class="s2">&quot;  CheckHostIP no&quot;</span>               &gt;&gt; ~/.ssh/config
+    <span class="nb">echo</span> <span class="s2">&quot;  UserKnownHostsFile=/dev/null&quot;</span> &gt;&gt; ~/.ssh/config
+
+    <span class="c"># Configure the worker&#39;s git details</span>
+    <span class="c"># otherwise git actions will fail.</span>
+    git config --global user.email <span class="s2">&quot;user@example.com&quot;</span>
+    git config --global user.name <span class="s2">&quot;Travis Build Bot&quot;</span>
+
+    <span class="c"># Do the actual work for deployment.</span>
+    <span class="c"># Clone the deployment repo. Notice the user,</span>
+    <span class="c"># which is the same as in the ~/.ssh/config file.</span>
+    git clone git@some_user:amirmc/www-test-deploy
+    <span class="nb">cd </span>www-test-deploy
+
+    <span class="c"># Make a folder named for the commit. </span>
+    <span class="c"># If we&#39;re rebuiling a VM from a previous</span>
+    <span class="c"># commit, then we need to clear the old one.</span>
+    <span class="c"># Then copy in both the config file and VM.</span>
+    rm -rf <span class="nv">$TRAVIS_COMMIT</span>
+    mkdir -p <span class="nv">$TRAVIS_COMMIT</span>
+    cp ../mir-www.xen ../config.ml <span class="nv">$TRAVIS_COMMIT</span>
+
+    <span class="c"># Compress the VM and add a text file to note</span>
+    <span class="c"># the commit of the most recently built VM.</span>
+    bzip2 -9 <span class="nv">$TRAVIS_COMMIT</span>/mir-www.xen
+    git pull --rebase
+    <span class="nb">echo</span> <span class="nv">$TRAVIS_COMMIT</span> &gt; latest    <span class="c"># update ref to most recent</span>
+
+    <span class="c"># Add, commit and push the changes!</span>
+    git add <span class="nv">$TRAVIS_COMMIT</span> latest
+    git commit -m <span class="s2">&quot;adding $TRAVIS_COMMIT built for $MIRAGE_BACKEND&quot;</span>
+    git push origin master
+    <span class="c"># Go out and enjoy the Sun!</span>
+<span class="k">fi</span>
+</code></pre></div>
+
+
+<p>At this point you should commit the changes to <code>./travis.yml</code> (don't forget
+the deploy flag) and <code>_mirage/travis.sh</code> and push the changes to GitHub.
+Everything else will take place automatically and in a few minutes you will
+have a unikernel ready to deploy on top of Xen!</p>
+
+<p>You can see both the complete YAML file and build script in use on my
+<a href="https://github.com/amirmc/www-test">test repo</a>, as well as the <a href="https://travis-ci.org/amirmc/www-test">build logs</a> for that repo
+and the <a href="https://github.com/amirmc/www-test-deploy">deploy repo</a> with a VM.</p>
+
+<p><em>[Pro-tip: If you add </em><code>[skip ci]</code><em> anywhere in your
+commit message, Travis will skip the build for that commit.
+This is very useful if you're making minor changes, like updating a
+README.]</em></p>
+
+<h2>Finishing up</h2>
+
+<p>Since I'm still using Jekyll for my website, I made a short script in my
+jekyll repository (<code>_deploy-unikernel.sh</code>) that builds the site, commits the
+contents of <code>_site</code> and pushes to GitHub. I simply run this after I've
+committed a new blog post and the rest takes care of itself.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c">#!/usr/bin/env bash</span>
+jekyll build
+git add _site
+git commit -m <span class="s1">&#39;update _site&#39;</span>
+git push origin master
+</code></pre></div>
+
+
+<p>Congratulations! You now have an end-to-end workflow that will produce a
+unikernel VM from your Jekyll-based site and push it to a repo.  If you
+strip out all the comments, you'll see that we've written less than 50 lines
+of code! Admittedly, I'm not counting the 80 or so lines that came for free
+in the <code>*.ml</code> files but that's still pretty impressive.</p>
+
+<p>Of course, we still need a machine to take that VM and run it but that's a
+topic for another post.  For the time-being, I'm still using GitHub Pages
+but once the VM is hosted somewhere, I will:</p>
+
+<ol>
+<li>Turn off GitHub Pages and serve from the VM -- but still using Jekyll in
+the workflow.</li>
+<li>Replace Jekyll with OCaml-based static-site generation.</li>
+</ol>
+
+
+<p>Although all the tools already exist to switch now, I'm taking my time so
+that I can easily maintain the code I end up using.</p>
+
+<h2>Expanding the script for testing</h2>
+
+<p>You may have noticed that the examples here are not very flexible or
+extensible but that was a deliberate choice to keep them readable.  It's
+possible to do much more with the build matrix and script, as you can see
+from the Travis files on my <a href="https://github.com/amirmc/amirmc.github.com/tree/master/_mirage">website repo</a>, which were based on
+those of the <a href="https://github.com/mirage/mirage-www">Mirage site</a> and <a href="https://github.com/mor1/mort-www">Mort's site</a>.
+Specifically, you can note the use of more environment variables and case
+statements to decide which PPAs to grab.  Once you've got your builds
+working, it's worth improving your scripts to make them more maintainable
+and cover the test cases you feel are important.</p>
+
+<h3>Not just for static sites (surprise!)</h3>
+
+<p>You might have noticed that in very few places in the toolchain above have I
+mentioned anything specific to static sites per se.  The workflow is simply
+(1) do some stuff locally, (2) push to a continuous integration service
+which then (3) builds and deploys a Xen-based unikernel.  Apart from the
+convenient folder structure, the specific work to treat this as a static
+site lives in the <code>*.ml</code> files, which I've skipped over for this post.</p>
+
+<p>As such, the GitHub+Travis workflow we've developed here is quite general
+and will apply to almost <em>any</em> unikernels that we may want to construct.
+I encourage you to explore the examples in the <a href="https://github.com/mirage/mirage-skeleton">mirage-skeleton</a> repo and
+keep your build script maintainable.  We'll be using it again the next time
+we build unikernel devices.</p>
+
+<hr />
+
+<p><em>Acknowledgements:</em> There were lots of things I read over while writing this
+post but there were a few particularly useful things that you should look up.
+Anil's posts on <a href="http://anil.recoil.org/2013/09/30/travis-and-ocaml.html">Testing with Travis</a> and
+<a href="http://anil.recoil.org/2013/10/06/travis-secure-ssh-integration.html">Travis for secure deployments</a> are quite succinct (and
+were themselves prompted by <a href="http://blog.mlin.net/2013/02/testing-ocaml-projects-on-travis-ci.html">Mike Lin's Travis post</a> several
+months earlier). Looking over Mort's <a href="https://github.com/mor1/mort-www/blob/master/.travis-build.sh">build script</a> and that of
+<a href="https://github.com/mirage/mirage-www/blob/master/.travis-ci.sh">mirage-www</a> helped me figure out the deployment steps as well as improve
+my own script. Special thanks also to <a href="http://erratique.ch">Daniel</a>, <a href="http://www.lpw25.net">Leo</a> and <a href="http://anil.recoil.org">Anil</a> for
+commenting on an earlier draft of this post.</p>
+
+<p>This post was previously published on my <a href="http://amirchaudhry.com/from-jekyll-to-unikernel-in-fifty-lines/">personal site</a>.</p>
+
+                <a href="/blog/2014/from-jekyll-site-to-unikernel/#share-comment"><!-- Share / -->Comment</a>
+              </div>
+              <hr>
+            </div>
+          </div>  
+          
+          <div class="page-header">
             <h1><a class="post-title" href="/blog/2014/fosdem-summary">Summary of FOSDEM 2014</a></h1>
             <span>Posted on 11 February 2014 by Amir Chaudhry</span>
             
@@ -285,76 +756,6 @@ meantime, we wish you a great holiday season and look forward to the New
 Year!</p>
 
                 <a href="/blog/2013/looking-forward-to-2014/#share-comment"><!-- Share / -->Comment</a>
-              </div>
-              <hr>
-            </div>
-          </div>  
-          
-          <div class="page-header">
-            <h1><a class="post-title" href="/blog/2013/smart-tvs-that-watch-you">Smart TVs that watch you</a></h1>
-            <span>Posted on 19 November 2013 by Amir Chaudhry</span>
-            
-          </div>
-          <div class="row">
-            <div class="span10">
-              <div class="title-page">
-                <h4 class="title-description"></h4>
-                <p>As our devices grow smarter and more connected it's reasonable to expect
-that we'll get better services and features as a result.  One such device
-that's already making its way into our homes is the humble TV.  We already
-have smart devices that <em>connect</em> to our TVs, such as the AppleTV and
-Google's Chromecast device, but the manufacturers themselves are also adding
-more functionality.  However, what these devices are doing is worth a second
-look.</p>
-
-<p>A recent post by <a href="http://doctorbeet.blogspot.co.uk">DoctorBeet</a>, examines what his LG TV was doing when he
-noticed advertising on the homescreen.  This led him to discover that LG was
-offering a Smart Ad service to advertisers, based on customers' data.  The
-LG site has since been taken down but apparently <em>"LG Smart Ad analyses
-users favourite programs, online behaviour, search keywords and other
-information to offer relevant ads to target audiences."</em> Furthermore, there
-was a setting on the TV itself called "Collection of watching info", where
-the default setting was 'ON'.  All of this seems quite invasive, since the
-TV was purchased outright so it's not a case of trading privacy for
-something that's free.  You'd think that turning the collection setting to
-'OFF' would largely solve the issue but this story isn't that simple.  You
-should <a href="http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html">read the post in full</a>, but a brief summary is below.</p>
-
-<p>DocterBeet turned off the collection setting and then decided to examine his
-internet traffic.  Apparently the viewing data was being <em>regardless</em> of the
-setting on the TV, which completely breaks user expectations.  As if that
-wasn't bad enough, the TV was scanning external USB drives and sending back
-that data too.  Sometimes just the filenames but sometimes all the content
-too.  When LG was contacted about the problems, their response was baffling.
-Essentially, they claimed that DoctorBeet had <em>"accepted the Terms and
-Conditions on [their] TV"</em> and implied there was nothing they could do.
-Since DoctorBeet is a technically savvy customer, he created rules on his
-home router to prevent any further connections to LG's computers, while
-ensuring he could still get the software updates.</p>
-
-<p>This case highlights a potential trend where devices that we've paid for are
-still attempting to collect user-data for the purpose of advertising.  A
-case of you are <em>both</em> the customer <em>and</em> the product. What's equally
-concerning is that one technically able customer was able to understand what
-was going on but the majority of users would have been none-the-wiser.</p>
-
-<p>The next few years are going to be interesting as more news like this breaks
-and people become more aware of how desperate companies are to learn about
-their users.  The irony is that if the customers had a real voice, many of
-them may be willing to trade with the companies and provide them access to
-data-sets, assuming a safe and secure way to do so was available.  We're
-working on a platform as part of the <a href="http://hubofallthings.wordpress.com">Hub of all Things</a> project, where
-companies and customers can do exactly this.  There may be other users who
-want to have more control over their home networks so we're also looking at
-<a href="http://homenetworks.ac.uk">novel ways to allow people to interact and configure home routers</a>.</p>
-
-<p>The Internet of Things and connected devices have the potential to be as
-ground-breaking as the Web but end-users must also be empowered if we are to
-reap all the benefits.</p>
-
-<p><em>Read the full story at: <a href="http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html">http://doctorbeet.blogspot.co.uk/2013/11/lg-smart-tvs-logging-usb-filenames-and.html</a></em></p>
-
-                <a href="/blog/2013/smart-tvs-that-watch-you/#share-comment"><!-- Share / -->Comment</a>
               </div>
               <hr>
             </div>

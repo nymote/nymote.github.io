@@ -12,6 +12,7 @@ http://nymote.org/software/mirage/index.html
 http://nymote.org/software/signpost/index.html
 http://nymote.org/tags/index.html
 
+http://nymote.org/blog/2014/from-jekyll-site-to-unikernel
 http://nymote.org/blog/2014/fosdem-summary
 http://nymote.org/blog/2014/heading-to-fosdem-2014
 http://nymote.org/blog/2014/announcing-first-mirage-release
