@@ -3,7 +3,7 @@ layout: post
 title: "Heading to FOSDEM!"
 author: Amir Chaudhry
 date: 2014-01-30 09:00:00
-tags: [conference, demo, irminsule, mirage]
+tags: [conference, demo, irmin, mirage]
 excerpt: "We're heading to FOSDEM in a few days!  If you haven't heard of FOSDEM before, it's a two-day, volunteer-organised event to promote open source software.  It takes place in Brussels and there will be over 500 talks, across 44 tracks attended by around 5000 people. The numbers alone don't capture the scale of the event so click though the image below for a view of the schedule -- and that's just for the Saturday. Did I mention this is all run by volunteers?"
 shorturl: http://bit.ly/MyEWP2
 ---
