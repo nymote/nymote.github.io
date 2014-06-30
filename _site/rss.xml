@@ -5,8 +5,8 @@
         <description>Nymote - Nymote</description>
         <link>http://nymote.org</link>
         <link>http://nymote.org</link>
-        <lastBuildDate>2014-03-16T19:33:21+00:00</lastBuildDate>
-        <pubDate>2014-03-16T19:33:21+00:00</pubDate>
+        <lastBuildDate>2014-06-30T19:43:06+01:00</lastBuildDate>
+        <pubDate>2014-06-30T19:43:06+01:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -470,7 +470,7 @@ commenting on an earlier draft of this post.&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2014/from-jekyll-site-to-unikernel</link>
                 <guid>http://nymote.org/blog/2014/from-jekyll-site-to-unikernel</guid>
-                <pubDate>2014-03-16T19:30:00Z</pubDate>
+                <pubDate>2014-03-16T19:30:00+00:00</pubDate>
         </item>
 
         <item>
@@ -521,7 +521,7 @@ Nymote toolstack.&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2014/fosdem-summary</link>
                 <guid>http://nymote.org/blog/2014/fosdem-summary</guid>
-                <pubDate>2014-02-11T13:40:00Z</pubDate>
+                <pubDate>2014-02-11T13:40:00+00:00</pubDate>
         </item>
 
         <item>
@@ -564,7 +564,7 @@ meet people working towards the same goals.&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2014/heading-to-fosdem-2014</link>
                 <guid>http://nymote.org/blog/2014/heading-to-fosdem-2014</guid>
-                <pubDate>2014-01-30T09:00:00Z</pubDate>
+                <pubDate>2014-01-30T09:00:00+00:00</pubDate>
         </item>
 
         <item>
@@ -575,7 +575,7 @@ represents many years of development, testing and community building. As
 mentioned previously, there are three main components of the
 &lt;a href=&quot;http://nymote.org/blog/2013/introducing-nymote/&quot;&gt;Nymote toolstack&lt;/a&gt;, which are: &lt;a href=&quot;http://nymote.org/software/mirage/&quot;&gt;Mirage&lt;/a&gt; - an
 operating system for the cloud, &lt;a href=&quot;http://nymote.org/software/signpost/&quot;&gt;Signpost&lt;/a&gt; - an identity and
-connectivity system and &lt;a href=&quot;http://nymote.org/software/irminsule/&quot;&gt;Irminsule&lt;/a&gt; - a distributed database. As
+connectivity system and &lt;a href=&quot;http://nymote.org/software/irmin/&quot;&gt;Irmin&lt;/a&gt; - a distributed database. As
 always, the best way to learn is to try things out, so follow the revamped
 &lt;a href=&quot;http://openmirage.org/wiki/install&quot;&gt;install instructions&lt;/a&gt; and create your own webserver to host
 a static website!&lt;/p&gt;
@@ -625,7 +625,7 @@ will open up for us!&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2014/announcing-first-mirage-release</link>
                 <guid>http://nymote.org/blog/2014/announcing-first-mirage-release</guid>
-                <pubDate>2014-01-13T17:00:00Z</pubDate>
+                <pubDate>2014-01-13T17:00:00+00:00</pubDate>
         </item>
 
         <item>
@@ -653,7 +653,7 @@ Year!&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2013/looking-forward-to-2014</link>
                 <guid>http://nymote.org/blog/2013/looking-forward-to-2014</guid>
-                <pubDate>2013-12-19T20:30:00Z</pubDate>
+                <pubDate>2013-12-19T20:30:00+00:00</pubDate>
         </item>
 
         <item>
@@ -715,7 +715,7 @@ reap all the benefits.&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2013/smart-tvs-that-watch-you</link>
                 <guid>http://nymote.org/blog/2013/smart-tvs-that-watch-you</guid>
-                <pubDate>2013-11-19T19:00:00Z</pubDate>
+                <pubDate>2013-11-19T19:00:00+00:00</pubDate>
         </item>
 
         <item>
@@ -769,7 +769,7 @@ gives people even more options to keep up with news about Nymote.&lt;/p&gt;
 </description>
                 <link>http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links</link>
                 <guid>http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links</guid>
-                <pubDate>2013-10-10T23:30:00Z</pubDate>
+                <pubDate>2013-10-11T00:30:00+01:00</pubDate>
         </item>
 
         <item>
@@ -882,7 +882,7 @@ short duration that they're needed.&lt;/p&gt;
 
 &lt;p&gt;Overall, Mirage provides substantial benefits in terms of increased
 efficiency and safety and is ideal for deploying to both the public could
-and embedded devices.  Together with &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; and &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;, Mirage
+and embedded devices.  Together with &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; and &lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt;, Mirage
 forms a core piece of the Nymote toolstack to power the coming wave of
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Internet_of_Things&quot;&gt;Internet of Things devices&lt;/a&gt;.&lt;/p&gt;
 
@@ -894,7 +894,7 @@ slides on the &lt;a href=&quot;/software/mirage&quot;&gt;Mirage page&lt;/a&gt;.&
 </description>
                 <link>http://nymote.org/blog/2013/overview-of-mirage</link>
                 <guid>http://nymote.org/blog/2013/overview-of-mirage</guid>
-                <pubDate>2013-10-03T12:00:00Z</pubDate>
+                <pubDate>2013-10-03T13:00:00+01:00</pubDate>
         </item>
 
         <item>
@@ -960,7 +960,7 @@ saw because it deals with some of the fundamental problems people need to
 solve.  For the case of Indie Web participants that meant dealing with
 identity and authentication (&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt;) as well as connectivity
 (&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; again) and deployment (&lt;a href=&quot;/software/mirage&quot;&gt;Mirage&lt;/a&gt;).  We did briefly discuss
-immutable datastores and sync problems, where &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt; is relevant.
+immutable datastores and sync problems, where &lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt; is relevant.
 I've collected some of these projects on a &lt;a href=&quot;/links&quot;&gt;links page&lt;/a&gt;, which I'll be
 adding to over time.  Please do &lt;a href=&quot;mailto:amir@nymote.com?subject=New%20link%20to%20consider!&quot;&gt;send me&lt;/a&gt; any interesting things
 which should go on that list.&lt;/p&gt;
@@ -1132,7 +1132,7 @@ upgrade.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/jezpage/4990873353/&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/lego-blocks.jpg&quot;&gt;&lt;/a&gt;
 We're starting with fundamental &lt;a href=&quot;/#infrastructure&quot;&gt;infrastructure&lt;/a&gt; to solve the problems
 around &lt;a href=&quot;/software/mirage&quot;&gt;operating systems&lt;/a&gt; for the future, &lt;a href=&quot;/software/signpost&quot;&gt;identity&lt;/a&gt; for
-users and devices and &lt;a href=&quot;/software/irminsule&quot;&gt;data-persistence&lt;/a&gt; across those devices.&lt;/p&gt;
+users and devices and &lt;a href=&quot;/software/irmin&quot;&gt;data-persistence&lt;/a&gt; across those devices.&lt;/p&gt;
 
 &lt;p&gt;We began work on these issues four years ago under the umbrella of the
 &lt;a href=&quot;http://www.horizon.ac.uk&quot;&gt;Horizon Digital Economy programme&lt;/a&gt;, at Cambridge University and
@@ -1166,9 +1166,9 @@ Internet.  If you'd like to read ahead, you can look over our recent
 There are also &lt;a href=&quot;/docs/2012-signpost-poster-a4.pdf&quot;&gt;two&lt;/a&gt; &lt;a href=&quot;/docs/2012-sigcomm-signposts-poster.pdf&quot;&gt;posters&lt;/a&gt; that summarise the
 approach.&lt;/p&gt;
 
-&lt;p&gt;Finally, we will cover &lt;strong&gt;&lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;&lt;/strong&gt;, which rethinks how we *persist data
+&lt;p&gt;Finally, we will cover &lt;strong&gt;&lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt;&lt;/strong&gt;, which rethinks how we *persist data
 * based on the principles of version control systems such as Git (or
-historically, &lt;a href=&quot;http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps&quot;&gt;Bayou&lt;/a&gt;).  Irminsule incorporates provenance and sync and
+historically, &lt;a href=&quot;http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps&quot;&gt;Bayou&lt;/a&gt;).  Irmin incorporates provenance and sync and
 solves the problems of how all a user's devices coordinate and remain
 synchronised with each other, and how that data is seamlessly backed up and
 encrypted to prevent third-party snooping. This is increasingly important as

@@ -7,7 +7,7 @@ http://nymote.org/index.html
 http://nymote.org/links/index.html
 http://nymote.org/rss.xml
 http://nymote.org/sitemap.txt
-http://nymote.org/software/irminsule/index.html
+http://nymote.org/software/irmin/index.html
 http://nymote.org/software/mirage/index.html
 http://nymote.org/software/signpost/index.html
 http://nymote.org/tags/index.html

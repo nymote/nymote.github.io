@@ -4,7 +4,7 @@
  <title>Nymote</title>
  <link href="http://nymote.org/" rel="self"/>
  <link href="http://nymote.org"/>
- <updated>2014-03-16T19:33:21+00:00</updated>
+ <updated>2014-06-30T19:43:06+01:00</updated>
  <id>http://nymote.org</id>
  <author>
    <name>Nymote</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>From Jekyll site to Unikernel</title>
    <link href="http://nymote.org/blog/2014/from-jekyll-site-to-unikernel"/>
-   <updated>2014-03-16T19:30:00Z</updated>
+   <updated>2014-03-16T19:30:00+00:00</updated>
    <id>http://nymote.org/blog/2014/from-jekyll-site-to-unikernel</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://nymote.org/software/mirage&quot;&gt;Mirage&lt;/a&gt; has reached a point where it's possible to easily set up
 end-to-end toolchains to build &lt;a href=&quot;http://queue.acm.org/detail.cfm?id=2566628&quot;&gt;unikernels&lt;/a&gt;! &lt;!--\[If you're not sure what that is, read the post [What is a unikernel?][amc-unikernel]\]--&gt;
@@ -478,7 +478,7 @@ commenting on an earlier draft of this post.&lt;/p&gt;
  <entry>
    <title>Summary of FOSDEM 2014</title>
    <link href="http://nymote.org/blog/2014/fosdem-summary"/>
-   <updated>2014-02-11T13:40:00Z</updated>
+   <updated>2014-02-11T13:40:00+00:00</updated>
    <id>http://nymote.org/blog/2014/fosdem-summary</id>
    <content type="html">&lt;p&gt;It's been just over a week since FOSDEM ended and it was even more hectic
 than we imagined.  Thousands of open source developers across dozens of
@@ -529,7 +529,7 @@ Nymote toolstack.&lt;/p&gt;
  <entry>
    <title>Heading to FOSDEM!</title>
    <link href="http://nymote.org/blog/2014/heading-to-fosdem-2014"/>
-   <updated>2014-01-30T09:00:00Z</updated>
+   <updated>2014-01-30T09:00:00+00:00</updated>
    <id>http://nymote.org/blog/2014/heading-to-fosdem-2014</id>
    <content type="html">&lt;p&gt;We're heading to &lt;a href=&quot;https://fosdem.org/2014/&quot;&gt;FOSDEM&lt;/a&gt; in a few days!  If you haven't heard of FOSDEM
 before, it's a two-day, volunteer-organised event to promote open source
@@ -572,7 +572,7 @@ meet people working towards the same goals.&lt;/p&gt;
  <entry>
    <title>Announcing the first major release of Mirage - the Cloud Operating System</title>
    <link href="http://nymote.org/blog/2014/announcing-first-mirage-release"/>
-   <updated>2014-01-13T17:00:00Z</updated>
+   <updated>2014-01-13T17:00:00+00:00</updated>
    <id>http://nymote.org/blog/2014/announcing-first-mirage-release</id>
    <content type="html">&lt;p&gt;We're very pleased to announce that version 1.0 of Mirage, the first of the
 components, has been released! This is the first major release of Mirage and
@@ -580,7 +580,7 @@ represents many years of development, testing and community building. As
 mentioned previously, there are three main components of the
 &lt;a href=&quot;http://nymote.org/blog/2013/introducing-nymote/&quot;&gt;Nymote toolstack&lt;/a&gt;, which are: &lt;a href=&quot;http://nymote.org/software/mirage/&quot;&gt;Mirage&lt;/a&gt; - an
 operating system for the cloud, &lt;a href=&quot;http://nymote.org/software/signpost/&quot;&gt;Signpost&lt;/a&gt; - an identity and
-connectivity system and &lt;a href=&quot;http://nymote.org/software/irminsule/&quot;&gt;Irminsule&lt;/a&gt; - a distributed database. As
+connectivity system and &lt;a href=&quot;http://nymote.org/software/irmin/&quot;&gt;Irmin&lt;/a&gt; - a distributed database. As
 always, the best way to learn is to try things out, so follow the revamped
 &lt;a href=&quot;http://openmirage.org/wiki/install&quot;&gt;install instructions&lt;/a&gt; and create your own webserver to host
 a static website!&lt;/p&gt;
@@ -633,7 +633,7 @@ will open up for us!&lt;/p&gt;
  <entry>
    <title>Looking forward to 2014</title>
    <link href="http://nymote.org/blog/2013/looking-forward-to-2014"/>
-   <updated>2013-12-19T20:30:00Z</updated>
+   <updated>2013-12-19T20:30:00+00:00</updated>
    <id>http://nymote.org/blog/2013/looking-forward-to-2014</id>
    <content type="html">&lt;p&gt;This year has been an interesting one for proponents of decentralisation,
 privacy and open protocols.  We've had revelations about
@@ -661,7 +661,7 @@ Year!&lt;/p&gt;
  <entry>
    <title>Smart TVs that watch you</title>
    <link href="http://nymote.org/blog/2013/smart-tvs-that-watch-you"/>
-   <updated>2013-11-19T19:00:00Z</updated>
+   <updated>2013-11-19T19:00:00+00:00</updated>
    <id>http://nymote.org/blog/2013/smart-tvs-that-watch-you</id>
    <content type="html">&lt;p&gt;As our devices grow smarter and more connected it's reasonable to expect
 that we'll get better services and features as a result.  One such device
@@ -723,7 +723,7 @@ reap all the benefits.&lt;/p&gt;
  <entry>
    <title>Using Pinboard to tag interesting links</title>
    <link href="http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links"/>
-   <updated>2013-10-10T23:30:00Z</updated>
+   <updated>2013-10-11T00:30:00+01:00</updated>
    <id>http://nymote.org/blog/2013/using-pinboard-to-tag-interesting-links</id>
    <content type="html">&lt;p&gt;For some time now, I've been collecting links to news articles, products and
 discussions relating to the Internet of Things, Personal Clouds, data
@@ -777,7 +777,7 @@ gives people even more options to keep up with news about Nymote.&lt;/p&gt;
  <entry>
    <title>Overview of Mirage</title>
    <link href="http://nymote.org/blog/2013/overview-of-mirage"/>
-   <updated>2013-10-03T12:00:00Z</updated>
+   <updated>2013-10-03T13:00:00+01:00</updated>
    <id>http://nymote.org/blog/2013/overview-of-mirage</id>
    <content type="html">&lt;p&gt;Mirage is one of the key components of the Nymote toolstack and this post
 introduces the principles behind it. If you're familiar with the using the
@@ -887,7 +887,7 @@ short duration that they're needed.&lt;/p&gt;
 
 &lt;p&gt;Overall, Mirage provides substantial benefits in terms of increased
 efficiency and safety and is ideal for deploying to both the public could
-and embedded devices.  Together with &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; and &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;, Mirage
+and embedded devices.  Together with &lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; and &lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt;, Mirage
 forms a core piece of the Nymote toolstack to power the coming wave of
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Internet_of_Things&quot;&gt;Internet of Things devices&lt;/a&gt;.&lt;/p&gt;
 
@@ -965,7 +965,7 @@ saw because it deals with some of the fundamental problems people need to
 solve.  For the case of Indie Web participants that meant dealing with
 identity and authentication (&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt;) as well as connectivity
 (&lt;a href=&quot;/software/signpost&quot;&gt;Signpost&lt;/a&gt; again) and deployment (&lt;a href=&quot;/software/mirage&quot;&gt;Mirage&lt;/a&gt;).  We did briefly discuss
-immutable datastores and sync problems, where &lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt; is relevant.
+immutable datastores and sync problems, where &lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt; is relevant.
 I've collected some of these projects on a &lt;a href=&quot;/links&quot;&gt;links page&lt;/a&gt;, which I'll be
 adding to over time.  Please do &lt;a href=&quot;mailto:amir@nymote.com?subject=New%20link%20to%20consider!&quot;&gt;send me&lt;/a&gt; any interesting things
 which should go on that list.&lt;/p&gt;
@@ -1137,7 +1137,7 @@ upgrade.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/jezpage/4990873353/&quot;&gt;&lt;img style=&quot;float:right&quot; src=&quot;/images/lego-blocks.jpg&quot;&gt;&lt;/a&gt;
 We're starting with fundamental &lt;a href=&quot;/#infrastructure&quot;&gt;infrastructure&lt;/a&gt; to solve the problems
 around &lt;a href=&quot;/software/mirage&quot;&gt;operating systems&lt;/a&gt; for the future, &lt;a href=&quot;/software/signpost&quot;&gt;identity&lt;/a&gt; for
-users and devices and &lt;a href=&quot;/software/irminsule&quot;&gt;data-persistence&lt;/a&gt; across those devices.&lt;/p&gt;
+users and devices and &lt;a href=&quot;/software/irmin&quot;&gt;data-persistence&lt;/a&gt; across those devices.&lt;/p&gt;
 
 &lt;p&gt;We began work on these issues four years ago under the umbrella of the
 &lt;a href=&quot;http://www.horizon.ac.uk&quot;&gt;Horizon Digital Economy programme&lt;/a&gt;, at Cambridge University and
@@ -1171,9 +1171,9 @@ Internet.  If you'd like to read ahead, you can look over our recent
 There are also &lt;a href=&quot;/docs/2012-signpost-poster-a4.pdf&quot;&gt;two&lt;/a&gt; &lt;a href=&quot;/docs/2012-sigcomm-signposts-poster.pdf&quot;&gt;posters&lt;/a&gt; that summarise the
 approach.&lt;/p&gt;
 
-&lt;p&gt;Finally, we will cover &lt;strong&gt;&lt;a href=&quot;/software/irminsule&quot;&gt;Irminsule&lt;/a&gt;&lt;/strong&gt;, which rethinks how we *persist data
+&lt;p&gt;Finally, we will cover &lt;strong&gt;&lt;a href=&quot;/software/irmin&quot;&gt;Irmin&lt;/a&gt;&lt;/strong&gt;, which rethinks how we *persist data
 * based on the principles of version control systems such as Git (or
-historically, &lt;a href=&quot;http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps&quot;&gt;Bayou&lt;/a&gt;).  Irminsule incorporates provenance and sync and
+historically, &lt;a href=&quot;http://pdos.csail.mit.edu/6.824/papers/bayou-conflicts.ps&quot;&gt;Bayou&lt;/a&gt;).  Irmin incorporates provenance and sync and
 solves the problems of how all a user's devices coordinate and remain
 synchronised with each other, and how that data is seamlessly backed up and
 encrypted to prevent third-party snooping. This is increasingly important as
