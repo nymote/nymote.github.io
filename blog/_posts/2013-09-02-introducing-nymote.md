@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Nymote"
 author: Amir Chaudhry
-tags: [infrastructure, internet of things, irminsule, mirage, signpost, tools]
+tags: [infrastructure, internet of things, irmin, mirage, signpost, tools]
 excerpt: "Nymote is a set of tools and software infrastructure, created from 
 the ground up, to provide end-users with life-long control of their networks 
 and personal data."
@@ -115,11 +115,11 @@ upgrade.
 <a href="http://www.flickr.com/photos/jezpage/4990873353/"><img style="float:right" src="/images/lego-blocks.jpg"></a>
 We're starting with fundamental [infrastructure][] to solve the problems 
 around [operating systems][Mirage] for the future, [identity][Signpost] for 
-users and devices and [data-persistence][Irminsule] across those devices.
+users and devices and [data-persistence][Irmin] across those devices.
 
 [Mirage]: /software/mirage
 [Signpost]: /software/signpost
-[Irminsule]: /software/irminsule
+[Irmin]: /software/irmin
 
 We began work on these issues four years ago under the umbrella of the 
 [Horizon Digital Economy programme][horizon-de], at Cambridge University and 
@@ -171,9 +171,9 @@ approach.
 [signposter1]: /docs/2012-signpost-poster-a4.pdf
 [signposter2]: /docs/2012-sigcomm-signposts-poster.pdf
 
-Finally, we will cover **[Irminsule][]**, which rethinks how we *persist data
+Finally, we will cover **[Irmin][]**, which rethinks how we *persist data
 * based on the principles of version control systems such as Git (or 
-historically, [Bayou][]).  Irminsule incorporates provenance and sync and 
+historically, [Bayou][]).  Irmin incorporates provenance and sync and 
 solves the problems of how all a user's devices coordinate and remain 
 synchronised with each other, and how that data is seamlessly backed up and 
 encrypted to prevent third-party snooping. This is increasingly important as 

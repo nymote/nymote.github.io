@@ -27,7 +27,7 @@ The underlying building blocks are a crucial piece of the puzzle.  We need
 robust and open-source tools that allow us to create distributed systems 
 that anyone can build on.  These tools are the bedrock on which we will 
 create the next generation of products.  They deal with the issues of 
-[connectivity](#signpost), [synchronisation](#irminsule), and 
+[connectivity](#signpost), [synchronisation](#irmin), and 
 [deployment](#mirage).
 
 ### Signpost
@@ -40,16 +40,16 @@ any complex configuration.  Once all your devices can find each other,
 regardless of location, you effectively have your own little internet.  
 *([more about signpost](./signpost/)*)
 
-### Irminsule
+### Irmin
 
 <img style="float:right;"  src="/images/tree_of_digital_life-thumb.png">
 Having multiple devices has made the engineering effort around data 
 persistence and sync more complex.  We have to concern ourselves about how 
 data obtained for one device is made available and useful to others, without 
-losing history.  **Irminsule** is a new kind of library database, based on 
+losing history.  **Irmin** is a new kind of library database, based on 
 the principles of Git (the version control system), meaning that all history 
 can be kept and moved between devices with ease.  
-*([more about irminsule](./irminsule/)*)
+*([more about irmin](./irmin/)*)
 
 ### Mirage
 

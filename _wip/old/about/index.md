@@ -46,7 +46,7 @@ contributors so far.
 
 [![Thomas](/images/mugshots/tg.png)][thomas-www]  
 *[Thomas Gazagnaire][thomas-www]*  
-**Lead for [Irminsule](/software/irminsule)**  
+**Lead for [Irmin](/software/irmin)**  
 [thomas-www]: http://gazagnaire.org
 
 [![David](/images/mugshots/djs.jpg)][scotty-www]  

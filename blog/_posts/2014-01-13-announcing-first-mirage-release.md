@@ -4,7 +4,7 @@ title: "Announcing the first major release of Mirage - the Cloud Operating Syste
 author: Amir Chaudhry and Anil Madhavapeddy
 date: 2014-01-13 17:00:00
 tags: [mirage, releases, software]
-excerpt: "We're very pleased to announce that version 1.0 of Mirage, the first of the components, has been released! This is the first major release of Mirage and represents many years of development, testing and community building. As mentioned previously, there are three main components of the Nymote toolstack, which are: Mirage - an operating system for the cloud, Signpost - an identity and connectivity system and Irminsule - a distributed database. As always, the best way to learn is to try things out, so follow the revamped install instructions and create your own webserver to host a static website!"
+excerpt: "We're very pleased to announce that version 1.0 of Mirage, the first of the components, has been released! This is the first major release of Mirage and represents many years of development, testing and community building. As mentioned previously, there are three main components of the Nymote toolstack, which are: Mirage - an operating system for the cloud, Signpost - an identity and connectivity system and Irmin - a distributed database. As always, the best way to learn is to try things out, so follow the revamped install instructions and create your own webserver to host a static website!"
 shorturl: http://nymote.org/blog/announcing-first-mirage-release
 ---
 {% include JB/setup %}
@@ -15,7 +15,7 @@ represents many years of development, testing and community building. As
 mentioned previously, there are three main components of the 
 [Nymote toolstack][nymote-intro], which are: [Mirage][mirage-nym] - an 
 operating system for the cloud, [Signpost][signpost-nym] - an identity and 
-connectivity system and [Irminsule][irmin-nym] - a distributed database. As 
+connectivity system and [Irmin][irmin-nym] - a distributed database. As 
 always, the best way to learn is to try things out, so follow the revamped 
 [install instructions][mirage-install] and create your own webserver to host 
 a static website!
@@ -67,7 +67,7 @@ will open up for us!
 [nymote-intro]: http://nymote.org/blog/2013/introducing-nymote/
 [mirage-nym]: http://nymote.org/software/mirage/
 [signpost-nym]: http://nymote.org/software/signpost/
-[irmin-nym]: http://nymote.org/software/irminsule/
+[irmin-nym]: http://nymote.org/software/irmin/
 [mirage-install]: http://openmirage.org/wiki/install
 [mirage-post]: http://nymote.org/blog/2013/overview-of-mirage/
 [mirage-www]: http://openmirage.org

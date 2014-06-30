@@ -115,7 +115,7 @@ short duration that they're needed.
 
 Overall, Mirage provides substantial benefits in terms of increased 
 efficiency and safety and is ideal for deploying to both the public could 
-and embedded devices.  Together with [Signpost][] and [Irminsule][], Mirage 
+and embedded devices.  Together with [Signpost][] and [Irmin][], Mirage 
 forms a core piece of the Nymote toolstack to power the coming wave of 
 [Internet of Things devices][iot-wiki].  
 
@@ -138,7 +138,7 @@ slides on the [Mirage page](/software/mirage).
 [mirage-www]: http://openmirage.org
 [RPi]: http://www.raspberrypi.org
 [Signpost]: /software/signpost
-[Irminsule]: /software/irminsule
+[Irmin]: /software/irmin
 [iot-wiki]: http://en.wikipedia.org/wiki/Internet_of_Things
 [horizon]: http://www.horizon.ac.uk
 [mirage-github]: http://github.com/mirage

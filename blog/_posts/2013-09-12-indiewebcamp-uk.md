@@ -64,7 +64,7 @@ saw because it deals with some of the fundamental problems people need to
 solve.  For the case of Indie Web participants that meant dealing with 
 identity and authentication ([Signpost][]) as well as connectivity 
 ([Signpost][] again) and deployment ([Mirage][]).  We did briefly discuss 
-immutable datastores and sync problems, where [Irminsule][] is relevant. 
+immutable datastores and sync problems, where [Irmin][] is relevant. 
 I've collected some of these projects on a [links page][], which I'll be 
 adding to over time.  Please do [send me][email-link] any interesting things 
 which should go on that list.
@@ -93,7 +93,7 @@ Below are some quick notes I took during the sessions I attended.
 [HubMed]: http://www.hubmed.org
 [PubMed]: http://www.ncbi.nlm.nih.gov/pubmed
 [Mirage]: /software/mirage
-[Irminsule]: /software/irminsule
+[Irmin]: /software/irmin
 [links page]: /links
 [food-fest]: http://brightonfoodfestival.com
 [email-link]: mailto:amir@nymote.com?subject=New%20link%20to%20consider!
