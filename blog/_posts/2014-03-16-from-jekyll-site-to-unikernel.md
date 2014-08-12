@@ -59,6 +59,7 @@ the mirage package installed by running `$ opam install mirage` and then run:
 {% highlight bash %}
 $ cd _mirage
 $ mirage configure --unix
+$ make depend       # needed as of mirage 1.2
 $ mirage build
 $ cd ..
 {% endhighlight %}
