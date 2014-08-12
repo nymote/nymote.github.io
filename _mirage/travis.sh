@@ -3,7 +3,7 @@
 # Edited from https://gist.github.com/avsm/6757425 and @mor1
 # (see post at: http://anil.recoil.org/2013/09/30/travis-and-ocaml.html)
 
-OPAM_DEPENDS="mirage"
+OPAM_DEPENDS="mirage fat-filesystem"
 
 case "$OCAML_VERSION,$OPAM_VERSION" in
 4.01.0,1.1.0) ppa=avsm/ocaml41+opam11 ;;
@@ -35,6 +35,7 @@ mirage --version
 
 # run the commands to build from here
 FS=fat mirage configure --$MIRAGE_BACKEND
+make depend
 mirage build
 
 #############################
