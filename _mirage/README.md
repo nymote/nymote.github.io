@@ -16,14 +16,13 @@ in this folder.
 Since these files are copy/pasted from another repo, the following links
 should help to check if things have been updated upstream
 
-Files are from:
-https://github.com/mirage/mirage-skeleton/commit/6c75202f5a0272a97b1de66dd12054982da91f6f
+Files are from: https://github.com/mirage/mirage-skeleton/commit/1709bad5bac9484b8feb476aa6803e464d66057b
 
-Latest versions:
+Latest versions are:
 - [config.ml][]
 - [dispatch.ml][]
 
-[1] https://github.com/mirage/mirage-skeleton
+[1]: https://github.com/mirage/mirage-skeleton
 
 [mirage unikernel]: http://openmirage.org
 [Travis CI]: https://travis-ci.org
