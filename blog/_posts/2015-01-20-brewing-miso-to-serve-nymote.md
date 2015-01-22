@@ -206,6 +206,8 @@ through issues, consider the [projects][pioneer] or simply write online and
 share with us the things you'd like to see.
 This promises to be an exciting year!
 
+*Sign up to the [mailing list][nym-list] to keep up to date!*
+
 *\* NB The research leading to these results has received
 funding from the European Union's Seventh Framework Programme FP7/2007-2013
 under the UCN project, grant agreement no 611001.*
@@ -251,3 +253,5 @@ under the UCN project, grant agreement no 611001.*
 [js_of_ocaml]: http://ocsigen.org/js_of_ocaml/
 [yan-writeup]: http://yansnotes.blogspot.co.uk/2015/01/work-summary-ocaml-labs.html
 [seedhack]: http://seedcamp.com/seedhack-5-0/
+
+[nym-list]: http://nymote.us5.list-manage.com/subscribe?u=8a83b2d5453bba2ee5838b4ad&id=a41245094c
