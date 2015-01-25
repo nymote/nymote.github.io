@@ -189,4 +189,8 @@ that come with decentralised networks.
 To keep up to date with our posts, sign up to the 
 [Nymote mailing list][followers-list].
 
+*Update - You can read about the progress so far in my follow up post:
+**["Brewing MISO to serve Nymote"][miso-post]***
+
 [followers-list]: http://eepurl.com/mXYb1
+[miso-post]: http://nymote.org/blog/2015/brewing-miso-to-serve-nymote/
